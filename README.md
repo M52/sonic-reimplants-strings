@@ -28,7 +28,7 @@ The installer writes the banks to the `Sonic Reimplants/Samples` folder. The ins
 
 ### macOS
 
-Apple has not notarized the installer. Thus macOS does not start it. Do these steps one time:
+The installer is not signed by Apple so will automatically get quarantined. To fix this and run the application, do these steps:
 
 1. Open Terminal.
 2. Type `xattr -dr com.apple.quarantine` and a space.
@@ -37,17 +37,12 @@ Apple has not notarized the installer. Thus macOS does not start it. Do these st
 5. Double-click `Installer/sr_install`.
 
 ### Linux
-
-The installer needs X11 or XWayland, libX11 and libXext. Most desktop systems have them.
-
 ```
 cd "Sonic Reimplants/Installer"
 ./sr_install
 ```
 
 ## Command line
-
-With arguments, the installer does not open a window.
 
 ```
 sr_install --gig <folder or .gig file> [options]
@@ -73,11 +68,7 @@ sr_install --gig "D:\Libraries\Sonic Implants" --only Cellos --yes
 
 ## Different editions of the .gig files
 
-If a .gig file has a different size, the installer finds each sample by its name. The installer compares each sample with the recipe. If a sample is different, the installer does not build that bank.
-
-## Data in the banks
-
-Each bank contains an encrypted record of who built it: your account name, your display name, the date and the name of the installer. Only the FastSampler maintainer can read the record. The installer does not send data.
+If a .gig file has a different size, the installer finds the samples by name instead. The installer compares each sample with the recipe. If a sample is different, the installer does not build that bank.
 
 ## Build from source
 
