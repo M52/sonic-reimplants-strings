@@ -25,7 +25,7 @@ jobs:
             exe: sr_install
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Build (Windows)
         if: matrix.platform == 'windows'
@@ -75,7 +75,7 @@ jobs:
         if: matrix.platform != 'windows'
         run: cd dist && zip -r -X -y "../$ZIP_NAME" "Sonic Reimplants"
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: ${{ matrix.platform }}
           path: ${{ env.ZIP_NAME }}
@@ -86,8 +86,8 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v4
+      - uses: actions/checkout@v7
+      - uses: actions/download-artifact@v8
         with:
           path: assets
           merge-multiple: true
