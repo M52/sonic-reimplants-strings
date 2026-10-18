@@ -1,0 +1,847 @@
+# Sonic Reimplants bank recipe: how sr_install rebuilds this bank from the original .gig files.
+recipe 1
+bank "Violas Tremolo.fsb" bytes 69814302 content_xxh64 e160d248f4dc13eb
+format rate 48000 channels 2 bits 24 preload 8192 block 4096 flags 0
+part 0 0 name "Violas Tremolo.gig" folder "Symphonic String Collection- Violas" bytes 460603634
+sample 0 file 0 gig 1 part 0 offset 12844594 bytes 2244936 frames 374156 channels 2 bits 24 rate 48000 compressed 0 source ad6c3df359be5846 steps 0 result_frames 374156 result_bits 24 result ad6c3df359be5846 name "vlato1s1-c3-1-c3"
+stream 0 offset 7356588 bytes 523456 first 8192 xxh64 617fdc1646cd987c
+sample 1 file 0 gig 76 part 0 offset 159429064 bytes 617472 frames 102912 channels 2 bits 24 rate 48000 compressed 0 source 5c882fad9b436ccc steps 0 result_frames 102912 result_bits 24 result 5c882fad9b436ccc name "vlato1s1-c3-1Relc3"
+stream 1 offset 7880044 bytes 98710 first 8192 xxh64 24874864709bd886
+sample 2 file 0 gig 25 part 0 offset 67479850 bytes 1854288 frames 309048 channels 2 bits 24 rate 48000 compressed 0 source d01b958f9a16cb16 steps 0 result_frames 309048 result_bits 24 result d01b958f9a16cb16 name "vlato2s1-c3-1-c3"
+stream 2 offset 7978754 bytes 533872 first 8192 xxh64 8f5edb0a67909854
+sample 3 file 0 gig 91 part 0 offset 167477752 bytes 746364 frames 124394 channels 2 bits 24 rate 48000 compressed 0 source adbf7567e7992118 steps 0 result_frames 124394 result_bits 24 result adbf7567e7992118 name "vlato2s1-c3-1Relc3"
+stream 3 offset 8512626 bytes 103366 first 8192 xxh64 75f80000fedeeb9d
+sample 4 file 0 gig 64 part 0 offset 147311200 bytes 2349978 frames 391663 channels 2 bits 24 rate 48000 compressed 0 source f91df3fc4a07a87c steps 0 result_frames 391663 result_bits 24 result f91df3fc4a07a87c name "vlato3s1-cs3-2-c#3"
+stream 4 offset 8615992 bytes 816032 first 0 xxh64 226dcfbb278b3786
+sample 5 file 0 gig 131 part 0 offset 192145496 bytes 662778 frames 110463 channels 2 bits 24 rate 48000 compressed 0 source c6a7c1d821032e4b steps 0 result_frames 110463 result_bits 24 result c6a7c1d821032e4b name "vlato3s1-cs3-2Relc#3"
+stream 5 offset 9432024 bytes 105844 first 0 xxh64 6c945a7b56199d0b
+sample 6 file 0 gig 22 part 0 offset 61578460 bytes 1691526 frames 281921 channels 2 bits 24 rate 48000 compressed 0 source 427d99b128ab65f1 steps 0 result_frames 281921 result_bits 24 result 427d99b128ab65f1 name "vlato1s1-cs3-4-c#3"
+stream 6 offset 9537868 bytes 401446 first 8192 xxh64 5f11d0dd7f2851b9
+sample 7 file 0 gig 69 part 0 offset 155804958 bytes 626688 frames 104448 channels 2 bits 24 rate 48000 compressed 0 source e55629bccebe1502 steps 0 result_frames 104448 result_bits 24 result e55629bccebe1502 name "vlato1s1-cs3-4Relc#3"
+stream 7 offset 9939314 bytes 92522 first 8192 xxh64 d5e5cbb6e1abd72d
+sample 8 file 0 gig 26 part 0 offset 69334346 bytes 1908924 frames 318154 channels 2 bits 24 rate 48000 compressed 0 source 6ad0777b38cde421 steps 0 result_frames 318154 result_bits 24 result 6ad0777b38cde421 name "vlato2s1-cs3-1-c#3"
+stream 8 offset 10031836 bytes 570650 first 0 xxh64 9d7a7eacf06ea0c7
+sample 9 file 0 gig 92 part 0 offset 168224324 bytes 510930 frames 85155 channels 2 bits 24 rate 48000 compressed 0 source 5eb180da8eb73b75 steps 0 result_frames 85155 result_bits 24 result 5eb180da8eb73b75 name "vlato2s1-cs3-1Relc#3"
+stream 9 offset 10602486 bytes 81374 first 0 xxh64 a41a2781649b8e8b
+sample 10 file 0 gig 11 part 0 offset 37236524 bytes 1422828 frames 237138 channels 2 bits 24 rate 48000 compressed 0 source a9005be5ec4112f5 steps 0 result_frames 237138 result_bits 24 result a9005be5ec4112f5 name "vlato1s1-ds3-2-d#3"
+stream 10 offset 10683860 bytes 355590 first 0 xxh64 71b7bcfac5a3ef7e
+sample 11 file 0 gig 70 part 0 offset 156431854 bytes 589824 frames 98304 channels 2 bits 24 rate 48000 compressed 0 source dc429c9050ae3f0b steps 0 result_frames 98304 result_bits 24 result dc429c9050ae3f0b name "vlato1s1-ds3-2Reld#3"
+stream 11 offset 11039450 bytes 98038 first 0 xxh64 a8afea1573626421
+sample 12 file 0 gig 66 part 0 offset 151669326 bytes 1870854 frames 311809 channels 2 bits 24 rate 48000 compressed 0 source 689f6ff1991eee42 steps 0 result_frames 311809 result_bits 24 result 689f6ff1991eee42 name "vlato3s1-ds3-2-d#3"
+stream 12 offset 11137488 bytes 664496 first 0 xxh64 3ba15ff5c136f9f9
+sample 13 file 0 gig 112 part 0 offset 179322178 bytes 663552 frames 110592 channels 2 bits 24 rate 48000 compressed 0 source e7c73c2cffc0cfee steps 0 result_frames 110592 result_bits 24 result e7c73c2cffc0cfee name "vlato3s1-ds3-2Reld#3"
+stream 13 offset 11801984 bytes 111088 first 0 xxh64 665d2b4f956495d5
+sample 14 file 0 gig 27 part 0 offset 71243478 bytes 2322072 frames 387012 channels 2 bits 24 rate 48000 compressed 0 source 75bc9d04c9a631a0 steps 0 result_frames 387012 result_bits 24 result 75bc9d04c9a631a0 name "vlato2s1-ds3-1-d#3"
+stream 14 offset 11913072 bytes 711672 first 0 xxh64 70035aef3b79bf95
+sample 15 file 0 gig 93 part 0 offset 168735462 bytes 337920 frames 56320 channels 2 bits 24 rate 48000 compressed 0 source 1803feb77296346e steps 0 result_frames 56320 result_bits 24 result 1803feb77296346e name "vlato2s1-ds3-1Reld#3"
+stream 15 offset 12624744 bytes 56364 first 0 xxh64 1b36357785545fc4
+sample 16 file 0 gig 12 part 0 offset 38659560 bytes 2350878 frames 391813 channels 2 bits 24 rate 48000 compressed 0 source 0cad5a7ba2af9b9d steps 0 result_frames 391813 result_bits 24 result 0cad5a7ba2af9b9d name "vlato1s1-e3-2-e3"
+stream 16 offset 12681108 bytes 588734 first 8192 xxh64 18187d85c5414886
+sample 17 file 0 gig 71 part 0 offset 157021886 bytes 460800 frames 76800 channels 2 bits 24 rate 48000 compressed 0 source c5d6b54507e8bb3f steps 0 result_frames 76800 result_bits 24 result c5d6b54507e8bb3f name "vlato1s1-e3-2Rele3"
+stream 17 offset 13269842 bytes 67500 first 8192 xxh64 7a2ceb51d824ced0
+sample 18 file 0 gig 21 part 0 offset 59680374 bytes 1897878 frames 316313 channels 2 bits 24 rate 48000 compressed 0 source 40aeb0618d33649c steps 0 result_frames 316313 result_bits 24 result 40aeb0618d33649c name "vlato1s1-e3-3-e3"
+stream 18 offset 13337342 bytes 461590 first 8192 xxh64 074ac796836bfc3d
+sample 19 file 0 gig 72 part 0 offset 157482894 bytes 421632 frames 70272 channels 2 bits 24 rate 48000 compressed 0 source d32038b67215ab7c steps 0 result_frames 70272 result_bits 24 result d32038b67215ab7c name "vlato1s1-e3-3Rele3"
+stream 19 offset 13798932 bytes 59986 first 8192 xxh64 3b8fb8702ef28b47
+sample 20 file 0 gig 28 part 0 offset 73565758 bytes 1480422 frames 246737 channels 2 bits 24 rate 48000 compressed 0 source 507f503d612f20f5 steps 0 result_frames 246737 result_bits 24 result 507f503d612f20f5 name "vlato2s1-e3-1-e3"
+stream 20 offset 13858918 bytes 424914 first 0 xxh64 b056555c4022ec2e
+sample 21 file 0 gig 94 part 0 offset 169073590 bytes 393216 frames 65536 channels 2 bits 24 rate 48000 compressed 0 source 780787f6abd61fdf steps 0 result_frames 65536 result_bits 24 result 780787f6abd61fdf name "vlato2s1-e3-1Rele3"
+stream 21 offset 14283832 bytes 62820 first 0 xxh64 5f4439d726a43453
+sample 22 file 0 gig 47 part 0 offset 111169076 bytes 2407314 frames 401219 channels 2 bits 24 rate 48000 compressed 0 source 4213890fcadfb9f4 steps 0 result_frames 401219 result_bits 24 result 4213890fcadfb9f4 name "vlato3s1-fs3-1-f#3"
+stream 22 offset 14346652 bytes 832388 first 0 xxh64 99a657c737177f6e
+sample 23 file 0 gig 113 part 0 offset 179985938 bytes 755430 frames 125905 channels 2 bits 24 rate 48000 compressed 0 source 539406e343e680f3 steps 0 result_frames 125905 result_bits 24 result 539406e343e680f3 name "vlato3s1-fs3-1Relf#3"
+stream 23 offset 15179040 bytes 123132 first 0 xxh64 4d4e8809d7376674
+sample 24 file 0 gig 13 part 0 offset 41010646 bytes 2443782 frames 407297 channels 2 bits 24 rate 48000 compressed 0 source beb0f52772df6fd6 steps 0 result_frames 407297 result_bits 24 result beb0f52772df6fd6 name "vlato1s1-fs3-2-f#3"
+stream 24 offset 15302172 bytes 587952 first 8192 xxh64 3c977df34f46fb2d
+sample 25 file 0 gig 73 part 0 offset 157904734 bytes 430080 frames 71680 channels 2 bits 24 rate 48000 compressed 0 source 7a681dc47349f010 steps 0 result_frames 71680 result_bits 24 result 7a681dc47349f010 name "vlato1s1-fs3-2Relf#3"
+stream 25 offset 15890124 bytes 61366 first 8192 xxh64 85b24f4e6352188a
+sample 26 file 0 gig 14 part 0 offset 43454636 bytes 2240646 frames 373441 channels 2 bits 24 rate 48000 compressed 0 source e9c3897ce1110e06 steps 0 result_frames 373441 result_bits 24 result e9c3897ce1110e06 name "vlato1s1-g3-2-g3"
+stream 26 offset 15951490 bytes 556988 first 8192 xxh64 32b2e39c4f561e6e
+sample 27 file 0 gig 74 part 0 offset 158335022 bytes 546816 frames 91136 channels 2 bits 24 rate 48000 compressed 0 source 620f3f26935ae590 steps 0 result_frames 91136 result_bits 24 result 620f3f26935ae590 name "vlato1s1-g3-2Relg3"
+stream 27 offset 16508478 bytes 81390 first 8192 xxh64 96598ac573605ba4
+sample 28 file 0 gig 295 part 0 offset 408072508 bytes 2654616 frames 442436 channels 2 bits 24 rate 48000 compressed 0 source 48c4685217f0d0b3 steps 0 result_frames 442436 result_bits 24 result 48c4685217f0d0b3 name "vlato1s2-g3-2g3"
+stream 28 offset 16589868 bytes 777996 first 8192 xxh64 7ecf0cc0151786b0
+sample 29 file 0 gig 304 part 0 offset 429461092 bytes 1254972 frames 209162 channels 2 bits 24 rate 48000 compressed 0 source 29c8d0bc8ff9c343 steps 0 result_frames 209162 result_bits 24 result 29c8d0bc8ff9c343 name "vlato1s2-g3-Rel2g3"
+stream 29 offset 17367864 bytes 248996 first 8192 xxh64 6fc4567d3619eed2
+sample 30 file 0 gig 43 part 0 offset 102861514 bytes 1940742 frames 323457 channels 2 bits 24 rate 48000 compressed 0 source 5dbd0d60e063cfcf steps 0 result_frames 323457 result_bits 24 result 5dbd0d60e063cfcf name "vlato2s1-g3-2-g3"
+stream 30 offset 17616860 bytes 559688 first 0 xxh64 969f3e00f3cc5a1e
+sample 31 file 0 gig 95 part 0 offset 169467014 bytes 577536 frames 96256 channels 2 bits 24 rate 48000 compressed 0 source 8946a2320b01b07d steps 0 result_frames 96256 result_bits 24 result 8946a2320b01b07d name "vlato2s1-g3-2Relg3"
+stream 31 offset 18176548 bytes 89398 first 0 xxh64 d23e4004143aa68e
+sample 32 file 0 gig 298 part 0 offset 416422672 bytes 2322534 frames 387089 channels 2 bits 24 rate 48000 compressed 0 source cb8787f2de725c27 steps 0 result_frames 387089 result_bits 24 result cb8787f2de725c27 name "vlato2s2-g3-1g3"
+stream 32 offset 18265946 bytes 748978 first 8192 xxh64 f84aa77abf8bcb57
+sample 33 file 0 gig 307 part 0 offset 432058444 bytes 646656 frames 107776 channels 2 bits 24 rate 48000 compressed 0 source e46ddd40d3fc775b steps 0 result_frames 107776 result_bits 24 result e46ddd40d3fc775b name "vlato2s2-g3-Rel1g3"
+stream 33 offset 19014924 bytes 104366 first 8192 xxh64 20065831794f3354
+sample 34 file 0 gig 301 part 0 offset 423038428 bytes 2230032 frames 371672 channels 2 bits 24 rate 48000 compressed 0 source 390167e0a29e9979 steps 0 result_frames 371672 result_bits 24 result 390167e0a29e9979 name "vlato3s2-g3-2g3"
+stream 34 offset 19119290 bytes 787200 first 8192 xxh64 0383f1e7362ba513
+sample 35 file 0 gig 310 part 0 offset 434532088 bytes 853290 frames 142215 channels 2 bits 24 rate 48000 compressed 0 source 3639a00afb5ae619 steps 0 result_frames 142215 result_bits 24 result 3639a00afb5ae619 name "vlato3s2-g3-Rel2g3"
+stream 35 offset 19906490 bytes 111678 first 8192 xxh64 173cef84bae26be3
+sample 36 file 0 gig 2 part 0 offset 15089738 bytes 1958580 frames 326430 channels 2 bits 24 rate 48000 compressed 0 source 0535468e9dcef481 steps 0 result_frames 326430 result_bits 24 result 0535468e9dcef481 name "vlato1s2-gs3-1-g#3"
+stream 36 offset 20018168 bytes 484210 first 8192 xxh64 e6735dfcbdde3015
+sample 37 file 0 gig 77 part 0 offset 160046744 bytes 552960 frames 92160 channels 2 bits 24 rate 48000 compressed 0 source e6d82bfa36b2f1c7 steps 0 result_frames 92160 result_bits 24 result e6d82bfa36b2f1c7 name "vlato1s2-gs3-1-Relg#3"
+stream 37 offset 20502378 bytes 82434 first 8192 xxh64 f03035a6d43e7d38
+sample 38 file 0 gig 53 part 0 offset 123976028 bytes 2198868 frames 366478 channels 2 bits 24 rate 48000 compressed 0 source 3d0c66bb6844e7bc steps 0 result_frames 366478 result_bits 24 result 3d0c66bb6844e7bc name "vlato3s2-gs3-1-g#3"
+stream 38 offset 20584812 bytes 763332 first 8192 xxh64 b6b93641e592ce3f
+sample 39 file 0 gig 120 part 0 offset 184974798 bytes 760134 frames 126689 channels 2 bits 24 rate 48000 compressed 0 source 5bf6420418a0c4f7 steps 0 result_frames 126689 result_bits 24 result 5bf6420418a0c4f7 name "vlato3s2-gs3-1Relg#3"
+stream 39 offset 21348144 bytes 104722 first 8192 xxh64 47812680cfa8fe16
+sample 40 file 0 gig 23 part 0 offset 63270194 bytes 2304000 frames 384000 channels 2 bits 24 rate 48000 compressed 0 source 33ccaca825d70a6a steps 0 result_frames 384000 result_bits 24 result 33ccaca825d70a6a name "vlato1s1-a3-4-a3"
+stream 40 offset 21452866 bytes 554530 first 8192 xxh64 9f20d592058b3f68
+sample 41 file 0 gig 75 part 0 offset 158882046 bytes 546810 frames 91135 channels 2 bits 24 rate 48000 compressed 0 source dc9292dc9d21cce1 steps 0 result_frames 91135 result_bits 24 result dc9292dc9d21cce1 name "vlato1s2-as3-2Rela#3"
+stream 41 offset 22007396 bytes 94190 first 0 xxh64 5111ca014a6158df
+sample 42 file 0 gig 29 part 0 offset 75046388 bytes 2237478 frames 372913 channels 2 bits 24 rate 48000 compressed 0 source be6fd6de7e5c75dd steps 0 result_frames 372913 result_bits 24 result be6fd6de7e5c75dd name "vlato2s1-a3-1-a3"
+stream 42 offset 22101586 bytes 653780 first 8192 xxh64 b591eacb105737c9
+sample 43 file 0 gig 102 part 0 offset 173124150 bytes 735756 frames 122626 channels 2 bits 24 rate 48000 compressed 0 source 2f5078be78c9afb4 steps 0 result_frames 122626 result_bits 24 result 2f5078be78c9afb4 name "vlato2s1-a3-1Rela3"
+stream 43 offset 22755366 bytes 113084 first 0 xxh64 27f2d74f94d90372
+sample 44 file 0 gig 48 part 0 offset 113576598 bytes 2038344 frames 339724 channels 2 bits 24 rate 48000 compressed 0 source c638bdcb6ab2633a steps 0 result_frames 339724 result_bits 24 result c638bdcb6ab2633a name "vlato3s2-as3-1-a#3"
+stream 44 offset 22868450 bytes 734612 first 0 xxh64 6881ce9054c9cca2
+sample 45 file 0 gig 114 part 0 offset 180741576 bytes 737934 frames 122989 channels 2 bits 24 rate 48000 compressed 0 source fb1577ceae8b378c steps 0 result_frames 122989 result_bits 24 result fb1577ceae8b378c name "vlato3s2-as3-1Rela#3"
+stream 45 offset 23603062 bytes 115770 first 0 xxh64 23a7fa6009842b8d
+sample 46 file 0 gig 20 part 0 offset 56970512 bytes 2709654 frames 451609 channels 2 bits 24 rate 48000 compressed 0 source e98afdc12e386736 steps 0 result_frames 451609 result_bits 24 result e98afdc12e386736 name "vlato1s2-as3-2-a#3"
+stream 46 offset 23718832 bytes 699024 first 0 xxh64 fd97b4b50a76f65f
+sample 47 file 0 gig 30 part 0 offset 77284074 bytes 2229414 frames 371569 channels 2 bits 24 rate 48000 compressed 0 source 40ba0207751d2939 steps 0 result_frames 371569 result_bits 24 result 40ba0207751d2939 name "vlato2s2-b3-1-b3"
+stream 47 offset 24417856 bytes 646690 first 0 xxh64 3ff568c735e54196
+sample 48 file 0 gig 49 part 0 offset 115615150 bytes 2343858 frames 390643 channels 2 bits 24 rate 48000 compressed 0 source 46b356a2b315b2d2 steps 0 result_frames 390643 result_bits 24 result 46b356a2b315b2d2 name "vlato3s2-b3-1-b3"
+stream 48 offset 25064546 bytes 845400 first 0 xxh64 a377fa8efecae9a5
+sample 49 file 0 gig 115 part 0 offset 181479718 bytes 755712 frames 125952 channels 2 bits 24 rate 48000 compressed 0 source 44d8350e6e050a4c steps 0 result_frames 125952 result_bits 24 result 44d8350e6e050a4c name "vlato3s2-b3-1Relb3"
+stream 49 offset 25909946 bytes 117430 first 0 xxh64 62dd0a72cdeab891
+sample 50 file 0 gig 44 part 0 offset 104802464 bytes 2206392 frames 367732 channels 2 bits 24 rate 48000 compressed 0 source a4097472d6b1effe steps 0 result_frames 367732 result_bits 24 result a4097472d6b1effe name "vlato2s2-cs4-2-c#4"
+stream 50 offset 26027376 bytes 652314 first 0 xxh64 e18bea3f42cf7cb1
+sample 51 file 0 gig 96 part 0 offset 170044758 bytes 516096 frames 86016 channels 2 bits 24 rate 48000 compressed 0 source 993f52102eb5002a steps 0 result_frames 86016 result_bits 24 result 993f52102eb5002a name "vlato2s2-d4-1Reld4"
+stream 51 offset 26679690 bytes 83524 first 0 xxh64 b3151371f12c6e20
+sample 52 file 0 gig 19 part 0 offset 55190266 bytes 1780038 frames 296673 channels 2 bits 24 rate 48000 compressed 0 source d91b19501cc06e21 steps 0 result_frames 296673 result_bits 24 result d91b19501cc06e21 name "vlato1s2-cs4-2-c#4"
+stream 52 offset 26763214 bytes 468130 first 0 xxh64 00616ceac0037b3c
+sample 53 file 0 gig 68 part 0 offset 155196494 bytes 608256 frames 101376 channels 2 bits 24 rate 48000 compressed 0 source 02138a4d7db46752 steps 0 result_frames 101376 result_bits 24 result 02138a4d7db46752 name "vlato1s2-cs4-2Relc#4"
+stream 53 offset 27231344 bytes 103268 first 0 xxh64 f32d34e098eaf4f1
+sample 54 file 0 gig 50 part 0 offset 117959216 bytes 2090010 frames 348335 channels 2 bits 24 rate 48000 compressed 0 source c32d587503516910 steps 0 result_frames 348335 result_bits 24 result c32d587503516910 name "vlato3s2-cs4-1-c#4"
+stream 54 offset 27334612 bytes 748028 first 8192 xxh64 0ff1fd957585b531
+sample 55 file 0 gig 116 part 0 offset 182235638 bytes 651672 frames 108612 channels 2 bits 24 rate 48000 compressed 0 source 794b22b647d07a06 steps 0 result_frames 108612 result_bits 24 result 794b22b647d07a06 name "vlato3s2-cs4-1Relc#4"
+stream 55 offset 28082640 bytes 91974 first 8192 xxh64 493b566a092e1a7c
+sample 56 file 0 gig 296 part 0 offset 410727332 bytes 2809254 frames 468209 channels 2 bits 24 rate 48000 compressed 0 source 3e34da13de920c30 steps 0 result_frames 468209 result_bits 24 result 3e34da13de920c30 name "vlato1s3-d4-2d4"
+stream 56 offset 28174614 bytes 891330 first 8192 xxh64 cedad5e07217ad03
+sample 57 file 0 gig 305 part 0 offset 430716272 bytes 536064 frames 89344 channels 2 bits 24 rate 48000 compressed 0 source 34931d01a49c6aeb steps 0 result_frames 89344 result_bits 24 result 34931d01a49c6aeb name "vlato1s3-d4-Rel2d4"
+stream 57 offset 29065944 bytes 99080 first 8192 xxh64 163f5cfa78c6d7a8
+sample 58 file 0 gig 31 part 0 offset 79513696 bytes 2179590 frames 363265 channels 2 bits 24 rate 48000 compressed 0 source b7e5931945ec85a6 steps 0 result_frames 363265 result_bits 24 result b7e5931945ec85a6 name "vlato2s2-d4-1-d4"
+stream 58 offset 29165024 bytes 677564 first 8192 xxh64 8167ffb8758b700a
+sample 59 file 0 gig 299 part 0 offset 418745414 bytes 2170806 frames 361801 channels 2 bits 24 rate 48000 compressed 0 source a2ebc825b0149e1e steps 0 result_frames 361801 result_bits 24 result a2ebc825b0149e1e name "vlato2s3-d4-1d4"
+stream 59 offset 29842588 bytes 766834 first 8192 xxh64 0b104dbb3bb8105e
+sample 60 file 0 gig 308 part 0 offset 432705308 bytes 751104 frames 125184 channels 2 bits 24 rate 48000 compressed 0 source 7012afd286e999a5 steps 0 result_frames 125184 result_bits 24 result 7012afd286e999a5 name "vlato2s3-d4-Rel1d4"
+stream 60 offset 30609422 bytes 121260 first 8192 xxh64 3092f11c30780c18
+sample 61 file 0 gig 51 part 0 offset 120049434 bytes 2268096 frames 378016 channels 2 bits 24 rate 48000 compressed 0 source 57e817f0af505c57 steps 0 result_frames 378016 result_bits 24 result 57e817f0af505c57 name "vlato3s2-d4-1-d4"
+stream 61 offset 30730682 bytes 818668 first 8192 xxh64 6c1954bd531ad980
+sample 62 file 0 gig 117 part 0 offset 182887518 bytes 730944 frames 121824 channels 2 bits 24 rate 48000 compressed 0 source 463ef9594f9d8989 steps 0 result_frames 121824 result_bits 24 result 463ef9594f9d8989 name "vlato3s2-d4-1Reld4"
+stream 62 offset 31549350 bytes 103556 first 8192 xxh64 07236aa5ca8199da
+sample 63 file 0 gig 302 part 0 offset 425268668 bytes 2145246 frames 357541 channels 2 bits 24 rate 48000 compressed 0 source 91b9ac801eb51748 steps 0 result_frames 357541 result_bits 24 result 91b9ac801eb51748 name "vlato3s3-d4-2d4"
+stream 63 offset 31652906 bytes 820128 first 8192 xxh64 55fa5bcaa96a453b
+sample 64 file 0 gig 311 part 0 offset 435385586 bytes 1239252 frames 206542 channels 2 bits 24 rate 48000 compressed 0 source 554c7a070962231a steps 0 result_frames 206542 result_bits 24 result 554c7a070962231a name "vlato3s3-d4-Rel2d4"
+stream 64 offset 32473034 bytes 170608 first 8192 xxh64 ec74eb1db246fd52
+sample 65 file 0 gig 15 part 0 offset 45695490 bytes 1908006 frames 318001 channels 2 bits 24 rate 48000 compressed 0 source ceaa0578db72cf2e steps 0 result_frames 318001 result_bits 24 result ceaa0578db72cf2e name "vlato1s3-ds4-2-d#4"
+stream 65 offset 32643642 bytes 513858 first 8192 xxh64 e3635f51a058afb7
+sample 66 file 0 gig 79 part 0 offset 161116024 bytes 559104 frames 93184 channels 2 bits 24 rate 48000 compressed 0 source 1adac6e0dc9f0ab9 steps 0 result_frames 93184 result_bits 24 result 1adac6e0dc9f0ab9 name "vlato1s3-ds4-2Reld#4"
+stream 66 offset 33157500 bytes 83230 first 8192 xxh64 5c26eb96952c7d8f
+sample 67 file 0 gig 33 part 0 offset 83530758 bytes 2221542 frames 370257 channels 2 bits 24 rate 48000 compressed 0 source 9f8d3d2e6fffc32c steps 0 result_frames 370257 result_bits 24 result 9f8d3d2e6fffc32c name "vlato2s3-ds4-1-d#4"
+stream 67 offset 33240730 bytes 732086 first 0 xxh64 75782adac61b6581
+sample 68 file 0 gig 97 part 0 offset 170561062 bytes 614400 frames 102400 channels 2 bits 24 rate 48000 compressed 0 source 3c021c8e20d9bcf8 steps 0 result_frames 102400 result_bits 24 result 3c021c8e20d9bcf8 name "vlato2s3-ds4-1Reld#4"
+stream 68 offset 33972816 bytes 101388 first 0 xxh64 46b843966dfd6542
+sample 69 file 0 gig 67 part 0 offset 153540388 bytes 1655898 frames 275983 channels 2 bits 24 rate 48000 compressed 0 source 163285ed270a9e8d steps 0 result_frames 275983 result_bits 24 result 163285ed270a9e8d name "vlato3s2-e4-3-e4"
+stream 69 offset 34074204 bytes 586738 first 8192 xxh64 63cc4fb2a6240ea3
+sample 70 file 0 gig 119 part 0 offset 184357694 bytes 616896 frames 102816 channels 2 bits 24 rate 48000 compressed 0 source 7280fb12fa85f3b2 steps 0 result_frames 102816 result_bits 24 result 7280fb12fa85f3b2 name "vlato3s2-e4-3Rele4"
+stream 70 offset 34660942 bytes 87066 first 8192 xxh64 94e9f72ab165b2dc
+sample 71 file 0 gig 5 part 0 offset 22444916 bytes 2900466 frames 483411 channels 2 bits 24 rate 48000 compressed 0 source 0fb52f42134d2a0e steps 0 result_frames 483411 result_bits 24 result 0fb52f42134d2a0e name "vlato1s3-f4-1-f4"
+stream 71 offset 34748008 bytes 801422 first 0 xxh64 183070c469338f5d
+sample 72 file 0 gig 80 part 0 offset 161675336 bytes 509952 frames 84992 channels 2 bits 24 rate 48000 compressed 0 source f2a77b84afcaa2a8 steps 0 result_frames 84992 result_bits 24 result f2a77b84afcaa2a8 name "vlato1s3-f4-1Relf4"
+stream 72 offset 35549430 bytes 90416 first 0 xxh64 39391a3289e418a1
+sample 73 file 0 gig 52 part 0 offset 122317738 bytes 1658082 frames 276347 channels 2 bits 24 rate 48000 compressed 0 source 700723643366e8e4 steps 0 result_frames 276347 result_bits 24 result 700723643366e8e4 name "vlato3s2-e4-1-e4"
+stream 73 offset 35639846 bytes 613994 first 0 xxh64 55715763f2a203a3
+sample 74 file 0 gig 118 part 0 offset 183618670 bytes 738816 frames 123136 channels 2 bits 24 rate 48000 compressed 0 source f20e77f91cccfdcd steps 0 result_frames 123136 result_bits 24 result f20e77f91cccfdcd name "vlato3s2-e4-1Rele4"
+stream 74 offset 36253840 bytes 118616 first 0 xxh64 6852025d1c0b9069
+sample 75 file 0 gig 34 part 0 offset 85752508 bytes 1885110 frames 314185 channels 2 bits 24 rate 48000 compressed 0 source 8e86beb1c17245fa steps 0 result_frames 314185 result_bits 24 result 8e86beb1c17245fa name "vlato2s3-f4-1-f4"
+stream 75 offset 36372456 bytes 643310 first 0 xxh64 051a100689a37a8f
+sample 76 file 0 gig 98 part 0 offset 171175670 bytes 477696 frames 79616 channels 2 bits 24 rate 48000 compressed 0 source 1bf2cc783f31099e steps 0 result_frames 79616 result_bits 24 result 1bf2cc783f31099e name "vlato2s3-f4-1Relf4"
+stream 76 offset 37015766 bytes 76076 first 0 xxh64 8a33365ca11cfc96
+sample 77 file 0 gig 56 part 0 offset 130445942 bytes 2197482 frames 366247 channels 2 bits 24 rate 48000 compressed 0 source 7486b277e6f94e3d steps 0 result_frames 366247 result_bits 24 result 7486b277e6f94e3d name "vlato3s3-fs4-1-f#4"
+stream 77 offset 37091842 bytes 843760 first 0 xxh64 df188d1b8198179a
+sample 78 file 0 gig 123 part 0 offset 187123344 bytes 591030 frames 98505 channels 2 bits 24 rate 48000 compressed 0 source ab0fa0539cbdf32e steps 0 result_frames 98505 result_bits 24 result ab0fa0539cbdf32e name "vlato3s3-fs4-1Relf#4"
+stream 78 offset 37935602 bytes 99532 first 0 xxh64 376b9502e8974698
+sample 79 file 0 gig 6 part 0 offset 25345590 bytes 2497158 frames 416193 channels 2 bits 24 rate 48000 compressed 0 source dbbbdc66e0632374 steps 0 result_frames 416193 result_bits 24 result dbbbdc66e0632374 name "vlato1s3-gs4-1-g#4"
+stream 79 offset 38035134 bytes 694270 first 0 xxh64 146c025a0bb0d1a0
+sample 80 file 0 gig 81 part 0 offset 162185496 bytes 583680 frames 97280 channels 2 bits 24 rate 48000 compressed 0 source 145feebab92e478a steps 0 result_frames 97280 result_bits 24 result 145feebab92e478a name "vlato1s3-gs4-1Relg#4"
+stream 80 offset 38729404 bytes 100292 first 0 xxh64 ca252c8d9543d6c6
+sample 81 file 0 gig 35 part 0 offset 87637826 bytes 1834974 frames 305829 channels 2 bits 24 rate 48000 compressed 0 source f848094936f906df steps 0 result_frames 305829 result_bits 24 result f848094936f906df name "vlato2s3-gs4-1-g#4"
+stream 81 offset 38829696 bytes 620896 first 0 xxh64 6ddf619777550ccd
+sample 82 file 0 gig 99 part 0 offset 171653574 bytes 364032 frames 60672 channels 2 bits 24 rate 48000 compressed 0 source f5e4096de44453de steps 0 result_frames 60672 result_bits 24 result f5e4096de44453de name "vlato2s3-gs4-1Relg#4"
+stream 82 offset 39450592 bytes 63902 first 0 xxh64 f16adefdaaad3d3c
+sample 83 file 0 gig 3 part 0 offset 17048526 bytes 2789376 frames 464896 channels 2 bits 24 rate 48000 compressed 0 source c35cd0d451b983b3 steps 0 result_frames 464896 result_bits 24 result c35cd0d451b983b3 name "vlato1s3-a4-1-a4"
+stream 83 offset 39514494 bytes 768506 first 8192 xxh64 ce15d719f545cf5f
+sample 84 file 0 gig 297 part 0 offset 413536794 bytes 2885670 frames 480945 channels 2 bits 24 rate 48000 compressed 0 source b720945bb76e888a steps 0 result_frames 480945 result_bits 24 result b720945bb76e888a name "vlato1s4-a4-3a4"
+stream 84 offset 40283000 bytes 1018196 first 8192 xxh64 52c6287a7c74ace3
+sample 85 file 0 gig 306 part 0 offset 431252544 bytes 805692 frames 134282 channels 2 bits 24 rate 48000 compressed 0 source d10e1d702983d1d2 steps 0 result_frames 134282 result_bits 24 result d10e1d702983d1d2 name "vlato1s4-a4-Rel3a4"
+stream 85 offset 41301196 bytes 160322 first 8192 xxh64 de535dc32bf095ec
+sample 86 file 0 gig 32 part 0 offset 81693494 bytes 1837056 frames 306176 channels 2 bits 24 rate 48000 compressed 0 source 42dd9f4e69085b7b steps 0 result_frames 306176 result_bits 24 result 42dd9f4e69085b7b name "vlato2s3-a4-2-a4"
+stream 86 offset 41461518 bytes 576822 first 8192 xxh64 939465b3f74f5ff6
+sample 87 file 0 gig 100 part 0 offset 172017814 bytes 516096 frames 86016 channels 2 bits 24 rate 48000 compressed 0 source 9f99a7aaf7ba4da0 steps 0 result_frames 86016 result_bits 24 result 9f99a7aaf7ba4da0 name "vlato2s3-a4-2-Rela4"
+stream 87 offset 42038340 bytes 65984 first 8192 xxh64 717bb83a463cc389
+sample 88 file 0 gig 300 part 0 offset 420916428 bytes 2121792 frames 353632 channels 2 bits 24 rate 48000 compressed 0 source 4dce8beeaef828cb steps 0 result_frames 353632 result_bits 24 result 4dce8beeaef828cb name "vlato2s4-a4-1a4"
+stream 88 offset 42104324 bytes 854642 first 8192 xxh64 831fcbb5fdf07622
+sample 89 file 0 gig 309 part 0 offset 433456620 bytes 1075260 frames 179210 channels 2 bits 24 rate 48000 compressed 0 source 6a67cb6c4b9070ca steps 0 result_frames 179210 result_bits 24 result 6a67cb6c4b9070ca name "vlato2s4-a4-Rel1a4"
+stream 89 offset 42958966 bytes 209240 first 8192 xxh64 d63e2162d7df0f02
+sample 90 file 0 gig 55 part 0 offset 128319760 bytes 2125974 frames 354329 channels 2 bits 24 rate 48000 compressed 0 source 1df5e269759f9df1 steps 0 result_frames 354329 result_bits 24 result 1df5e269759f9df1 name "vlato3s3-b4-1-b4"
+stream 90 offset 43168206 bytes 831174 first 0 xxh64 6474e0a3757f8c56
+sample 91 file 0 gig 121 part 0 offset 185735140 bytes 724236 frames 120706 channels 2 bits 24 rate 48000 compressed 0 source 167db339c43e47b8 steps 0 result_frames 120706 result_bits 24 result 167db339c43e47b8 name "vlato3s3-a4-1Rela4"
+stream 91 offset 43999380 bytes 114708 first 0 xxh64 ec43729f327ccd2a
+sample 92 file 0 gig 303 part 0 offset 427414122 bytes 2046762 frames 341127 channels 2 bits 24 rate 48000 compressed 0 source 76eac0f7f27097a3 steps 0 result_frames 341127 result_bits 24 result 76eac0f7f27097a3 name "vlato3s4-a4-1a4"
+stream 92 offset 44114088 bytes 891202 first 8192 xxh64 5d6c5514ddddc1fe
+sample 93 file 0 gig 312 part 0 offset 436625046 bytes 1031112 frames 171852 channels 2 bits 24 rate 48000 compressed 0 source 627423f3849e8656 steps 0 result_frames 171852 result_bits 24 result 627423f3849e8656 name "vlato3s4-a4-Rel1a4"
+stream 93 offset 45005290 bytes 144960 first 8192 xxh64 9286b7bafe763fe4
+sample 94 file 0 gig 4 part 0 offset 19838110 bytes 2606598 frames 434433 channels 2 bits 24 rate 48000 compressed 0 source 46d3214d82ca02e5 steps 0 result_frames 434433 result_bits 24 result 46d3214d82ca02e5 name "vlato1s3-b4-1-b4"
+stream 94 offset 45150250 bytes 735632 first 0 xxh64 0cf477c50539ec05
+sample 95 file 0 gig 78 part 0 offset 160599912 bytes 515904 frames 85984 channels 2 bits 24 rate 48000 compressed 0 source 39b7b4b67d03e200 steps 0 result_frames 85984 result_bits 24 result 39b7b4b67d03e200 name "vlato1s3-b4-1Relb4"
+stream 95 offset 45885882 bytes 88426 first 0 xxh64 6a35a6d3bc77c91d
+sample 96 file 0 gig 45 part 0 offset 107009064 bytes 2095110 frames 349185 channels 2 bits 24 rate 48000 compressed 0 source 96f09107e2aada34 steps 0 result_frames 349185 result_bits 24 result 96f09107e2aada34 name "vlato2s4-as4-2-a#4"
+stream 96 offset 45974308 bytes 736432 first 8192 xxh64 c5d773b734daff8b
+sample 97 file 0 gig 90 part 0 offset 167004456 bytes 473088 frames 78848 channels 2 bits 24 rate 48000 compressed 0 source e1c825a476cc923d steps 0 result_frames 78848 result_bits 24 result e1c825a476cc923d name "vlato2s4-as4-2Rela#4"
+stream 97 offset 46710740 bytes 66914 first 8192 xxh64 894bf5cc41ca82f1
+sample 98 file 0 gig 38 part 0 offset 93614732 bytes 1997622 frames 332937 channels 2 bits 24 rate 48000 compressed 0 source 924990ba3c42a6ca steps 0 result_frames 332937 result_bits 24 result 924990ba3c42a6ca name "vlato2s4-c5-1-c5"
+stream 98 offset 46777654 bytes 738592 first 0 xxh64 a53dd51c439d7942
+sample 99 file 0 gig 104 part 0 offset 174473186 bytes 608256 frames 101376 channels 2 bits 24 rate 48000 compressed 0 source 5af90f068fbad980 steps 0 result_frames 101376 result_bits 24 result 5af90f068fbad980 name "vlato2s4-c5-1Relc5"
+stream 99 offset 47516246 bytes 101254 first 0 xxh64 f4a17170694dfd4c
+sample 100 file 0 gig 122 part 0 offset 186459584 bytes 663552 frames 110592 channels 2 bits 24 rate 48000 compressed 0 source 37a6558ba359849b steps 0 result_frames 110592 result_bits 24 result 37a6558ba359849b name "vlato3s3-b4-1Relb4"
+stream 100 offset 47617500 bytes 96718 first 8192 xxh64 aa498363c849989d
+sample 101 file 0 gig 17 part 0 offset 49908164 bytes 2516550 frames 419425 channels 2 bits 24 rate 48000 compressed 0 source 07d68efac5ca36b6 steps 0 result_frames 419425 result_bits 24 result 07d68efac5ca36b6 name "vlato1s4-c5-2-c5"
+stream 101 offset 47714218 bytes 759246 first 8192 xxh64 9d66a27e5dbfb8ac
+sample 102 file 0 gig 84 part 0 offset 163931784 bytes 503808 frames 83968 channels 2 bits 24 rate 48000 compressed 0 source ac3889b0de2f824e steps 0 result_frames 83968 result_bits 24 result ac3889b0de2f824e name "vlato1s4-c5-2Relc5"
+stream 102 offset 48473464 bytes 76480 first 8192 xxh64 f92c96cb669c4f64
+sample 103 file 0 gig 59 part 0 offset 136762934 bytes 2162610 frames 360435 channels 2 bits 24 rate 48000 compressed 0 source bb1502a4a27354ef steps 0 result_frames 360435 result_bits 24 result bb1502a4a27354ef name "vlato3s4-c5-1-c5"
+stream 103 offset 48549944 bytes 934094 first 0 xxh64 c5863ea0820a5ae1
+sample 104 file 0 gig 127 part 0 offset 189789976 bytes 675840 frames 112640 channels 2 bits 24 rate 48000 compressed 0 source 3eed3e09808d0208 steps 0 result_frames 112640 result_bits 24 result 3eed3e09808d0208 name "vlato3s4-c5-1Relc5"
+stream 104 offset 49484038 bytes 112914 first 0 xxh64 e5176717e6401bee
+sample 105 file 0 gig 8 part 0 offset 30485498 bytes 2394390 frames 399065 channels 2 bits 24 rate 48000 compressed 0 source 8c59c5369299e7ae steps 0 result_frames 399065 result_bits 24 result 8c59c5369299e7ae name "vlato1s4-cs5-1-c#5"
+stream 105 offset 49596952 bytes 765158 first 0 xxh64 b93eaef124c9ac19
+sample 106 file 0 gig 86 part 0 offset 164972072 bytes 424704 frames 70784 channels 2 bits 24 rate 48000 compressed 0 source 66c7e1c578fbe2c4 steps 0 result_frames 70784 result_bits 24 result 66c7e1c578fbe2c4 name "vlato1s4-cs5-1Relc#5"
+stream 106 offset 50362110 bytes 77616 first 0 xxh64 a61b3f7dcb47cdb6
+sample 107 file 0 gig 40 part 0 offset 97694152 bytes 1954854 frames 325809 channels 2 bits 24 rate 48000 compressed 0 source d8b47fe1dbb180bd steps 0 result_frames 325809 result_bits 24 result d8b47fe1dbb180bd name "vlato2s4-cs5-1-c#5"
+stream 107 offset 50439726 bytes 717598 first 8192 xxh64 f5fd223b7dd18054
+sample 108 file 0 gig 106 part 0 offset 175720834 bytes 588324 frames 98054 channels 2 bits 24 rate 48000 compressed 0 source d16a9b561a50b0ac steps 0 result_frames 98054 result_bits 24 result d16a9b561a50b0ac name "vlato2s4-cs5-1Relc#5"
+stream 108 offset 51157324 bytes 83904 first 8192 xxh64 300d36a5cd9badc9
+sample 109 file 0 gig 41 part 0 offset 99649214 bytes 1256454 frames 209409 channels 2 bits 24 rate 48000 compressed 0 source b0600ab01378758d steps 0 result_frames 209409 result_bits 24 result b0600ab01378758d name "vlato2s4-ds5-1-d#5"
+stream 109 offset 51241228 bytes 458676 first 8192 xxh64 176229506f1f96c4
+sample 110 file 0 gig 107 part 0 offset 176309366 bytes 433152 frames 72192 channels 2 bits 24 rate 48000 compressed 0 source 0fdf42769e2ca7f8 steps 0 result_frames 72192 result_bits 24 result 0fdf42769e2ca7f8 name "vlato2s4-ds5-1Reld#5"
+stream 110 offset 51699904 bytes 66010 first 8192 xxh64 fb73e549a2126f7c
+sample 111 file 0 gig 61 part 0 offset 141175420 bytes 2126022 frames 354337 channels 2 bits 24 rate 48000 compressed 0 source 49211e17a934ffee steps 0 result_frames 354337 result_bits 24 result 49211e17a934ffee name "vlato3s4-ds5-1-d#5"
+stream 111 offset 51765914 bytes 932222 first 0 xxh64 531ee3f8b641ddd7
+sample 112 file 0 gig 129 part 0 offset 191086776 bytes 485376 frames 80896 channels 2 bits 24 rate 48000 compressed 0 source 3c57600bc4b036b9 steps 0 result_frames 80896 result_bits 24 result 3c57600bc4b036b9 name "vlato3s4-ds5-1Reld#5"
+stream 112 offset 52698136 bytes 88682 first 0 xxh64 a9529c7a859c395c
+sample 113 file 0 gig 9 part 0 offset 32880096 bytes 1893414 frames 315569 channels 2 bits 24 rate 48000 compressed 0 source 8bdc968113d4a935 steps 0 result_frames 315569 result_bits 24 result 8bdc968113d4a935 name "vlato1s4-e5-1-e5"
+stream 113 offset 52786818 bytes 604640 first 0 xxh64 9faa599bb7c658ba
+sample 114 file 0 gig 87 part 0 offset 165396984 bytes 552960 frames 92160 channels 2 bits 24 rate 48000 compressed 0 source f187e9e3a93a07a3 steps 0 result_frames 92160 result_bits 24 result f187e9e3a93a07a3 name "vlato1s4-e5-1-Rele5"
+stream 114 offset 53391458 bytes 98334 first 0 xxh64 051b8d6d33f419a3
+sample 115 file 0 gig 46 part 0 offset 109104382 bytes 2064486 frames 344081 channels 2 bits 24 rate 48000 compressed 0 source 339f4ab3eb62b34f steps 0 result_frames 344081 result_bits 24 result 339f4ab3eb62b34f name "vlato2s4-e5-2-e5"
+stream 115 offset 53489792 bytes 801926 first 0 xxh64 7dfea45333d4a9d3
+sample 116 file 0 gig 108 part 0 offset 176742726 bytes 584892 frames 97482 channels 2 bits 24 rate 48000 compressed 0 source 88d45fb1c4189385 steps 0 result_frames 97482 result_bits 24 result 88d45fb1c4189385 name "vlato2s4-e5-2Rele5"
+stream 116 offset 54291718 bytes 104674 first 0 xxh64 cbc0d5b6ca226b7f
+sample 117 file 0 gig 62 part 0 offset 143301650 bytes 1875912 frames 312652 channels 2 bits 24 rate 48000 compressed 0 source c1ad793f01358d05 steps 0 result_frames 312652 result_bits 24 result c1ad793f01358d05 name "vlato3s4-e5-1-e5"
+stream 117 offset 54396392 bytes 823698 first 8192 xxh64 c2c98886a9d59a69
+sample 118 file 0 gig 130 part 0 offset 191572360 bytes 572928 frames 95488 channels 2 bits 24 rate 48000 compressed 0 source 2a59c54c0e244de8 steps 0 result_frames 95488 result_bits 24 result 2a59c54c0e244de8 name "vlato3s4-e5-1Rele5"
+stream 118 offset 55220090 bytes 97916 first 8192 xxh64 16d846c3e15fd9e8
+sample 119 file 0 gig 65 part 0 offset 149661386 bytes 2007732 frames 334622 channels 2 bits 24 rate 48000 compressed 0 source fb2285f19db85c3d steps 0 result_frames 334622 result_bits 24 result fb2285f19db85c3d name "vlato3s4-fs5-2-f#5"
+stream 119 offset 55318006 bytes 898908 first 0 xxh64 372a0b6806f78537
+sample 120 file 0 gig 111 part 0 offset 178604658 bytes 717312 frames 119552 channels 2 bits 24 rate 48000 compressed 0 source d29a25b493571841 steps 0 result_frames 119552 result_bits 24 result d29a25b493571841 name "vlato3s4-fs5-2Relf#5"
+stream 120 offset 56216914 bytes 121142 first 0 xxh64 f619980a46f10214
+sample 121 file 0 gig 10 part 0 offset 34773718 bytes 2462598 frames 410433 channels 2 bits 24 rate 48000 compressed 0 source 1db3c0dab2880e32 steps 0 result_frames 410433 result_bits 24 result 1db3c0dab2880e32 name "vlato1s4-g5-2-g5"
+stream 121 offset 56338056 bytes 827618 first 8192 xxh64 fe4cae4e83a790c7
+sample 122 file 0 gig 89 part 0 offset 166449752 bytes 554496 frames 92416 channels 2 bits 24 rate 48000 compressed 0 source af2abc3b904c983b steps 0 result_frames 92416 result_bits 24 result af2abc3b904c983b name "vlato1s4-g5-2Relg5"
+stream 122 offset 57165674 bytes 85722 first 8192 xxh64 6e6fb7a135ebe7bc
+sample 123 file 0 gig 42 part 0 offset 100905876 bytes 1955430 frames 325905 channels 2 bits 24 rate 48000 compressed 0 source 294b20ecb31d0204 steps 0 result_frames 325905 result_bits 24 result 294b20ecb31d0204 name "vlato2s4-fs5-1-f#5"
+stream 123 offset 57251396 bytes 740896 first 8192 xxh64 f3252d9621db2412
+sample 124 file 0 gig 109 part 0 offset 177327826 bytes 534528 frames 89088 channels 2 bits 24 rate 48000 compressed 0 source f747df85d13108a7 steps 0 result_frames 89088 result_bits 24 result f747df85d13108a7 name "vlato2s4-fs5-1Relf#5"
+stream 124 offset 57992292 bytes 78288 first 8192 xxh64 9c0b265ca2182870
+sample 125 file 0 gig 0 part 0 offset 9899316 bytes 2945070 frames 490845 channels 2 bits 24 rate 48000 compressed 0 source cff14a705e64b92c steps 0 result_frames 490845 result_bits 24 result cff14a705e64b92c name "vlato1s4-g5-1-g5"
+stream 125 offset 58070580 bytes 1019944 first 0 xxh64 8bc91e4f7a445045
+sample 126 file 0 gig 88 part 0 offset 165950152 bytes 499392 frames 83232 channels 2 bits 24 rate 48000 compressed 0 source 40ce7854a287cfe2 steps 0 result_frames 83232 result_bits 24 result 40ce7854a287cfe2 name "vlato1s4-g5-1-Relg5"
+stream 126 offset 59090524 bytes 89926 first 0 xxh64 09d2eb9a00b08726
+sample 127 file 0 gig 24 part 0 offset 65574402 bytes 1905240 frames 317540 channels 2 bits 24 rate 48000 compressed 0 source 00d76a443842d428 steps 0 result_frames 317540 result_bits 24 result 00d76a443842d428 name "vlato2s4-g5-1-g5"
+stream 127 offset 59180450 bytes 711716 first 8192 xxh64 4d9bbfe46db1eed0
+sample 128 file 0 gig 110 part 0 offset 177862562 bytes 741888 frames 123648 channels 2 bits 24 rate 48000 compressed 0 source 8f6a469ea545af6c steps 0 result_frames 123648 result_bits 24 result 8f6a469ea545af6c name "vlato2s4-g5-1Relg5"
+stream 128 offset 59892166 bytes 106288 first 8192 xxh64 12ef87402b62d842
+sample 129 file 0 gig 63 part 0 offset 145177770 bytes 2133222 frames 355537 channels 2 bits 24 rate 48000 compressed 0 source c874a5772804f406 steps 0 result_frames 355537 result_bits 24 result c874a5772804f406 name "vlato3s4-g5-1-g5"
+stream 129 offset 59998454 bytes 939564 first 8192 xxh64 a6ce7fdb4700cce9
+sample 130 file 0 gig 132 part 0 offset 192808482 bytes 667776 frames 111296 channels 2 bits 24 rate 48000 compressed 0 source 90d53cab7d91dfe0 steps 0 result_frames 111296 result_bits 24 result 90d53cab7d91dfe0 name "vlato3s4-g5-1Relg5"
+stream 130 offset 60938018 bytes 97416 first 8192 xxh64 d24e0014e7fa5623
+sample 131 file 0 gig 36 part 0 offset 89473008 bytes 2194950 frames 365825 channels 2 bits 24 rate 48000 compressed 0 source dd5ac9b51eb65cdb steps 0 result_frames 365825 result_bits 24 result dd5ac9b51eb65cdb name "vlato2s4-a5-1-a5"
+stream 131 offset 61035434 bytes 851676 first 0 xxh64 bc822e1dad4413c5
+sample 132 file 0 gig 101 part 0 offset 172534118 bytes 589824 frames 98304 channels 2 bits 24 rate 48000 compressed 0 source 10fc19a10a321129 steps 0 result_frames 98304 result_bits 24 result 10fc19a10a321129 name "vlato2s4-a5-1Rela5"
+stream 132 offset 61887110 bytes 101056 first 0 xxh64 e3d92cc79d340820
+sample 133 file 0 gig 135 part 0 offset 196105674 bytes 1996824 frames 332804 channels 2 bits 24 rate 48000 compressed 0 source dfb3762915d825fa steps 0 result_frames 332804 result_bits 24 result dfb3762915d825fa name "vlato3s4-a6-1-a6"
+stream 133 offset 61988166 bytes 904066 first 0 xxh64 91480a2a0b1e909a
+sample 134 file 0 gig 125 part 0 offset 188552288 bytes 600216 frames 100036 channels 2 bits 24 rate 48000 compressed 0 source cab23cbc7c071a60 steps 0 result_frames 100036 result_bits 24 result cab23cbc7c071a60 name "vlato3s4-a6-1Rela6"
+stream 134 offset 62892232 bytes 107956 first 0 xxh64 8f2b0d9006067e6d
+sample 135 file 0 gig 7 part 0 offset 27842956 bytes 2642334 frames 440389 channels 2 bits 24 rate 48000 compressed 0 source 5d01dfde74f01fe1 steps 0 result_frames 440389 result_bits 24 result 5d01dfde74f01fe1 name "vlato1s4-as5-1-a#5"
+stream 135 offset 63000188 bytes 930800 first 8192 xxh64 425755174d2b8b5b
+sample 136 file 0 gig 82 part 0 offset 162769384 bytes 589824 frames 98304 channels 2 bits 24 rate 48000 compressed 0 source 3066c22518684e0f steps 0 result_frames 98304 result_bits 24 result 3066c22518684e0f name "vlato1s4-as5-1Rela#5"
+stream 136 offset 63930988 bytes 91712 first 8192 xxh64 33f261b395417b94
+sample 137 file 0 gig 16 part 0 offset 47603704 bytes 2304252 frames 384042 channels 2 bits 24 rate 48000 compressed 0 source af6535bec7572fbe steps 0 result_frames 384042 result_bits 24 result af6535bec7572fbe name "vlato1s4-as5-2-a#5"
+stream 137 offset 64022700 bytes 794876 first 8192 xxh64 c1ef623f80acb0a6
+sample 138 file 0 gig 83 part 0 offset 163359416 bytes 572160 frames 95360 channels 2 bits 24 rate 48000 compressed 0 source 6712dc4770c4c340 steps 0 result_frames 95360 result_bits 24 result 6712dc4770c4c340 name "vlato1s4-as5-2Rela#5"
+stream 138 offset 64817576 bytes 88712 first 8192 xxh64 557b186bdf7e96a2
+sample 139 file 0 gig 37 part 0 offset 91668166 bytes 1946358 frames 324393 channels 2 bits 24 rate 48000 compressed 0 source ce947c7017665a4f steps 0 result_frames 324393 result_bits 24 result ce947c7017665a4f name "vlato2s4-as5-1-a#5"
+stream 139 offset 64906288 bytes 724818 first 8192 xxh64 ab74909f0585313f
+sample 140 file 0 gig 103 part 0 offset 173860114 bytes 612864 frames 102144 channels 2 bits 24 rate 48000 compressed 0 source 5d424154d960bc14 steps 0 result_frames 102144 result_bits 24 result 5d424154d960bc14 name "vlato2s4-as5-1Rela#5"
+stream 140 offset 65631106 bytes 89152 first 8192 xxh64 1269af7de48dcd1d
+sample 141 file 0 gig 58 part 0 offset 134847808 bytes 1914918 frames 319153 channels 2 bits 24 rate 48000 compressed 0 source c7e39af6789ec2ee steps 0 result_frames 319153 result_bits 24 result c7e39af6789ec2ee name "vlato3s4-as5-1-a#5"
+stream 141 offset 65720258 bytes 851992 first 8192 xxh64 395f49a156cbd9d5
+sample 142 file 0 gig 126 part 0 offset 189152712 bytes 637056 frames 106176 channels 2 bits 24 rate 48000 compressed 0 source 5b60104a4deeff4d steps 0 result_frames 106176 result_bits 24 result 5b60104a4deeff4d name "vlato3s4-as5-1Rela#5"
+stream 142 offset 66572250 bytes 92148 first 8192 xxh64 fe119cb001768721
+sample 143 file 0 gig 18 part 0 offset 52424922 bytes 2765136 frames 460856 channels 2 bits 24 rate 48000 compressed 0 source d0cf1aa9e888d32b steps 0 result_frames 460856 result_bits 24 result d0cf1aa9e888d32b name "vlato1s4-c6-2-c6"
+stream 143 offset 66664398 bytes 976600 first 0 xxh64 68d29e92daa0a44f
+sample 144 file 0 gig 85 part 0 offset 164435800 bytes 536064 frames 89344 channels 2 bits 24 rate 48000 compressed 0 source fce56890fa978eb0 steps 0 result_frames 89344 result_bits 24 result fce56890fa978eb0 name "vlato1s4-c6-2Relc6"
+stream 144 offset 67640998 bytes 98422 first 0 xxh64 f16818a3f0c71669
+sample 145 file 0 gig 39 part 0 offset 95612562 bytes 2081382 frames 346897 channels 2 bits 24 rate 48000 compressed 0 source bae73545866e0dc6 steps 0 result_frames 346897 result_bits 24 result bae73545866e0dc6 name "vlato2s4-c6-1-c6"
+stream 145 offset 67739420 bytes 829340 first 0 xxh64 dd4931c83713bfd6
+sample 146 file 0 gig 105 part 0 offset 175081650 bytes 638976 frames 106496 channels 2 bits 24 rate 48000 compressed 0 source 23e97d39d708e545 steps 0 result_frames 106496 result_bits 24 result 23e97d39d708e545 name "vlato2s4-c6-1Relc6"
+stream 146 offset 68568760 bytes 110140 first 0 xxh64 6bd317bde77f8d78
+sample 147 file 0 gig 60 part 0 offset 138925752 bytes 2249460 frames 374910 channels 2 bits 24 rate 48000 compressed 0 source bec9116730b2be18 steps 0 result_frames 374910 result_bits 24 result bec9116730b2be18 name "vlato3s4-c6-1-c6"
+stream 147 offset 68678900 bytes 1027808 first 0 xxh64 bbbeedde424f94ce
+sample 148 file 0 gig 128 part 0 offset 190466024 bytes 620544 frames 103424 channels 2 bits 24 rate 48000 compressed 0 source 5949dcab808039e9 steps 0 result_frames 103424 result_bits 24 result 5949dcab808039e9 name "vlato3s4-c6-1Relc6"
+stream 148 offset 69706708 bytes 107594 first 0 xxh64 c16d0e61a279becf
+preload offset 32940 bytes 7323648 xxh64 482aa3bd23d02506
+head bytes 44
+RlNCMQMAAACAuwAAAgAAAAAgAADwAAAArIAAAAAAAAAAwG8AAAAAABgAAAA=
+rows count 240 bytes 30720 xxh64 0ecaccb293bb4db3
+dmxhdG8xczEtYzMtMS1jMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAACAAAAAAAACMtQUAAAAAAAAAAAAAAAAAAAAAAIy1BQCsQHAAAAAAAMD8
+BwAAAAAAACAAAAAAAAB2bGF0bzFzMS1jczMtNC1jIzMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAIAAAAAAAAEFNBAAAAAAAAAAAAAAAAAAGAAAA
+QU0EAEyJkQAAAAAAJiAGAAAAAAAAIAAAAAAAAHZsYXRvMXMxLWRzMy0yLWQjMwAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAEAAAAAAAAgAAAAAAAAUp4DAAAA
+AAAAAAAAAAAAAAoAAABSngMA1AWjAAAAAAAGbQUAAAAAAAAAAAAAAAAAdmxhdG8xczEtZHMzLTIt
+ZCMzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAQAAAAAA
+ACAAAAAAAABSngMAAAAAAAAAAAAAAAAACgAAAFKeAwDUBaMAAAAAAAZtBQAAAAAAAAAAAAAAAAB2
+bGF0bzFzMS1lMy0yLWUzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAACAAAAAAAAIAAAAAAAAIX6BQAAAAAAAAAAAAAAAAAQAAAAhfoFAJR/wQAAAAAAvvsI
+AAAAAAAAIAAAAAAAAHZsYXRvMXMxLWUzLTMtZTMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAIAAAAAAAAgAAAAAAAAmdMEAAAAAAAAAAAAAAAAABIAAACZ
+0wQA/oLLAAAAAAAWCwcAAAAAAAAgAAAAAAAAdmxhdG8xczEtZnMzLTItZiMzAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAACAAAAAAAAABNwYAAAAA
+AAAAAAAAAAAAGAAAAAE3BgAcfukAAAAAALD4CAAAAAAAACAAAAAAAAB2bGF0bzFzMi1nczMtMS1n
+IzMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAEAAAAAAAA
+IAAAAAAAAB77BAAAAAAAAAAAAAAAAAAkAAAAHvsEAPhzMQEAAAAAcmMHAAAAAAAAIAAAAAAAAHZs
+YXRvMXMxLWEzLTQtYTMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAUAAAAAAAAgAAAAAAAAANwFAAAAAAAAAAAAAAAAACgAAAAA3AUAQlhHAQAAAAAidggA
+AAAAAAAgAAAAAAAAdmxhdG8xczItYXMzLTItYSMzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAADABQAAAAAAACAAAAAAAAAZ5AYAAAAAAAAAAAAAAAAALgAAABnk
+BgCw62kBAAAAAJCqCgAAAAAAAAAAAAAAAAB2bGF0bzFzMi1hczMtMi1hIzMAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAFAAAAAAAAIAAAAAAAABnkBgAAAAAA
+AAAAAAAAAAAuAAAAGeQGALDraQEAAAAAkKoKAAAAAAAAAAAAAAAAAHZsYXRvMXMyLWFzMy0yLWEj
+MwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAUAAAAAAAAg
+AAAAAAAAGeQGAAAAAAAAAAAAAAAAAC4AAAAZ5AYAsOtpAQAAAACQqgoAAAAAAAAAAAAAAAAAdmxh
+dG8xczItY3M0LTItYyM0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAACABgAAAAAAACAAAAAAAADhhgQAAAAAAAAAAAAAAAAANAAAAOGGBADOX5gBAAAAAKIkBwAA
+AAAAAAAAAAAAAAB2bGF0bzFzMy1kczQtMi1kIzQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAACAIAAAAAAAAIAAAAAAAADHaBAAAAAAAAAAAAAAAAABBAAAAMdoE
+ADoa8gEAAAAAQtcHAAAAAAAAIAAAAAAAAHZsYXRvMXMzLWY0LTEtZjQAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4AgAAAAAAAAgAAAAAAAAU2AHAAAAAAAA
+AAAAAAAAAEcAAABTYAcAaDYSAgAAAACOOgwAAAAAAAAAAAAAAAAAdmxhdG8xczMtZjQtMS1mNAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgCAAAAAAAACAA
+AAAAAABTYAcAAAAAAAAAAAAAAAAARwAAAFNgBwBoNhICAAAAAI46DAAAAAAAAAAAAAAAAAB2bGF0
+bzFzMy1mNC0xLWY0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAOAIAAAAAAAAIAAAAAAAAFNgBwAAAAAAAAAAAAAAAABHAAAAU2AHAGg2EgIAAAAAjjoMAAAA
+AAAAAAAAAAAAAHZsYXRvMXMzLWdzNC0xLWcjNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAA4AkAAAAAAAAgAAAAAAAAwVkGAAAAAAAAAAAAAAAAAE8AAADBWQYA
+vl5EAgAAAAD+lwoAAAAAAAAAAAAAAAAAdmxhdG8xczMtZ3M0LTEtZyM0AAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgCQAAAAAAACAAAAAAAADBWQYAAAAAAAAA
+AAAAAAAATwAAAMFZBgC+XkQCAAAAAP6XCgAAAAAAAAAAAAAAAAB2bGF0bzFzMy1iNC0xLWI0AAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMALAAAAAAAAIAAA
+AAAAAAGhBgAAAAAAAAAAAAAAAABeAAAAAaEGACrwsAIAAAAAkDkLAAAAAAAAAAAAAAAAAHZsYXRv
+MXMzLWI0LTEtYjQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAwAsAAAAAAAAgAAAAAAAAAaEGAAAAAAAAAAAAAAAAAF4AAAABoQYAKvCwAgAAAACQOQsAAAAA
+AAAAAAAAAAAAdmxhdG8xczQtYzUtMi1jNQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAACgDAAAAAAAACAAAAAAAABhZgYAAAAAAAAAAAAAAAAAZQAAAGFmBgCq
+D9gCAAAAAM6VCwAAAAAAACAAAAAAAAB2bGF0bzFzNC1jczUtMS1jIzUAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACANAAAAAAAAIAAAAAAAANkWBgAAAAAAAAAA
+AAAAAABpAAAA2RYGABjK9AIAAAAA5qwLAAAAAAAAAAAAAAAAAHZsYXRvMXM0LWNzNS0xLWMjNQAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA0AAAAAAAAgAAAA
+AAAA2RYGAAAAAAAAAAAAAAAAAGkAAADZFgYAGMr0AgAAAADmrAsAAAAAAAAAAAAAAAAAdmxhdG8x
+czQtZTUtMS1lNQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAgDgAAAAAAACAAAAAAAACx0AQAAAAAAAAAAAAAAAAAcQAAALHQBACCdiUDAAAAAOA5CQAAAAAA
+AAAAAAAAAAB2bGF0bzFzNC1lNS0xLWU1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAACAOAAAAAAAAIAAAAAAAALHQBAAAAAAAAAAAAAAAAABxAAAAsdAEAIJ2
+JQMAAAAA4DkJAAAAAAAAAAAAAAAAAHZsYXRvMXM0LWU1LTEtZTUAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA4AAAAAAAAgAAAAAAAAsdAEAAAAAAAAAAAA
+AAAAAHEAAACx0AQAgnYlAwAAAADgOQkAAAAAAAAAAAAAAAAAdmxhdG8xczQtZzUtMi1nNQAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgDwAAAAAAACAAAAAA
+AABBQwYAAAAAAAAAAAAAAAAAeQAAAEFDBgCIplsDAAAAAOKgDAAAAAAAACAAAAAAAAB2bGF0bzFz
+NC1nNS0xLWc1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AKAPAAAAAAAAIAAAAAAAAF19BwAAAAAAAAAAAAAAAAB9AAAAXX0HADQWdgMAAAAAKJAPAAAAAAAA
+AAAAAAAAAHZsYXRvMXM0LWc1LTEtZzUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAoA8AAAAAAAAgAAAAAAAAXX0HAAAAAAAAAAAAAAAAAH0AAABdfQcANBZ2
+AwAAAAAokA8AAAAAAAAAAAAAAAAAdmxhdG8xczQtYXM1LTEtYSM1AAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgEAAAAAAAACAAAAAAAABFuAYAAAAAAAAAAAAA
+AAAAhwAAAEW4BgB8TsEDAAAAAPAzDgAAAAAAACAAAAAAAAB2bGF0bzFzNC1hczUtMi1hIzUAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACARAAAAAAAAIAAAAAAA
+ACrcBQAAAAAAAAAAAAAAAACJAAAAKtwFAKzo0AMAAAAA/CAMAAAAAAAAIAAAAAAAAHZsYXRvMXM0
+LWM2LTItYzYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+4BEAAAAAAAAgAAAAAAAAOAgHAAAAAAAAAAAAAAAAAI8AAAA4CAcAzjf5AwAAAADY5g4AAAAAAAAA
+AAAAAAAAdmxhdG8xczQtYzYtMi1jNgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAADgEQAAAAAAACAAAAAAAAA4CAcAAAAAAAAAAAAAAAAAjwAAADgIBwDON/kD
+AAAAANjmDgAAAAAAAAAAAAAAAAB2bGF0bzFzMS1jMy0xUmVsYzMAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAIAAAAAAAAACSAQAAAAAAAAAAAAAA
+AAABAAAAAJIBAGw9eAAAAAAAloEBAAAAAAAAIAAAAAAAAHZsYXRvMXMxLWNzMy00UmVsYyMzAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAgAAAAAAAA
+AJgBAAAAAAAAAAAAAAAAAAcAAAAAmAEAcqmXAAAAAABqaQEAAAAAAAAgAAAAAAAAdmxhdG8xczEt
+ZHMzLTJSZWxkIzMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABg
+AQAAAAAAACAAAAAAAAAAgAEAAAAAAAAAAAAAAAAACwAAAACAAQDacqgAAAAAAPZ+AQAAAAAAAAAA
+AAAAAAB2bGF0bzFzMS1kczMtMlJlbGQjMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAGABAAAAAAAAIAAAAAAAAACAAQAAAAAAAAAAAAAAAAALAAAAAIABANpyqAAA
+AAAA9n4BAAAAAAAAAAAAAAAAAHZsYXRvMXMxLWUzLTJSZWxlMwAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAIAAAAAAAAgAAAAAAAAACwBAAAAAAAAAAAAAAAA
+ABEAAAAALAEAUnvKAAAAAACsBwEAAAAAAAAgAAAAAAAAdmxhdG8xczEtZTMtM1JlbGUzAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAgAAAAAAACAAAAAAAACA
+EgEAAAAAAAAAAAAAAAAAEwAAAIASAQAUjtIAAAAAAFLqAAAAAAAAACAAAAAAAAB2bGF0bzFzMS1m
+czMtMlJlbGYjMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAD
+AAAAAAAAIAAAAAAAAAAYAQAAAAAAAAAAAAAAAAAZAAAAABgBAMx28gAAAAAAtu8AAAAAAAAAIAAA
+AAAAAHZsYXRvMXMyLWdzMy0xLVJlbGcjMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAoAQAAAAAAAAgAAAAAAAAAGgBAAAAAAAAAAAAAAAAACUAAAAAaAEAatc4AQAA
+AAACQgEAAAAAAAAgAAAAAAAAdmxhdG8xczItYXMzLTJSZWxhIzMAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBQAAAAAAACAAAAAAAAD/YwEAAAAAAAAAAAAAAAAA
+KQAAAP9jAQBkzk8BAAAAAO5vAQAAAAAAAAAAAAAAAAB2bGF0bzFzMi1hczMtMlJlbGEjMwAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAFAAAAAAAAIAAAAAAAAP9j
+AQAAAAAAAAAAAAAAAAApAAAA/2MBAGTOTwEAAAAA7m8BAAAAAAAAAAAAAAAAAHZsYXRvMXMyLWFz
+My0yUmVsYSMzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAUA
+AAAAAAAgAAAAAAAA/2MBAAAAAAAAAAAAAAAAACkAAAD/YwEAZM5PAQAAAADubwEAAAAAAAAAAAAA
+AAAAdmxhdG8xczItYXMzLTJSZWxhIzMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAgBQAAAAAAACAAAAAAAAD/YwEAAAAAAAAAAAAAAAAAKQAAAP9jAQBkzk8BAAAA
+AO5vAQAAAAAAAAAAAAAAAAB2bGF0bzFzMi1jczQtMlJlbGMjNAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAGAAAAAAAAIAAAAAAAAACMAQAAAAAAAAAAAAAAAAA1
+AAAAAIwBAHCEnwEAAAAAZJMBAAAAAAAAAAAAAAAAAHZsYXRvMXMzLWRzNC0yUmVsZCM0AAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAgAAAAAAAAgAAAAAAAAAGwB
+AAAAAAAAAAAAAAAAAEIAAAAAbAEAfPH5AQAAAAAeRQEAAAAAAAAgAAAAAAAAdmxhdG8xczMtZjQt
+MVJlbGY0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAA
+AAAAACAAAAAAAAAATAEAAAAAAAAAAAAAAAAASAAAAABMAQD2cB4CAAAAADBhAQAAAAAAAAAAAAAA
+AAB2bGF0bzFzMy1mNC0xUmVsZjQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAJAAAAAAAAIAAAAAAAAABMAQAAAAAAAAAAAAAAAABIAAAAAEwBAPZwHgIAAAAA
+MGEBAAAAAAAAAAAAAAAAAHZsYXRvMXMzLWY0LTFSZWxmNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAgAAAAAAAAAEwBAAAAAAAAAAAAAAAAAEgA
+AAAATAEA9nAeAgAAAAAwYQEAAAAAAAAAAAAAAAAAdmxhdG8xczMtZ3M0LTFSZWxnIzQAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAAAAAACAAAAAAAAAAfAEA
+AAAAAAAAAAAAAAAAUAAAAAB8AQC89k4CAAAAAMSHAQAAAAAAAAAAAAAAAAB2bGF0bzFzMy1nczQt
+MVJlbGcjNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKAAAA
+AAAAIAAAAAAAAAB8AQAAAAAAAAAAAAAAAABQAAAAAHwBALz2TgIAAAAAxIcBAAAAAAAAAAAAAAAA
+AHZsYXRvMXMzLWI0LTFSZWxiNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAA4AsAAAAAAAAgAAAAAAAA4E8BAAAAAAAAAAAAAAAAAF8AAADgTwEAuim8AgAAAABq
+WQEAAAAAAAAAAAAAAAAAdmxhdG8xczMtYjQtMVJlbGI0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgCwAAAAAAACAAAAAAAADgTwEAAAAAAAAAAAAAAAAAXwAA
+AOBPAQC6KbwCAAAAAGpZAQAAAAAAAAAAAAAAAAB2bGF0bzFzNC1jNS0yUmVsYzUAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAMAAAAAAAAIAAAAAAAAABIAQAA
+AAAAAAAAAAAAAABmAAAAAEgBAHil4wIAAAAAwCoBAAAAAAAAIAAAAAAAAHZsYXRvMXM0LWNzNS0x
+UmVsYyM1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA0AAAAA
+AAAgAAAAAAAAgBQBAAAAAAAAAAAAAAAAAGoAAACAFAEA/nYAAwAAAAAwLwEAAAAAAAAAAAAAAAAA
+dmxhdG8xczQtY3M1LTFSZWxjIzUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAABADQAAAAAAACAAAAAAAACAFAEAAAAAAAAAAAAAAAAAagAAAIAUAQD+dgADAAAAADAv
+AQAAAAAAAAAAAAAAAAB2bGF0bzFzNC1lNS0xLVJlbGU1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAOAAAAAAAAIAAAAAAAAABoAQAAAAAAAAAAAAAAAAByAAAA
+AGgBAGKwLgMAAAAAHoABAAAAAAAAAAAAAAAAAHZsYXRvMXM0LWU1LTEtUmVsZTUAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA4AAAAAAAAgAAAAAAAAAGgBAAAA
+AAAAAAAAAAAAAHIAAAAAaAEAYrAuAwAAAAAegAEAAAAAAAAAAAAAAAAAdmxhdG8xczQtZTUtMS1S
+ZWxlNQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABADgAAAAAA
+ACAAAAAAAAAAaAEAAAAAAAAAAAAAAAAAcgAAAABoAQBisC4DAAAAAB6AAQAAAAAAAAAAAAAAAAB2
+bGF0bzFzNC1nNS0yUmVsZzUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAEAPAAAAAAAAIAAAAAAAAABpAQAAAAAAAAAAAAAAAAB6AAAAAGkBAGpHaAMAAAAA2k4B
+AAAAAAAAIAAAAAAAAHZsYXRvMXM0LWc1LTEtUmVsZzUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAwA8AAAAAAAAgAAAAAAAAIEUBAAAAAAAAAAAAAAAAAH4AAAAg
+RQEAXKaFAwAAAABGXwEAAAAAAAAAAAAAAAAAdmxhdG8xczQtZzUtMS1SZWxnNQAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADADwAAAAAAACAAAAAAAAAgRQEAAAAA
+AAAAAAAAAAAAfgAAACBFAQBcpoUDAAAAAEZfAQAAAAAAAAAAAAAAAAB2bGF0bzFzNC1hczUtMVJl
+bGEjNQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAA
+IAAAAAAAAACAAQAAAAAAAAAAAAAAAACIAAAAAIABAGyCzwMAAAAAQGYBAAAAAAAAIAAAAAAAAHZs
+YXRvMXM0LWFzNS0yUmVsYSM1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAQBEAAAAAAAAgAAAAAAAAgHQBAAAAAAAAAAAAAAAAAIoAAACAdAEAqAndAwAAAACIWgEA
+AAAAAAAgAAAAAAAAdmxhdG8xczQtYzYtMlJlbGM2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAACAAAAAAAAAAXQEAAAAAAAAAAAAAAAAAkAAAAABd
+AQCmHggEAAAAAHaAAQAAAAAAAAAAAAAAAAB2bGF0bzFzNC1jNi0yUmVsYzYAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAIAAAAAAAAABdAQAAAAAA
+AAAAAAAAAACQAAAAAF0BAKYeCAQAAAAAdoABAAAAAAAAAAAAAAAAAHZsYXRvMXMxLWczLTItZzMA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAMAAAAAAAAg
+AAAAAAAAwbIFAAAAAAAAAAAAAAAAABoAAADBsgUAgmbzAAAAAAC8fwgAAAAAAAAgAAAAAAAAdmxh
+dG8xczItY3M0LTItYyM0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAACABgAAAAAAACAAAAAAAADhhgQAAAAAAAAAAAAAAAAANAAAAOGGBADOX5gBAAAAAKIkBwAA
+AAAAAAAAAAAAAAB2bGF0bzFzMy1hNC0xLWE0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAGAKAAAAAAAAIAAAAAAAAAAYBwAAAAAAAAAAAAAAAABTAAAAABgH
+AH7xWgIAAAAA+rkLAAAAAAAAIAAAAAAAAHZsYXRvMXMxLWczLTJSZWxnMwAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAMAAAAAAAAgAAAAAAAAAGQBAAAAAAAA
+AAAAAAAAABsAAAAAZAEAPub7AAAAAADuPQEAAAAAAAAgAAAAAAAAdmxhdG8xczItY3M0LTJSZWxj
+IzQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgBgAAAAAAACAA
+AAAAAAAAjAEAAAAAAAAAAAAAAAAANQAAAACMAQBwhJ8BAAAAAGSTAQAAAAAAAAAAAAAAAAB2bGF0
+bzFzMy1nczQtMVJlbGcjNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAKAAAAAAAAIAAAAAAAAAB8AQAAAAAAAAAAAAAAAABQAAAAAHwBALz2TgIAAAAAxIcBAAAA
+AAAAAAAAAAAAAHZsYXRvMXMyLWczLTJnMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAgAMAAAAAAAAgAAAAAAAARMAGAAAAAAAAAAAAAAAAABwAAABEwAYA
+LCT9AAAAAAAM3wsAAAAAAAAgAAAAAAAAdmxhdG8xczMtZDQtMmQ0AAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwAAAAAAACAAAAAAAADxJAcAAAAAAAAA
+AAAAAAAAOAAAAPEkBwAW6a0BAAAAAMKZDQAAAAAAACAAAAAAAAB2bGF0bzFzNC1hNC0zYTQAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAKAAAAAAAAIAAA
+AAAAALFWBwAAAAAAAAAAAAAAAABUAAAAsVYHAHirZgIAAAAAVIkPAAAAAAAAIAAAAAAAAHZsYXRv
+MXMyLWczLVJlbDJnMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAoAMAAAAAAAAgAAAAAAAACjEDAAAAAAAAAAAAAAAAAB0AAAAKMQMAOAMJAQAAAACkzAMAAAAA
+AAAgAAAAAAAAdmxhdG8xczMtZDQtUmVsMmQ0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+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
+end

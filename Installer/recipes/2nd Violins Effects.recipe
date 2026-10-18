@@ -1,0 +1,526 @@
+# Sonic Reimplants bank recipe: how sr_install rebuilds this bank from the original .gig files.
+recipe 1
+bank "2nd Violins Effects.fsb" bytes 119593694 content_xxh64 7730938514b8e242
+format rate 48000 channels 2 bits 24 preload 8192 block 4096 flags 0
+part 0 0 name "2nd Violins Effects.gig" folder "Symphonic String Collection- 2nd Violins" bytes 262424694
+sample 0 file 0 gig 1 part 0 offset 4906268 bytes 2899968 frames 483328 channels 2 bits 24 rate 48000 compressed 0 source 86c54f517577f826 steps 0 result_frames 483328 result_bits 24 result 86c54f517577f826 name "v2brgrandom_Looped"
+stream 0 offset 5965228 bytes 2320548 first 8192 xxh64 a846c7a877aed20f
+sample 1 file 0 gig 5 part 0 offset 14983254 bytes 566592 frames 94432 channels 2 bits 24 rate 48000 compressed 0 source 7b3ccb1ce32e0226 steps 0 result_frames 94432 result_bits 24 result 7b3ccb1ce32e0226 name "v2brgrandomRel"
+stream 1 offset 8285776 bytes 292566 first 8192 xxh64 861ee7e35f9c7f75
+sample 2 file 0 gig 3 part 0 offset 11486902 bytes 2952198 frames 492033 channels 2 bits 24 rate 48000 compressed 0 source cc3d0b51badec98a steps 0 result_frames 492033 result_bits 24 result cc3d0b51badec98a name "v2brgrandom2_Looped"
+stream 2 offset 8578342 bytes 2330554 first 8192 xxh64 10f481e35fb78a3b
+sample 3 file 0 gig 4 part 0 offset 14439308 bytes 543738 frames 90623 channels 2 bits 24 rate 48000 compressed 0 source 0683382e6240c055 steps 0 result_frames 90623 result_bits 24 result 0683382e6240c055 name "v2brgrandom2Rel"
+stream 3 offset 10908896 bytes 258378 first 8192 xxh64 5e2958c55040fdb0
+sample 4 file 0 gig 23 part 0 offset 29037768 bytes 2672640 frames 445440 channels 2 bits 24 rate 48000 compressed 0 source b91316fa0d6b757f steps 0 result_frames 445440 result_bits 24 result b91316fa0d6b757f name "v2brgtrems1_Looped"
+stream 4 offset 11167274 bytes 2036556 first 8192 xxh64 5e430cb2fe73aafb
+sample 5 file 0 gig 24 part 0 offset 31710616 bytes 631002 frames 105167 channels 2 bits 24 rate 48000 compressed 0 source 9c4825c0a32fb9e0 steps 0 result_frames 105167 result_bits 24 result 9c4825c0a32fb9e0 name "v2brgtrems1Rel"
+stream 5 offset 13203830 bytes 320878 first 8192 xxh64 4538902182fc63b2
+sample 6 file 0 gig 26 part 0 offset 35740854 bytes 2617344 frames 436224 channels 2 bits 24 rate 48000 compressed 0 source 3283c6e491ea3a31 steps 0 result_frames 436224 result_bits 24 result 3283c6e491ea3a31 name "v2brgtrems2_Looped"
+stream 6 offset 13524708 bytes 2061462 first 8192 xxh64 147e47ad29c42d80
+sample 7 file 0 gig 27 part 0 offset 38358406 bytes 537984 frames 89664 channels 2 bits 24 rate 48000 compressed 0 source da7d09c71c38b874 steps 0 result_frames 89664 result_bits 24 result da7d09c71c38b874 name "v2brgtrems2Rel"
+stream 7 offset 15586170 bytes 272646 first 8192 xxh64 9a07d52ca7e95c07
+sample 8 file 0 gig 29 part 0 offset 42312096 bytes 2592768 frames 432128 channels 2 bits 24 rate 48000 compressed 0 source 7637fe538228ad13 steps 0 result_frames 432128 result_bits 24 result 7637fe538228ad13 name "v2brgtrems3_Looped"
+stream 8 offset 15858816 bytes 2131936 first 8192 xxh64 867159a763bff273
+sample 9 file 0 gig 30 part 0 offset 44905072 bytes 625338 frames 104223 channels 2 bits 24 rate 48000 compressed 0 source d3e5340843bb029d steps 0 result_frames 104223 result_bits 24 result d3e5340843bb029d name "v2brgtrems3Rel"
+stream 9 offset 17990752 bytes 314794 first 8192 xxh64 8730bbfaf269b0b7
+sample 10 file 0 gig 32 part 0 offset 48891300 bytes 2629632 frames 438272 channels 2 bits 24 rate 48000 compressed 0 source 968aabdc35227023 steps 0 result_frames 438272 result_bits 24 result 968aabdc35227023 name "v2brgtrems4_Looped"
+stream 10 offset 18305546 bytes 2237560 first 8192 xxh64 8beb12476b45d8f2
+sample 11 file 0 gig 33 part 0 offset 51521140 bytes 611328 frames 101888 channels 2 bits 24 rate 48000 compressed 0 source ad2b51f7262a9715 steps 0 result_frames 101888 result_bits 24 result ad2b51f7262a9715 name "v2brgtrems4Rel"
+stream 11 offset 20543106 bytes 323562 first 8192 xxh64 172ea4e5d1d6c1d6
+sample 12 file 0 gig 6 part 0 offset 15550054 bytes 650058 frames 108343 channels 2 bits 24 rate 48000 compressed 0 source 222ff9a9444f9a93 steps 0 result_frames 108343 result_bits 24 result 222ff9a9444f9a93 name "v2brgshort1-1"
+stream 12 offset 20866668 bytes 321900 first 8192 xxh64 ae1f8072b28edacd
+sample 13 file 0 gig 7 part 0 offset 16200320 bytes 681402 frames 113567 channels 2 bits 24 rate 48000 compressed 0 source ae6d36895ee0226f steps 0 result_frames 113567 result_bits 24 result ae6d36895ee0226f name "v2brgshort1-2"
+stream 13 offset 21188568 bytes 339310 first 8192 xxh64 8109bc900246f441
+sample 14 file 0 gig 8 part 0 offset 16881930 bytes 655578 frames 109263 channels 2 bits 24 rate 48000 compressed 0 source f21a92d65b085d2d steps 0 result_frames 109263 result_bits 24 result f21a92d65b085d2d name "v2brgshort1-3"
+stream 14 offset 21527878 bytes 319832 first 8192 xxh64 158d64c39a07fdba
+sample 15 file 0 gig 9 part 0 offset 17537716 bytes 650490 frames 108415 channels 2 bits 24 rate 48000 compressed 0 source 42c3b1870d6abb9b steps 0 result_frames 108415 result_bits 24 result 42c3b1870d6abb9b name "v2brgshort1-4"
+stream 15 offset 21847710 bytes 314266 first 8192 xxh64 91c649e0737a60f7
+sample 16 file 0 gig 10 part 0 offset 18188414 bytes 639258 frames 106543 channels 2 bits 24 rate 48000 compressed 0 source 32507d35146b554f steps 0 result_frames 106543 result_bits 24 result 32507d35146b554f name "v2brgshort2-1"
+stream 16 offset 22161976 bytes 318542 first 8192 xxh64 8e7505cae10bdd23
+sample 17 file 0 gig 11 part 0 offset 18827880 bytes 652698 frames 108783 channels 2 bits 24 rate 48000 compressed 0 source 4b5f5bafbf5cf2cf steps 0 result_frames 108783 result_bits 24 result 4b5f5bafbf5cf2cf name "v2brgshort2-2"
+stream 17 offset 22480518 bytes 333104 first 8192 xxh64 8b1fe4705445161c
+sample 18 file 0 gig 12 part 0 offset 19480786 bytes 644154 frames 107359 channels 2 bits 24 rate 48000 compressed 0 source b3b34bfab7d6d88c steps 0 result_frames 107359 result_bits 24 result b3b34bfab7d6d88c name "v2brgshort2-3"
+stream 18 offset 22813622 bytes 331182 first 8192 xxh64 eb803fa814eab686
+sample 19 file 0 gig 13 part 0 offset 20125148 bytes 659130 frames 109855 channels 2 bits 24 rate 48000 compressed 0 source 435884bd7119e1fc steps 0 result_frames 109855 result_bits 24 result 435884bd7119e1fc name "v2brgshort2-4"
+stream 19 offset 23144804 bytes 341180 first 8192 xxh64 198cbe84fcfa4f6c
+sample 20 file 0 gig 21 part 0 offset 25005748 bytes 652314 frames 108719 channels 2 bits 24 rate 48000 compressed 0 source 10969484bdffdf68 steps 0 result_frames 108719 result_bits 24 result 10969484bdffdf68 name "vbrgshort3-1"
+stream 20 offset 23485984 bytes 335630 first 8192 xxh64 481c7a6ec9fd0429
+sample 21 file 0 gig 14 part 0 offset 20784486 bytes 656634 frames 109439 channels 2 bits 24 rate 48000 compressed 0 source a88db99c627d50cb steps 0 result_frames 109439 result_bits 24 result a88db99c627d50cb name "v2brgshort3-2"
+stream 21 offset 23821614 bytes 359982 first 8192 xxh64 336d10f5722e7046
+sample 22 file 0 gig 16 part 0 offset 21983474 bytes 643914 frames 107319 channels 2 bits 24 rate 48000 compressed 0 source 34d3143102fe692e steps 0 result_frames 107319 result_bits 24 result 34d3143102fe692e name "v2brgshort3-4"
+stream 22 offset 24181596 bytes 341152 first 8192 xxh64 d7957b50aea0c22e
+sample 23 file 0 gig 17 part 0 offset 22627596 bytes 612282 frames 102047 channels 2 bits 24 rate 48000 compressed 0 source 5185f55b50f99998 steps 0 result_frames 102047 result_bits 24 result 5185f55b50f99998 name "v2brgshort4-1"
+stream 23 offset 24522748 bytes 336356 first 8192 xxh64 3867dfc8ebc0a08d
+sample 24 file 0 gig 18 part 0 offset 23240086 bytes 569946 frames 94991 channels 2 bits 24 rate 48000 compressed 0 source d61eac10f2d84f1a steps 0 result_frames 94991 result_bits 24 result d61eac10f2d84f1a name "v2brgshort4-2"
+stream 24 offset 24859104 bytes 308778 first 8192 xxh64 fb0c185fd8e4cc7e
+sample 25 file 0 gig 19 part 0 offset 23810240 bytes 637722 frames 106287 channels 2 bits 24 rate 48000 compressed 0 source ad5cf738498711f7 steps 0 result_frames 106287 result_bits 24 result ad5cf738498711f7 name "v2brgshort4-3"
+stream 25 offset 25167882 bytes 349610 first 8192 xxh64 7963c0194d5beb1b
+sample 26 file 0 gig 20 part 0 offset 24448170 bytes 557370 frames 92895 channels 2 bits 24 rate 48000 compressed 0 source fe2f73ab7534018a steps 0 result_frames 92895 result_bits 24 result fe2f73ab7534018a name "v2brgshort4-4"
+stream 26 offset 25517492 bytes 295396 first 8192 xxh64 6c210341f9a19191
+sample 27 file 0 gig 15 part 0 offset 21441328 bytes 541938 frames 90323 channels 2 bits 24 rate 48000 compressed 0 source ad58328b98d7ec4b steps 0 result_frames 90323 result_bits 24 result ad58328b98d7ec4b name "v2brgshort33"
+stream 27 offset 25812888 bytes 282844 first 8192 xxh64 ff7d4add108a904e
+sample 28 file 0 gig 36 part 0 offset 60902956 bytes 4128822 frames 688137 channels 2 bits 24 rate 48000 compressed 0 source cae5223996618579 steps 0 result_frames 688137 result_bits 24 result cae5223996618579 name "v2gharmrands1a_Looped"
+stream 28 offset 26095732 bytes 2673216 first 8192 xxh64 ebf0fd6aed9c5673
+sample 29 file 0 gig 37 part 0 offset 65031986 bytes 526848 frames 87808 channels 2 bits 24 rate 48000 compressed 0 source 41fe2ab19db73762 steps 0 result_frames 87808 result_bits 24 result 41fe2ab19db73762 name "v2gharmrands1aRel"
+stream 29 offset 28768948 bytes 269786 first 8192 xxh64 1e484d3845dcf012
+sample 30 file 0 gig 39 part 0 offset 69856972 bytes 3268902 frames 544817 channels 2 bits 24 rate 48000 compressed 0 source 46bd9210ee75e53a steps 0 result_frames 544817 result_bits 24 result 46bd9210ee75e53a name "v2gharmrands2a_Looped"
+stream 30 offset 29038734 bytes 2141726 first 8192 xxh64 1dd06729606a7196
+sample 31 file 0 gig 40 part 0 offset 73126082 bytes 749562 frames 124927 channels 2 bits 24 rate 48000 compressed 0 source bac592f16c537f36 steps 0 result_frames 124927 result_bits 24 result bac592f16c537f36 name "v2gharmrands2aRel"
+stream 31 offset 31180460 bytes 375954 first 8192 xxh64 fed45918bb11c8e2
+sample 32 file 0 gig 34 part 0 offset 52132676 bytes 3901518 frames 650253 channels 2 bits 24 rate 48000 compressed 0 source c6ed8146c8a66f3e steps 0 result_frames 650253 result_bits 24 result c6ed8146c8a66f3e name "v2gharmrand3a_Looped"
+stream 32 offset 31556414 bytes 2753510 first 8192 xxh64 e5934040f5d70c92
+sample 33 file 0 gig 42 part 0 offset 78592252 bytes 610176 frames 101696 channels 2 bits 24 rate 48000 compressed 0 source d2f6b73668bba73e steps 0 result_frames 101696 result_bits 24 result d2f6b73668bba73e name "v2gharmrands3aRel"
+stream 33 offset 34309924 bytes 317386 first 8192 xxh64 682b6d5188b3911a
+sample 34 file 0 gig 44 part 0 offset 83514390 bytes 3428622 frames 571437 channels 2 bits 24 rate 48000 compressed 0 source ee0739e2db05e7e2 steps 0 result_frames 571437 result_bits 24 result ee0739e2db05e7e2 name "v2gharmrands4a_Looped"
+stream 34 offset 34627310 bytes 2557846 first 8192 xxh64 e5d69f05daefc152
+sample 35 file 0 gig 45 part 0 offset 86943220 bytes 793626 frames 132271 channels 2 bits 24 rate 48000 compressed 0 source 0595e84141f54414 steps 0 result_frames 132271 result_bits 24 result 0595e84141f54414 name "v2gharmrands4aRel"
+stream 35 offset 37185156 bytes 424564 first 8192 xxh64 30265f68c1b20a77
+sample 36 file 0 gig 64 part 0 offset 120663212 bytes 3895560 frames 649260 channels 2 bits 24 rate 48000 compressed 0 source b105b054c14e0580 steps 0 result_frames 649260 result_bits 24 result b105b054c14e0580 name "v2gharmtogs1b_Looped"
+stream 36 offset 37609720 bytes 2480928 first 8192 xxh64 770739416c657c08
+sample 37 file 0 gig 65 part 0 offset 124558980 bytes 571008 frames 95168 channels 2 bits 24 rate 48000 compressed 0 source e272108c4c33a84e steps 0 result_frames 95168 result_bits 24 result e272108c4c33a84e name "v2gharmtogs1bRel"
+stream 37 offset 40090648 bytes 280660 first 8192 xxh64 165b9c48c1521589
+sample 38 file 0 gig 67 part 0 offset 129192008 bytes 3446856 frames 574476 channels 2 bits 24 rate 48000 compressed 0 source 9742d1c4142b054e steps 0 result_frames 574476 result_bits 24 result 9742d1c4142b054e name "v2gharmtogs2b_Looped"
+stream 38 offset 40371308 bytes 2237466 first 8192 xxh64 09a3e22e7b2b9eb6
+sample 39 file 0 gig 68 part 0 offset 132639072 bytes 615198 frames 102533 channels 2 bits 24 rate 48000 compressed 0 source 38b3e4ce2758ecb1 steps 0 result_frames 102533 result_bits 24 result 38b3e4ce2758ecb1 name "v2gharmtogs2bRel"
+stream 39 offset 42608774 bytes 305414 first 8192 xxh64 ac545f010f99d394
+sample 40 file 0 gig 70 part 0 offset 138754904 bytes 4349844 frames 724974 channels 2 bits 24 rate 48000 compressed 0 source 1ce5d746de2ff7c6 steps 0 result_frames 724974 result_bits 24 result 1ce5d746de2ff7c6 name "v2gharmtogs3b_Looped"
+stream 40 offset 42914188 bytes 3042946 first 8192 xxh64 52c48f278b94c1a5
+sample 41 file 0 gig 71 part 0 offset 143104956 bytes 847872 frames 141312 channels 2 bits 24 rate 48000 compressed 0 source d8fdc29c811824fe steps 0 result_frames 141312 result_bits 24 result d8fdc29c811824fe name "v2gharmtogs3bRel"
+stream 41 offset 45957134 bytes 444668 first 8192 xxh64 25b9079f2d8e01df
+sample 42 file 0 gig 73 part 0 offset 148004000 bytes 3354624 frames 559104 channels 2 bits 24 rate 48000 compressed 0 source 164f52b3ab4b4f97 steps 0 result_frames 559104 result_bits 24 result 164f52b3ab4b4f97 name "v2gharmtogs4b_Looped"
+stream 42 offset 46401802 bytes 2378634 first 8192 xxh64 cb2afd7f1be14f98
+sample 43 file 0 gig 74 part 0 offset 151358832 bytes 534912 frames 89152 channels 2 bits 24 rate 48000 compressed 0 source 64ba78df6321bbc5 steps 0 result_frames 89152 result_bits 24 result 64ba78df6321bbc5 name "v2gharmtogs4bRel"
+stream 43 offset 48780436 bytes 267990 first 8192 xxh64 6758e58c42399755
+sample 44 file 0 gig 76 part 0 offset 156328010 bytes 3797262 frames 632877 channels 2 bits 24 rate 48000 compressed 0 source fc26c2ab94f44c0f steps 0 result_frames 632877 result_bits 24 result fc26c2ab94f44c0f name "v2gharmtrems1_Looped"
+stream 44 offset 49048426 bytes 2531486 first 8192 xxh64 31393c2cddd4d58c
+sample 45 file 0 gig 77 part 0 offset 160125480 bytes 469434 frames 78239 channels 2 bits 24 rate 48000 compressed 0 source 83be6c0df7ee2c58 steps 0 result_frames 78239 result_bits 24 result 83be6c0df7ee2c58 name "v2gharmtrems1Rel"
+stream 45 offset 51579912 bytes 227354 first 8192 xxh64 29e10367d7ec8aed
+sample 46 file 0 gig 79 part 0 offset 165116930 bytes 3366858 frames 561143 channels 2 bits 24 rate 48000 compressed 0 source 2ade918f2d2691bb steps 0 result_frames 561143 result_bits 24 result 2ade918f2d2691bb name "v2gharmtrems2_Looped"
+stream 46 offset 51807266 bytes 2326740 first 8192 xxh64 7dca3f061c08d905
+sample 47 file 0 gig 80 part 0 offset 168483996 bytes 614784 frames 102464 channels 2 bits 24 rate 48000 compressed 0 source eda2d1c38b22d20e steps 0 result_frames 102464 result_bits 24 result eda2d1c38b22d20e name "v2gharmtrems2Rel"
+stream 47 offset 54134006 bytes 300232 first 8192 xxh64 00888cb187218d05
+sample 48 file 0 gig 82 part 0 offset 173327414 bytes 3582078 frames 597013 channels 2 bits 24 rate 48000 compressed 0 source 90383f844ffe1dfb steps 0 result_frames 597013 result_bits 24 result 90383f844ffe1dfb name "v2gharmtrems3_Looped"
+stream 48 offset 54434238 bytes 2572712 first 8192 xxh64 1e113ae0e7351fec
+sample 49 file 0 gig 83 part 0 offset 176909700 bytes 417024 frames 69504 channels 2 bits 24 rate 48000 compressed 0 source d91fafe838b5c833 steps 0 result_frames 69504 result_bits 24 result d91fafe838b5c833 name "v2gharmtrems3Rel"
+stream 49 offset 57006950 bytes 203500 first 8192 xxh64 16c67f471f6d9e48
+sample 50 file 0 gig 85 part 0 offset 181970078 bytes 3908436 frames 651406 channels 2 bits 24 rate 48000 compressed 0 source e62ee0ac978b7262 steps 0 result_frames 651406 result_bits 24 result e62ee0ac978b7262 name "v2gharmtrems4_Looped"
+stream 50 offset 57210450 bytes 2898908 first 8192 xxh64 657668aa53797fe4
+sample 51 file 0 gig 86 part 0 offset 185878722 bytes 436224 frames 72704 channels 2 bits 24 rate 48000 compressed 0 source e80b182057ae7b0a steps 0 result_frames 72704 result_bits 24 result e80b182057ae7b0a name "v2gharmtrems4Rel"
+stream 51 offset 60109358 bytes 213354 first 8192 xxh64 96611c77d542d76a
+sample 52 file 0 gig 116 part 0 offset 229634862 bytes 774048 frames 129008 channels 2 bits 24 rate 48000 compressed 0 source cd6f8c829fec3ff6 steps 0 result_frames 129008 result_bits 24 result cd6f8c829fec3ff6 name "v2gfast1"
+stream 52 offset 60322712 bytes 456096 first 8192 xxh64 fb0a993aee03d485
+sample 53 file 0 gig 125 part 0 offset 235967328 bytes 801330 frames 133555 channels 2 bits 24 rate 48000 compressed 0 source 179e423988af8439 steps 0 result_frames 133555 result_bits 24 result 179e423988af8439 name "v2gfast2"
+stream 53 offset 60778808 bytes 455354 first 8192 xxh64 73e5786672752345
+sample 54 file 0 gig 126 part 0 offset 236768866 bytes 820248 frames 136708 channels 2 bits 24 rate 48000 compressed 0 source 572d5ee452f5e8ac steps 0 result_frames 136708 result_bits 24 result 572d5ee452f5e8ac name "v2gfast3"
+stream 54 offset 61234162 bytes 464532 first 8192 xxh64 53812a266045915e
+sample 55 file 0 gig 127 part 0 offset 237589322 bytes 861978 frames 143663 channels 2 bits 24 rate 48000 compressed 0 source b3c31893d224fea1 steps 0 result_frames 143663 result_bits 24 result b3c31893d224fea1 name "v2gfast4"
+stream 55 offset 61698694 bytes 494684 first 8192 xxh64 c77a0331c89a01c0
+sample 56 file 0 gig 128 part 0 offset 238451508 bytes 664842 frames 110807 channels 2 bits 24 rate 48000 compressed 0 source 1b0fad1f92aff4e2 steps 0 result_frames 110807 result_bits 24 result 1b0fad1f92aff4e2 name "v2gfast5"
+stream 56 offset 62193378 bytes 357614 first 8192 xxh64 23a6b664fc5788b8
+sample 57 file 0 gig 129 part 0 offset 239116558 bytes 709344 frames 118224 channels 2 bits 24 rate 48000 compressed 0 source d7137a4d43df442d steps 0 result_frames 118224 result_bits 24 result d7137a4d43df442d name "v2gfast6"
+stream 57 offset 62550992 bytes 378088 first 8192 xxh64 62b3b4b13fe3077a
+sample 58 file 0 gig 130 part 0 offset 239826110 bytes 736314 frames 122719 channels 2 bits 24 rate 48000 compressed 0 source fcd6ba84c6fa8513 steps 0 result_frames 122719 result_bits 24 result fcd6ba84c6fa8513 name "v2gfast8"
+stream 58 offset 62929080 bytes 401980 first 8192 xxh64 7d8427bb3f6f8604
+sample 59 file 0 gig 131 part 0 offset 240562632 bytes 905802 frames 150967 channels 2 bits 24 rate 48000 compressed 0 source 4613c428b6953bd5 steps 0 result_frames 150967 result_bits 24 result 4613c428b6953bd5 name "v2gfast9"
+stream 59 offset 63331060 bytes 536880 first 8192 xxh64 05ecb5621aabba80
+sample 60 file 0 gig 117 part 0 offset 230409118 bytes 841152 frames 140192 channels 2 bits 24 rate 48000 compressed 0 source 1130a39291fefb50 steps 0 result_frames 140192 result_bits 24 result 1130a39291fefb50 name "v2gfast10"
+stream 60 offset 63867940 bytes 500214 first 8192 xxh64 ce5300fcd8461763
+sample 61 file 0 gig 118 part 0 offset 231250478 bytes 794268 frames 132378 channels 2 bits 24 rate 48000 compressed 0 source edf174e4d10b12dd steps 0 result_frames 132378 result_bits 24 result edf174e4d10b12dd name "v2gfast11"
+stream 61 offset 64368154 bytes 471674 first 8192 xxh64 291470b2a418692b
+sample 62 file 0 gig 119 part 0 offset 232044954 bytes 703626 frames 117271 channels 2 bits 24 rate 48000 compressed 0 source 881c26ecb172ea7c steps 0 result_frames 117271 result_bits 24 result 881c26ecb172ea7c name "v2gfast12"
+stream 62 offset 64839828 bytes 386192 first 8192 xxh64 4f73281f17a439d6
+sample 63 file 0 gig 120 part 0 offset 232748788 bytes 683376 frames 113896 channels 2 bits 24 rate 48000 compressed 0 source 04d83f71ca9160a7 steps 0 result_frames 113896 result_bits 24 result 04d83f71ca9160a7 name "v2gfast13"
+stream 63 offset 65226020 bytes 369076 first 8192 xxh64 f6041f4f01c199ee
+sample 64 file 0 gig 121 part 0 offset 233432372 bytes 675324 frames 112554 channels 2 bits 24 rate 48000 compressed 0 source df3fafe4adf0e2ab steps 0 result_frames 112554 result_bits 24 result df3fafe4adf0e2ab name "v2gfast14"
+stream 64 offset 65595096 bytes 378808 first 8192 xxh64 c1a9fa84bfb86f24
+sample 65 file 0 gig 122 part 0 offset 234107904 bytes 580812 frames 96802 channels 2 bits 24 rate 48000 compressed 0 source 9461e321d3575045 steps 0 result_frames 96802 result_bits 24 result 9461e321d3575045 name "v2gfast15"
+stream 65 offset 65973904 bytes 302126 first 8192 xxh64 9b0cc8103fdfad69
+sample 66 file 0 gig 123 part 0 offset 234688924 bytes 653898 frames 108983 channels 2 bits 24 rate 48000 compressed 0 source cc4556f31bfd53a6 steps 0 result_frames 108983 result_bits 24 result cc4556f31bfd53a6 name "v2gfast16"
+stream 66 offset 66276030 bytes 335234 first 8192 xxh64 2b2bccc6e1427a2a
+sample 67 file 0 gig 124 part 0 offset 235343030 bytes 624090 frames 104015 channels 2 bits 24 rate 48000 compressed 0 source f03073becb453aef steps 0 result_frames 104015 result_bits 24 result f03073becb453aef name "v2gfast17"
+stream 67 offset 66611264 bytes 315498 first 8192 xxh64 78919b21f1b4ea81
+sample 68 file 0 gig 110 part 0 offset 225912222 bytes 670122 frames 111687 channels 2 bits 24 rate 48000 compressed 0 source e4e0719baf554aea steps 0 result_frames 111687 result_bits 24 result e4e0719baf554aea name "v2scratchshortff-2"
+stream 68 offset 66926762 bytes 387516 first 8192 xxh64 2a4092fb4ba47c2e
+sample 69 file 0 gig 111 part 0 offset 226582552 bytes 701418 frames 116903 channels 2 bits 24 rate 48000 compressed 0 source 4d6a9b3d8fd98af8 steps 0 result_frames 116903 result_bits 24 result 4d6a9b3d8fd98af8 name "v2scratchshortff-3"
+stream 69 offset 67314278 bytes 408132 first 8192 xxh64 549e14f29cda5837
+sample 70 file 0 gig 113 part 0 offset 227848320 bytes 610692 frames 101782 channels 2 bits 24 rate 48000 compressed 0 source 575362f67e5fdc8f steps 0 result_frames 101782 result_bits 24 result 575362f67e5fdc8f name "v2scratchshortmf-3"
+stream 70 offset 67722410 bytes 312274 first 8192 xxh64 4fdecd031714e90f
+sample 71 file 0 gig 112 part 0 offset 227284178 bytes 563934 frames 93989 channels 2 bits 24 rate 48000 compressed 0 source 7f537685d66799a2 steps 0 result_frames 93989 result_bits 24 result 7f537685d66799a2 name "v2scratchshortff-4"
+stream 71 offset 68034684 bytes 339594 first 8192 xxh64 36dc8ae73041e619
+sample 72 file 0 gig 114 part 0 offset 228459220 bytes 575814 frames 95969 channels 2 bits 24 rate 48000 compressed 0 source 95d589b5994e4bc2 steps 0 result_frames 95969 result_bits 24 result 95d589b5994e4bc2 name "v2scratchshortmf-4"
+stream 72 offset 68374278 bytes 299148 first 8192 xxh64 b2f8b04c013fa08d
+sample 73 file 0 gig 115 part 0 offset 229035242 bytes 599412 frames 99902 channels 2 bits 24 rate 48000 compressed 0 source fa7ad2c1d676012e steps 0 result_frames 99902 result_bits 24 result fa7ad2c1d676012e name "v2scratchshortmf-5"
+stream 73 offset 68673426 bytes 312192 first 8192 xxh64 5a96519fe4509c99
+sample 74 file 0 gig 51 part 0 offset 104689582 bytes 563088 frames 93848 channels 2 bits 24 rate 48000 compressed 0 source ab156dce91d29173 steps 0 result_frames 93848 result_bits 24 result ab156dce91d29173 name "v2gscratchshort1"
+stream 74 offset 68985618 bytes 312328 first 8192 xxh64 d7e926bd5dfae87e
+sample 75 file 0 gig 52 part 0 offset 105252878 bytes 759786 frames 126631 channels 2 bits 24 rate 48000 compressed 0 source b0d7c023e0f1a497 steps 0 result_frames 126631 result_bits 24 result b0d7c023e0f1a497 name "v2gscratchshort2"
+stream 75 offset 69297946 bytes 420346 first 8192 xxh64 4363423ac5645d4e
+sample 76 file 0 gig 53 part 0 offset 106012872 bytes 704424 frames 117404 channels 2 bits 24 rate 48000 compressed 0 source 25805a5ef280baea steps 0 result_frames 117404 result_bits 24 result 25805a5ef280baea name "v2gscratchshort3"
+stream 76 offset 69718292 bytes 188820 first 8192 xxh64 5c3409288e5e7b1f
+sample 77 file 0 gig 57 part 0 offset 109328698 bytes 1254042 frames 209007 channels 2 bits 24 rate 48000 compressed 0 source b9cdd745cda7c77d steps 0 result_frames 209007 result_bits 24 result b9cdd745cda7c77d name "v2gscratchlong1"
+stream 77 offset 69907112 bytes 801842 first 8192 xxh64 498302875b8aa0da
+sample 78 file 0 gig 58 part 0 offset 110582948 bytes 1113600 frames 185600 channels 2 bits 24 rate 48000 compressed 0 source 0de2786f40a68479 steps 0 result_frames 185600 result_bits 24 result 0de2786f40a68479 name "v2gscratchlong2"
+stream 78 offset 70708954 bytes 753524 first 8192 xxh64 d12dea374a8b8c80
+sample 79 file 0 gig 59 part 0 offset 111696756 bytes 762432 frames 127072 channels 2 bits 24 rate 48000 compressed 0 source b4127bb79f0d9e3c steps 0 result_frames 127072 result_bits 24 result b4127bb79f0d9e3c name "v2gscratchlong3"
+stream 79 offset 71462478 bytes 446498 first 8192 xxh64 b43ade5214f0a4d6
+sample 80 file 0 gig 60 part 0 offset 112459396 bytes 828384 frames 138064 channels 2 bits 24 rate 48000 compressed 0 source 61c70a7a75c41da8 steps 0 result_frames 138064 result_bits 24 result 61c70a7a75c41da8 name "v2gscratchlong4"
+stream 80 offset 71908976 bytes 507828 first 8192 xxh64 7a37e334ab2c62fa
+sample 81 file 0 gig 61 part 0 offset 113287988 bytes 951402 frames 158567 channels 2 bits 24 rate 48000 compressed 0 source b4d2d29221ebbb5b steps 0 result_frames 158567 result_bits 24 result b4d2d29221ebbb5b name "v2gscratchlong5"
+stream 81 offset 72416804 bytes 551944 first 8192 xxh64 088717c55c09cfdd
+sample 82 file 0 gig 62 part 0 offset 114239598 bytes 894948 frames 149158 channels 2 bits 24 rate 48000 compressed 0 source f907f208d87d9f91 steps 0 result_frames 149158 result_bits 24 result f907f208d87d9f91 name "v2gscratchlong6"
+stream 82 offset 72968748 bytes 544716 first 8192 xxh64 51ae9181c7704499
+sample 83 file 0 gig 54 part 0 offset 106717504 bytes 944490 frames 157415 channels 2 bits 24 rate 48000 compressed 0 source a89696c85d0e8373 steps 0 result_frames 157415 result_bits 24 result a89696c85d0e8373 name "v2scratchtrem1"
+stream 83 offset 73513464 bytes 558282 first 8192 xxh64 c4cc7368865b3907
+sample 84 file 0 gig 55 part 0 offset 107662202 bytes 897126 frames 149521 channels 2 bits 24 rate 48000 compressed 0 source f3e07c734264e9f4 steps 0 result_frames 149521 result_bits 24 result f3e07c734264e9f4 name "v2scratchtrem2"
+stream 84 offset 74071746 bytes 524500 first 8192 xxh64 1fcbd344568548d5
+sample 85 file 0 gig 56 part 0 offset 108559536 bytes 768954 frames 128159 channels 2 bits 24 rate 48000 compressed 0 source 37637d0bbee0a4b5 steps 0 result_frames 128159 result_bits 24 result 37637d0bbee0a4b5 name "v2scratchtrem3"
+stream 85 offset 74596246 bytes 466630 first 8192 xxh64 0ba245a40c992b7e
+sample 86 file 0 gig 104 part 0 offset 222836940 bytes 526266 frames 87711 channels 2 bits 24 rate 48000 compressed 0 source fdbf95c0c35ca4e4 steps 0 result_frames 87711 result_bits 24 result fdbf95c0c35ca4e4 name "v2knock1"
+stream 86 offset 75062876 bytes 231930 first 8192 xxh64 d49b81480b3cad8f
+sample 87 file 0 gig 105 part 0 offset 223363414 bytes 541152 frames 90192 channels 2 bits 24 rate 48000 compressed 0 source 779c865aa2d3bb54 steps 0 result_frames 90192 result_bits 24 result 779c865aa2d3bb54 name "v2knock2"
+stream 87 offset 75294806 bytes 249904 first 8192 xxh64 f428ae8dda3576da
+sample 88 file 0 gig 106 part 0 offset 223904774 bytes 494850 frames 82475 channels 2 bits 24 rate 48000 compressed 0 source c9895c89fdf13e2a steps 0 result_frames 82475 result_bits 24 result c9895c89fdf13e2a name "v2knock3"
+stream 88 offset 75544710 bytes 226834 first 8192 xxh64 5206c7172bb53a8a
+sample 89 file 0 gig 107 part 0 offset 224399832 bytes 602754 frames 100459 channels 2 bits 24 rate 48000 compressed 0 source bade791c44c8428e steps 0 result_frames 100459 result_bits 24 result bade791c44c8428e name "v2knock4"
+stream 89 offset 75771544 bytes 268338 first 8192 xxh64 a9ae876f73df0847
+sample 90 file 0 gig 108 part 0 offset 225002794 bytes 452610 frames 75435 channels 2 bits 24 rate 48000 compressed 0 source f1bd2b9b3f682500 steps 0 result_frames 75435 result_bits 24 result f1bd2b9b3f682500 name "v2knock5"
+stream 90 offset 76039882 bytes 193778 first 8192 xxh64 f43663a9f0447d19
+sample 91 file 0 gig 109 part 0 offset 225455612 bytes 456402 frames 76067 channels 2 bits 24 rate 48000 compressed 0 source 96e68e4fe3a97457 steps 0 result_frames 76067 result_bits 24 result 96e68e4fe3a97457 name "v2knock6"
+stream 91 offset 76233660 bytes 199172 first 8192 xxh64 84b9dbc17f70d072
+sample 92 file 0 gig 50 part 0 offset 101512800 bytes 3176574 frames 529429 channels 2 bits 24 rate 48000 compressed 0 source c06b7df766b72f9c steps 0 result_frames 529429 result_bits 24 result c06b7df766b72f9c name "v2-randomknock1_Looped"
+stream 92 offset 76432832 bytes 1715448 first 8192 xxh64 2d9b4e03d63cd430
+sample 93 file 0 gig 48 part 0 offset 97316734 bytes 556026 frames 92671 channels 2 bits 24 rate 48000 compressed 0 source 58c6841703cbcbb3 steps 0 result_frames 92671 result_bits 24 result 58c6841703cbcbb3 name "v2-longknock2Rel"
+stream 93 offset 78148280 bytes 252480 first 0 xxh64 5a39ae5536603f3a
+sample 94 file 0 gig 47 part 0 offset 93028008 bytes 4288518 frames 714753 channels 2 bits 24 rate 48000 compressed 0 source 93725c31d208999e steps 0 result_frames 714753 result_bits 24 result 93725c31d208999e name "v2-longknock2_Looped"
+stream 94 offset 78400760 bytes 2236416 first 8192 xxh64 b68ea2ecb0380179
+sample 95 file 0 gig 95 part 0 offset 194172270 bytes 4193184 frames 698864 channels 2 bits 24 rate 48000 compressed 0 source 56b89e32973baf7a steps 0 result_frames 698864 result_bits 24 result 56b89e32973baf7a name "v2cluster1"
+stream 95 offset 80637176 bytes 3002906 first 8192 xxh64 53a66101b5328ca6
+sample 96 file 0 gig 96 part 0 offset 198365662 bytes 3657600 frames 609600 channels 2 bits 24 rate 48000 compressed 0 source d850a2dc103ea5e8 steps 0 result_frames 609600 result_bits 24 result d850a2dc103ea5e8 name "v2cluster2"
+stream 96 offset 83640082 bytes 2528438 first 8192 xxh64 2504d4619467ee14
+sample 97 file 0 gig 97 part 0 offset 202023470 bytes 5050362 frames 841727 channels 2 bits 24 rate 48000 compressed 0 source b563637550186486 steps 0 result_frames 841727 result_bits 24 result b563637550186486 name "v2cluster3"
+stream 97 offset 86168520 bytes 3313056 first 8192 xxh64 39a18822b0bcfb2c
+sample 98 file 0 gig 98 part 0 offset 207074040 bytes 5873280 frames 978880 channels 2 bits 24 rate 48000 compressed 0 source 888f730e468fdca7 steps 0 result_frames 978880 result_bits 24 result 888f730e468fdca7 name "v2cluster5"
+stream 98 offset 89481576 bytes 4091790 first 8192 xxh64 9abb40c85543ac2f
+sample 99 file 0 gig 99 part 0 offset 212947528 bytes 4211904 frames 701984 channels 2 bits 24 rate 48000 compressed 0 source 520b32fb8957533b steps 0 result_frames 701984 result_bits 24 result 520b32fb8957533b name "v2cluster6"
+stream 99 offset 93573366 bytes 3089526 first 8192 xxh64 a3ab9c0b5e9c0fb1
+sample 100 file 0 gig 100 part 0 offset 217159640 bytes 1083258 frames 180543 channels 2 bits 24 rate 48000 compressed 0 source 99a6126156d734bc steps 0 result_frames 180543 result_bits 24 result 99a6126156d734bc name "v2clusterb-1"
+stream 100 offset 96662892 bytes 682752 first 8192 xxh64 5adfaca64d01d655
+sample 101 file 0 gig 101 part 0 offset 218243106 bytes 1265466 frames 210911 channels 2 bits 24 rate 48000 compressed 0 source e1a77b293f49a6fe steps 0 result_frames 210911 result_bits 24 result e1a77b293f49a6fe name "v2clusterb-2"
+stream 101 offset 97345644 bytes 831394 first 8192 xxh64 b5c6527caf1ca98f
+sample 102 file 0 gig 102 part 0 offset 219508780 bytes 1393344 frames 232224 channels 2 bits 24 rate 48000 compressed 0 source 341d672ad91533b8 steps 0 result_frames 232224 result_bits 24 result 341d672ad91533b8 name "v2clusterb-3"
+stream 102 offset 98177038 bytes 880104 first 8192 xxh64 51fd5654583ed25b
+sample 103 file 0 gig 103 part 0 offset 220902332 bytes 1934400 frames 322400 channels 2 bits 24 rate 48000 compressed 0 source 68e723f480107f1c steps 0 result_frames 322400 result_bits 24 result 68e723f480107f1c name "v2clusterb-4"
+stream 103 offset 99057142 bytes 1366340 first 8192 xxh64 a668c868fffab6da
+sample 104 file 0 gig 87 part 0 offset 186315154 bytes 880602 frames 146767 channels 2 bits 24 rate 48000 compressed 0 source d3f8954acf75d356 steps 0 result_frames 146767 result_bits 24 result d3f8954acf75d356 name "v2gtri1"
+stream 104 offset 100423482 bytes 500674 first 8192 xxh64 bdd53952935fbd8f
+sample 105 file 0 gig 88 part 0 offset 187195964 bytes 897354 frames 149559 channels 2 bits 24 rate 48000 compressed 0 source 347a6ef7983391d2 steps 0 result_frames 149559 result_bits 24 result 347a6ef7983391d2 name "v2gtri2"
+stream 105 offset 100924156 bytes 511512 first 8192 xxh64 223add25ae1b7070
+sample 106 file 0 gig 89 part 0 offset 188093526 bytes 955194 frames 159199 channels 2 bits 24 rate 48000 compressed 0 source 84e306c31c1dd66a steps 0 result_frames 159199 result_bits 24 result 84e306c31c1dd66a name "v2gtri3"
+stream 106 offset 101435668 bytes 539436 first 8192 xxh64 edc72011835f25c8
+sample 107 file 0 gig 90 part 0 offset 189048928 bytes 982650 frames 163775 channels 2 bits 24 rate 48000 compressed 0 source 2ce9358f1a2da20d steps 0 result_frames 163775 result_bits 24 result 2ce9358f1a2da20d name "v2gtri4"
+stream 107 offset 101975104 bytes 565304 first 8192 xxh64 a70e1e3c99c23161
+sample 108 file 0 gig 91 part 0 offset 190031786 bytes 1005756 frames 167626 channels 2 bits 24 rate 48000 compressed 0 source 2f5e1eba31707260 steps 0 result_frames 167626 result_bits 24 result 2f5e1eba31707260 name "v2gtri5"
+stream 108 offset 102540408 bytes 562832 first 8192 xxh64 2f64f9b290ec3f37
+sample 109 file 0 gig 92 part 0 offset 191037750 bytes 1079706 frames 179951 channels 2 bits 24 rate 48000 compressed 0 source 7744191246dc31f3 steps 0 result_frames 179951 result_bits 24 result 7744191246dc31f3 name "v2gtri6"
+stream 109 offset 103103240 bytes 609812 first 8192 xxh64 b7bf13af3c42bac9
+sample 110 file 0 gig 93 part 0 offset 192117664 bytes 1059882 frames 176647 channels 2 bits 24 rate 48000 compressed 0 source 7cfbbe316e05a6f2 steps 0 result_frames 176647 result_bits 24 result 7cfbbe316e05a6f2 name "v2gtri7"
+stream 110 offset 103713052 bytes 606580 first 8192 xxh64 0610b55bb015a9cd
+sample 111 file 0 gig 94 part 0 offset 193177754 bytes 994308 frames 165718 channels 2 bits 24 rate 48000 compressed 0 source ec6b070424bf541e steps 0 result_frames 165718 result_bits 24 result ec6b070424bf541e name "v2gtri8"
+stream 111 offset 104319632 bytes 565632 first 8192 xxh64 6906efe5d822f3dd
+sample 112 file 0 gig 140 part 0 offset 258120120 bytes 4301238 frames 716873 channels 2 bits 24 rate 48000 compressed 0 source d1bd3513605a1cae steps 0 result_frames 716873 result_bits 24 result d1bd3513605a1cae name "v2widevib1"
+stream 112 offset 104885264 bytes 2679154 first 8192 xxh64 5184e7f58a315873
+sample 113 file 0 gig 133 part 0 offset 242046860 bytes 2118096 frames 353016 channels 2 bits 24 rate 48000 compressed 0 source 8aca9a944f764998 steps 0 result_frames 353016 result_bits 24 result 8aca9a944f764998 name "v2widevib2"
+stream 113 offset 107564418 bytes 1520784 first 8192 xxh64 dfec61e1c8d2e0e0
+sample 114 file 0 gig 134 part 0 offset 244165164 bytes 3336474 frames 556079 channels 2 bits 24 rate 48000 compressed 0 source 19f737965861eacc steps 0 result_frames 556079 result_bits 24 result 19f737965861eacc name "v2widevib3"
+stream 114 offset 109085202 bytes 2350846 first 8192 xxh64 61fd67ee5144a359
+sample 115 file 0 gig 135 part 0 offset 247501846 bytes 3361890 frames 560315 channels 2 bits 24 rate 48000 compressed 0 source 9b537f4cb0054f00 steps 0 result_frames 560315 result_bits 24 result 9b537f4cb0054f00 name "v2widevib4"
+stream 115 offset 111436048 bytes 2304738 first 8192 xxh64 590aec7ab5d1583b
+sample 116 file 0 gig 136 part 0 offset 250863944 bytes 2758806 frames 459801 channels 2 bits 24 rate 48000 compressed 0 source ee9299d6b3f0c7b4 steps 0 result_frames 459801 result_bits 24 result ee9299d6b3f0c7b4 name "v2widevib5"
+stream 116 offset 113740786 bytes 2160824 first 8192 xxh64 a5ea94c07154b4ab
+sample 117 file 0 gig 137 part 0 offset 253622958 bytes 2243016 frames 373836 channels 2 bits 24 rate 48000 compressed 0 source 20849cd5b9bf7f48 steps 0 result_frames 373836 result_bits 24 result 20849cd5b9bf7f48 name "v2widevibb-1"
+stream 117 offset 115901610 bytes 1811866 first 8192 xxh64 e803c4a7eb6c1341
+sample 118 file 0 gig 138 part 0 offset 255866182 bytes 578010 frames 96335 channels 2 bits 24 rate 48000 compressed 0 source af2cda41db4e8520 steps 0 result_frames 96335 result_bits 24 result af2cda41db4e8520 name "v2widevibb-1Rel"
+stream 118 offset 117713476 bytes 279748 first 8192 xxh64 bb5e5e6fb7f57edb
+sample 119 file 0 gig 139 part 0 offset 256444400 bytes 1675512 frames 279252 channels 2 bits 24 rate 48000 compressed 0 source 06cef3d75c2ba2d1 steps 0 result_frames 279252 result_bits 24 result 06cef3d75c2ba2d1 name "v2widevibb-2"
+stream 119 offset 117993224 bytes 1320722 first 8192 xxh64 1e9afec360389951
+sample 120 file 0 gig 132 part 0 offset 241468642 bytes 578010 frames 96335 channels 2 bits 24 rate 48000 compressed 0 source af2cda41db4e8520 steps 0 result_frames 96335 result_bits 24 result af2cda41db4e8520 name "v2widevibb-2Rel"
+stream 120 offset 119313946 bytes 279748 first 8192 xxh64 bb5e5e6fb7f57edb
+preload offset 17836 bytes 5947392 xxh64 e2130a46e0ab6473
+head bytes 44
+RlNCMQMAAACAuwAAAgAAAAAgAAB6AAAArEUAAAAAAAAAwFoAAAAAABgAAAA=
+rows count 122 bytes 15616 xxh64 75a0a686a3197a25
+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
+end

@@ -1,0 +1,740 @@
+# Sonic Reimplants bank recipe: how sr_install rebuilds this bank from the original .gig files.
+recipe 1
+bank "Basses Con Sordino.fsb" bytes 96445466 content_xxh64 9ba895ca4281c65f
+format rate 48000 channels 2 bits 24 preload 8192 block 4096 flags 0
+part 0 0 name "Basses Con Sordino.gig" folder "Symphonic String Collection- Basses" bytes 159742592
+sample 0 file 0 gig 7 part 0 offset 13530956 bytes 1919202 frames 319867 channels 2 bits 24 rate 48000 compressed 0 source 1c7db38d3afe7251 steps 0 result_frames 319867 result_bits 24 result 1c7db38d3afe7251 name "bsltm1s1-e1-2-e1"
+stream 0 offset 6026412 bytes 1128070 first 8192 xxh64 64b36c193b67fdb0
+sample 1 file 0 gig 36 part 0 offset 41286814 bytes 425928 frames 70988 channels 2 bits 24 rate 48000 compressed 0 source 73b1dacb2b0b5357 steps 0 result_frames 70988 result_bits 24 result 73b1dacb2b0b5357 name "bsltm1s1-e1-2-Rele1"
+stream 1 offset 7154482 bytes 213352 first 8192 xxh64 9da1088187d67d9c
+sample 2 file 0 gig 41 part 0 offset 48786960 bytes 1121184 frames 186864 channels 2 bits 24 rate 48000 compressed 0 source ec31fd08bb6b0597 steps 0 result_frames 186864 result_bits 24 result ec31fd08bb6b0597 name "bsltm2s1-e1-2-e1"
+stream 2 offset 7367834 bytes 667886 first 8192 xxh64 09c287dbf8b0fea2
+sample 3 file 0 gig 59 part 0 offset 79334730 bytes 387108 frames 64518 channels 2 bits 24 rate 48000 compressed 0 source 824db58882cb40a6 steps 0 result_frames 64518 result_bits 24 result 824db58882cb40a6 name "bsltm2s1-fs1-2-Relf#1"
+stream 3 offset 8035720 bytes 194442 first 0 xxh64 5f45e9e29a652890
+sample 4 file 0 gig 71 part 0 offset 84156216 bytes 1533468 frames 255578 channels 2 bits 24 rate 48000 compressed 0 source be6c0346fe4cd3cb steps 0 result_frames 255578 result_bits 24 result be6c0346fe4cd3cb name "bsltm3s1-e1-1-e1"
+stream 4 offset 8230162 bytes 915512 first 8192 xxh64 4a7ab9bbefd728ce
+sample 5 file 0 gig 111 part 0 offset 136056640 bytes 407280 frames 67880 channels 2 bits 24 rate 48000 compressed 0 source a64cdc27c21a5011 steps 0 result_frames 67880 result_bits 24 result a64cdc27c21a5011 name "bsltm3s1-e1-1-Rele1"
+stream 5 offset 9145674 bytes 189378 first 8192 xxh64 4d89b4da03996253
+sample 6 file 0 gig 8 part 0 offset 15450366 bytes 1746240 frames 291040 channels 2 bits 24 rate 48000 compressed 0 source cf3f567fdd2f176a steps 0 result_frames 291040 result_bits 24 result cf3f567fdd2f176a name "bsltm1s1-fs1-2-f#1"
+stream 6 offset 9335052 bytes 1044672 first 0 xxh64 2edec92b6fb31c3d
+sample 7 file 0 gig 35 part 0 offset 40941498 bytes 345108 frames 57518 channels 2 bits 24 rate 48000 compressed 0 source 491891fc0494dddf steps 0 result_frames 57518 result_bits 24 result 491891fc0494dddf name "bsltm1s1-fs1-2-Relf#1"
+stream 7 offset 10379724 bytes 190270 first 0 xxh64 3e3549278bbef3cf
+sample 8 file 0 gig 42 part 0 offset 49908352 bytes 1344738 frames 224123 channels 2 bits 24 rate 48000 compressed 0 source 9a98e3b625312627 steps 0 result_frames 224123 result_bits 24 result 9a98e3b625312627 name "bsltm2s1-fs1-2-f#1"
+stream 8 offset 10569994 bytes 800904 first 0 xxh64 56d399214b63c047
+sample 9 file 0 gig 72 part 0 offset 85689892 bytes 1989858 frames 331643 channels 2 bits 24 rate 48000 compressed 0 source c41dba38226d5f16 steps 0 result_frames 331643 result_bits 24 result c41dba38226d5f16 name "bsltm3s1-fs1-1-f#1"
+stream 9 offset 11370898 bytes 1201878 first 0 xxh64 d0317f22600a1f44
+sample 10 file 0 gig 109 part 0 offset 135363596 bytes 349380 frames 58230 channels 2 bits 24 rate 48000 compressed 0 source a70970c610ac9f09 steps 0 result_frames 58230 result_bits 24 result a70970c610ac9f09 name "bsltm3s1-fs1-2-Relf#1"
+stream 10 offset 12572776 bytes 169856 first 0 xxh64 3e7e805ee6fa95d7
+sample 11 file 0 gig 43 part 0 offset 51253298 bytes 2029380 frames 338230 channels 2 bits 24 rate 48000 compressed 0 source ceb576b9fb3fb654 steps 0 result_frames 338230 result_bits 24 result ceb576b9fb3fb654 name "bsltm2s1-g1-2-g1"
+stream 11 offset 12742632 bytes 1232148 first 8192 xxh64 a9a2865fd20c7cea
+sample 12 file 0 gig 5 part 0 offset 10380918 bytes 1578966 frames 263161 channels 2 bits 24 rate 48000 compressed 0 source 8d24a22afccacdd2 steps 0 result_frames 263161 result_bits 24 result 8d24a22afccacdd2 name "bsltm1s1-a1-2-a1"
+stream 12 offset 13974780 bytes 947866 first 0 xxh64 36eb37d05fed6641
+sample 13 file 0 gig 34 part 0 offset 40429544 bytes 511746 frames 85291 channels 2 bits 24 rate 48000 compressed 0 source 149ea9763263d882 steps 0 result_frames 85291 result_bits 24 result 149ea9763263d882 name "bsltm1s2-a1-2-Rela1"
+stream 13 offset 14922646 bytes 293334 first 0 xxh64 8c46db2c38b9ccd0
+sample 14 file 0 gig 40 part 0 offset 47353238 bytes 1433514 frames 238919 channels 2 bits 24 rate 48000 compressed 0 source 7082927948d18e27 steps 0 result_frames 238919 result_bits 24 result 7082927948d18e27 name "bsltm2s1-a1-2-a1"
+stream 14 offset 15215980 bytes 922016 first 0 xxh64 b8fa7252be04b483
+sample 15 file 0 gig 58 part 0 offset 78933026 bytes 401496 frames 66916 channels 2 bits 24 rate 48000 compressed 0 source 4070edabc2b24418 steps 0 result_frames 66916 result_bits 24 result 4070edabc2b24418 name "bsltm2s1-a1-2-Rela1"
+stream 15 offset 16137996 bytes 229452 first 0 xxh64 b1a83d3a85ee2c14
+sample 16 file 0 gig 78 part 0 offset 97758826 bytes 1817712 frames 302952 channels 2 bits 24 rate 48000 compressed 0 source d56bcba1c3de0d42 steps 0 result_frames 302952 result_bits 24 result d56bcba1c3de0d42 name "bsltm3s1-a1-3-a1"
+stream 16 offset 16367448 bytes 1161170 first 0 xxh64 ebaeb7f73da68d5f
+sample 17 file 0 gig 112 part 0 offset 136464128 bytes 368430 frames 61405 channels 2 bits 24 rate 48000 compressed 0 source 4ed9d6c29a337e86 steps 0 result_frames 61405 result_bits 24 result 4ed9d6c29a337e86 name "bsltm3s1-a1-3-Rela1"
+stream 17 offset 17528618 bytes 206086 first 0 xxh64 c3159a9c32c72761
+sample 18 file 0 gig 113 part 0 offset 136832766 bytes 1760166 frames 293361 channels 2 bits 24 rate 48000 compressed 0 source 1f55de56d446654d steps 0 result_frames 293361 result_bits 24 result 1f55de56d446654d name "bsltm1s2-a1-2-a1"
+stream 18 offset 17734704 bytes 1048156 first 8192 xxh64 6142d40f86331f20
+sample 19 file 0 gig 122 part 0 offset 154316928 bytes 366336 frames 61056 channels 2 bits 24 rate 48000 compressed 0 source d348fff83f4c78ff steps 0 result_frames 61056 result_bits 24 result d348fff83f4c78ff name "bsltm1s2-a1-Rel2a1"
+stream 19 offset 18782860 bytes 176528 first 8192 xxh64 ea366245d46b4803
+sample 20 file 0 gig 116 part 0 offset 141900078 bytes 1777248 frames 296208 channels 2 bits 24 rate 48000 compressed 0 source f29f15afd8e44149 steps 0 result_frames 296208 result_bits 24 result f29f15afd8e44149 name "bsltm2s2-a1-1-a1"
+stream 20 offset 18959388 bytes 1078586 first 8192 xxh64 aeb856500527a24b
+sample 21 file 0 gig 125 part 0 offset 155545584 bytes 596214 frames 99369 channels 2 bits 24 rate 48000 compressed 0 source 67a98eccfc65823e steps 0 result_frames 99369 result_bits 24 result 67a98eccfc65823e name "bsltm2s2-a1-Rel1a1"
+stream 21 offset 20037974 bytes 299898 first 8192 xxh64 8d45eee1327d55cb
+sample 22 file 0 gig 119 part 0 offset 147751320 bytes 2108898 frames 351483 channels 2 bits 24 rate 48000 compressed 0 source 7f7c2f4586e580c2 steps 0 result_frames 351483 result_bits 24 result 7f7c2f4586e580c2 name "bsltm3s2-a1-6-a1"
+stream 22 offset 20337872 bytes 1278886 first 8192 xxh64 d476fc4818a9a82c
+sample 23 file 0 gig 128 part 0 offset 157507914 bytes 712710 frames 118785 channels 2 bits 24 rate 48000 compressed 0 source 9bf788687b90cf16 steps 0 result_frames 118785 result_bits 24 result 9bf788687b90cf16 name "bsltm3s2-a1-Rel6a1"
+stream 23 offset 21616758 bytes 342948 first 8192 xxh64 0f11f36ae7cf8764
+sample 24 file 0 gig 6 part 0 offset 11960092 bytes 1570656 frames 261776 channels 2 bits 24 rate 48000 compressed 0 source 996cd97d0668d345 steps 0 result_frames 261776 result_bits 24 result 996cd97d0668d345 name "bsltm1s1-as1-2-a#1"
+stream 24 offset 21959706 bytes 936366 first 8192 xxh64 79a9d32a38e82973
+sample 25 file 0 gig 33 part 0 offset 39977752 bytes 451584 frames 75264 channels 2 bits 24 rate 48000 compressed 0 source 0f84894dbbc3355c steps 0 result_frames 75264 result_bits 24 result 0f84894dbbc3355c name "bsltm1s2-b1-2-Relb1"
+stream 25 offset 22896072 bytes 258910 first 0 xxh64 ea2d24a947fd5ac4
+sample 26 file 0 gig 60 part 0 offset 79722046 bytes 357552 frames 59592 channels 2 bits 24 rate 48000 compressed 0 source 831ab4c51568c0b6 steps 0 result_frames 59592 result_bits 24 result 831ab4c51568c0b6 name "bsltm2s2-b1-2-Relb1"
+stream 26 offset 23154982 bytes 204344 first 0 xxh64 ae19a7cd3564478e
+sample 27 file 0 gig 80 part 0 offset 101407308 bytes 2184930 frames 364155 channels 2 bits 24 rate 48000 compressed 0 source c5a67cba753759f9 steps 0 result_frames 364155 result_bits 24 result c5a67cba753759f9 name "bsltm3s2-b1-2-b1"
+stream 27 offset 23359326 bytes 1388006 first 0 xxh64 2eed418b37c32739
+sample 28 file 0 gig 107 part 0 offset 134330928 bytes 572922 frames 95487 channels 2 bits 24 rate 48000 compressed 0 source 4e09e7900d98d3af steps 0 result_frames 95487 result_bits 24 result 4e09e7900d98d3af name "bsltm3s2-b1-2-Relb1"
+stream 28 offset 24747332 bytes 315936 first 0 xxh64 8e2701cf3bea013a
+sample 29 file 0 gig 10 part 0 offset 18751538 bytes 1590564 frames 265094 channels 2 bits 24 rate 48000 compressed 0 source 48abe28378ab0152 steps 0 result_frames 265094 result_bits 24 result 48abe28378ab0152 name "bsltm1s2-b1-2-b1"
+stream 29 offset 25063268 bytes 949646 first 8192 xxh64 8a31a607389de300
+sample 30 file 0 gig 44 part 0 offset 53282886 bytes 1783938 frames 297323 channels 2 bits 24 rate 48000 compressed 0 source abdfa73362c4bde1 steps 0 result_frames 297323 result_bits 24 result abdfa73362c4bde1 name "bsltm2s2-b1-2-b1"
+stream 30 offset 26012914 bytes 1108718 first 8192 xxh64 7056e50a9df02ac4
+sample 31 file 0 gig 0 part 0 offset 3094924 bytes 1731684 frames 288614 channels 2 bits 24 rate 48000 compressed 0 source 73d919c8475c5865 steps 0 result_frames 288614 result_bits 24 result 73d919c8475c5865 name "bsltm1s2-c2-1-c2"
+stream 31 offset 27121632 bytes 1064254 first 0 xxh64 4b67e4ee82cbd456
+sample 32 file 0 gig 32 part 0 offset 39530730 bytes 446814 frames 74469 channels 2 bits 24 rate 48000 compressed 0 source 4be8afac8e6d370a steps 0 result_frames 74469 result_bits 24 result 4be8afac8e6d370a name "bsltm1s2-c2-1-Relc2"
+stream 32 offset 28185886 bytes 255526 first 0 xxh64 b4b41d8c596db16f
+sample 33 file 0 gig 45 part 0 offset 55067032 bytes 1701624 frames 283604 channels 2 bits 24 rate 48000 compressed 0 source 002392ae3896783d steps 0 result_frames 283604 result_bits 24 result 002392ae3896783d name "bsltm2s2-c2-2-c2"
+stream 33 offset 28441412 bytes 1101790 first 0 xxh64 461f654c09a38fcf
+sample 34 file 0 gig 74 part 0 offset 90031410 bytes 2205252 frames 367542 channels 2 bits 24 rate 48000 compressed 0 source f49ffc1b55d19de8 steps 0 result_frames 367542 result_bits 24 result f49ffc1b55d19de8 name "bsltm3s2-c2-1-c2"
+stream 34 offset 29543202 bytes 1360042 first 0 xxh64 29d17b4696541c07
+sample 35 file 0 gig 61 part 0 offset 80079806 bytes 320334 frames 53389 channels 2 bits 24 rate 48000 compressed 0 source d276b6ab2eb1c66e steps 0 result_frames 53389 result_bits 24 result d276b6ab2eb1c66e name "bsltm2s2-d2-2-Reld2"
+stream 35 offset 30903244 bytes 184180 first 0 xxh64 e42cfce3c0593cf7
+sample 36 file 0 gig 106 part 0 offset 133619036 bytes 711684 frames 118614 channels 2 bits 24 rate 48000 compressed 0 source 41ce36fc7f77deb1 steps 0 result_frames 118614 result_bits 24 result 41ce36fc7f77deb1 name "bsltm3s2-d2-1-Reld2"
+stream 36 offset 31087424 bytes 368516 first 0 xxh64 a300a51e3524c658
+sample 37 file 0 gig 11 part 0 offset 20342310 bytes 1451562 frames 241927 channels 2 bits 24 rate 48000 compressed 0 source 501382d55a95916d steps 0 result_frames 241927 result_bits 24 result 501382d55a95916d name "bsltm1s2-ds2-2-d#2"
+stream 37 offset 31455940 bytes 893424 first 0 xxh64 e78476c2e4d7454f
+sample 38 file 0 gig 30 part 0 offset 38566594 bytes 553974 frames 92329 channels 2 bits 24 rate 48000 compressed 0 source 37399f69297d90e8 steps 0 result_frames 92329 result_bits 24 result 37399f69297d90e8 name "bsltm1s3-e2-3-Rele2"
+stream 38 offset 32349364 bytes 314018 first 0 xxh64 2f361f4875384e6d
+sample 39 file 0 gig 114 part 0 offset 138593140 bytes 1533504 frames 255584 channels 2 bits 24 rate 48000 compressed 0 source 8e8c47bd69885d14 steps 0 result_frames 255584 result_bits 24 result 8e8c47bd69885d14 name "bsltm1s3-d2-1-d2"
+stream 39 offset 32663382 bytes 898776 first 8192 xxh64 0f223cfa7b5cdf75
+sample 40 file 0 gig 123 part 0 offset 154683472 bytes 491520 frames 81920 channels 2 bits 24 rate 48000 compressed 0 source 504d43fc7963a9ca steps 0 result_frames 81920 result_bits 24 result 504d43fc7963a9ca name "bsltm1s3-d2-Rel1d2"
+stream 40 offset 33562158 bytes 247960 first 8192 xxh64 89b6173dc883dc33
+sample 41 file 0 gig 46 part 0 offset 56768864 bytes 1791930 frames 298655 channels 2 bits 24 rate 48000 compressed 0 source 3d792d64a9892c11 steps 0 result_frames 298655 result_bits 24 result 3d792d64a9892c11 name "bsltm2s2-d2-2-d2"
+stream 41 offset 33810118 bytes 1124058 first 8192 xxh64 fb2c74ea171179f6
+sample 42 file 0 gig 117 part 0 offset 143677534 bytes 1873818 frames 312303 channels 2 bits 24 rate 48000 compressed 0 source 25673ed88dd5772a steps 0 result_frames 312303 result_bits 24 result 25673ed88dd5772a name "bsltm2s3-d2-1-d2"
+stream 42 offset 34934176 bytes 1175020 first 8192 xxh64 eb2b7096d41f4a89
+sample 43 file 0 gig 126 part 0 offset 156142006 bytes 666612 frames 111102 channels 2 bits 24 rate 48000 compressed 0 source b5f61e9f3f9a5416 steps 0 result_frames 111102 result_bits 24 result b5f61e9f3f9a5416 name "bsltm2s3-d2-Rel1d2"
+stream 43 offset 36109196 bytes 350120 first 8192 xxh64 21d92ca6a6a99d5d
+sample 44 file 0 gig 75 part 0 offset 92236870 bytes 1610352 frames 268392 channels 2 bits 24 rate 48000 compressed 0 source 166e0bebda27b423 steps 0 result_frames 268392 result_bits 24 result 166e0bebda27b423 name "bsltm3s2-d2-1-d2"
+stream 44 offset 36459316 bytes 991332 first 0 xxh64 5533df475e11ef25
+sample 45 file 0 gig 120 part 0 offset 149860426 bytes 2297856 frames 382976 channels 2 bits 24 rate 48000 compressed 0 source 111a175e48aadd09 steps 0 result_frames 382976 result_bits 24 result 111a175e48aadd09 name "bsltm3s3-d2-1-d2"
+stream 45 offset 37450648 bytes 1435662 first 8192 xxh64 69483a97238af287
+sample 46 file 0 gig 129 part 0 offset 158220832 bytes 798918 frames 133153 channels 2 bits 24 rate 48000 compressed 0 source 0eb0dce50035eba3 steps 0 result_frames 133153 result_bits 24 result 0eb0dce50035eba3 name "bsltm3s3-d2-Rel1d2"
+stream 46 offset 38886310 bytes 375326 first 8192 xxh64 a88a040a0406a9d7
+sample 47 file 0 gig 47 part 0 offset 58561002 bytes 1858086 frames 309681 channels 2 bits 24 rate 48000 compressed 0 source b7565706c3a234eb steps 0 result_frames 309681 result_bits 24 result b7565706c3a234eb name "bsltm2s2-ds2-2-d#2"
+stream 47 offset 39261636 bytes 1197188 first 0 xxh64 43ae352af48ee333
+sample 48 file 0 gig 104 part 0 offset 132570198 bytes 764196 frames 127366 channels 2 bits 24 rate 48000 compressed 0 source d673708e1a3a2ea0 steps 0 result_frames 127366 result_bits 24 result d673708e1a3a2ea0 name "bsltm3s3-e2-1-Rele2"
+stream 48 offset 40458824 bytes 429142 first 0 xxh64 ad102e6f25818520
+sample 49 file 0 gig 17 part 0 offset 28872612 bytes 1435554 frames 239259 channels 2 bits 24 rate 48000 compressed 0 source 6f20ab519d27128f steps 0 result_frames 239259 result_bits 24 result 6f20ab519d27128f name "bsltm1s3-e2-3-e2"
+stream 49 offset 40887966 bytes 884362 first 0 xxh64 c526db4a61a25628
+sample 50 file 0 gig 62 part 0 offset 80400348 bytes 293910 frames 48985 channels 2 bits 24 rate 48000 compressed 0 source a583db055bb52cca steps 0 result_frames 48985 result_bits 24 result a583db055bb52cca name "bsltm2s2-f2-2-Relf2"
+stream 50 offset 41772328 bytes 156716 first 0 xxh64 5ebcdc2966b94cec
+sample 51 file 0 gig 76 part 0 offset 93847430 bytes 1741716 frames 290286 channels 2 bits 24 rate 48000 compressed 0 source 223469d9ee306eb7 steps 0 result_frames 290286 result_bits 24 result 223469d9ee306eb7 name "bsltm3s3-e2-1-e2"
+stream 51 offset 41929044 bytes 1111184 first 8192 xxh64 88dcc6c2530acea3
+sample 52 file 0 gig 48 part 0 offset 60419296 bytes 1809012 frames 301502 channels 2 bits 24 rate 48000 compressed 0 source 630b773f9f496258 steps 0 result_frames 301502 result_bits 24 result 630b773f9f496258 name "bsltm2s2-f2-2-f2"
+stream 52 offset 43040228 bytes 1059088 first 8192 xxh64 fe85d745c14dd27b
+sample 53 file 0 gig 82 part 0 offset 105552698 bytes 2143542 frames 357257 channels 2 bits 24 rate 48000 compressed 0 source f33cda588c152608 steps 0 result_frames 357257 result_bits 24 result f33cda588c152608 name "bsltm3s3-f2-2-f2"
+stream 53 offset 44099316 bytes 1265528 first 8192 xxh64 a9ba658a8067152a
+sample 54 file 0 gig 103 part 0 offset 132190322 bytes 379668 frames 63278 channels 2 bits 24 rate 48000 compressed 0 source 9a3232fe791c0668 steps 0 result_frames 63278 result_bits 24 result 9a3232fe791c0668 name "bsltm3s3-f2-2-Relf2"
+stream 54 offset 45364844 bytes 163814 first 8192 xxh64 8c497b0e941de0a2
+sample 55 file 0 gig 12 part 0 offset 21794080 bytes 1162326 frames 193721 channels 2 bits 24 rate 48000 compressed 0 source ae551914ba986d67 steps 0 result_frames 193721 result_bits 24 result ae551914ba986d67 name "bsltm1s3-fs2-2-f#2"
+stream 55 offset 45528658 bytes 694254 first 8192 xxh64 476fe27b47f0b164
+sample 56 file 0 gig 29 part 0 offset 38112138 bytes 454248 frames 75708 channels 2 bits 24 rate 48000 compressed 0 source 7cce4e747819aa3d steps 0 result_frames 75708 result_bits 24 result 7cce4e747819aa3d name "bsltm1s3-g2-2-Relg2"
+stream 56 offset 46222912 bytes 259246 first 0 xxh64 d2cbe0c8b5970c06
+sample 57 file 0 gig 37 part 0 offset 41712950 bytes 1738434 frames 289739 channels 2 bits 24 rate 48000 compressed 0 source b4092981ce5ad730 steps 0 result_frames 289739 result_bits 24 result b4092981ce5ad730 name "bsltm2s3-g2-1-g2"
+stream 57 offset 46482158 bytes 1082630 first 8192 xxh64 645ffcba592fd744
+sample 58 file 0 gig 64 part 0 offset 81006776 bytes 394992 frames 65832 channels 2 bits 24 rate 48000 compressed 0 source b6e8423b8d83196d steps 0 result_frames 65832 result_bits 24 result b6e8423b8d83196d name "bsltm2s3-g2-1-Relg2"
+stream 58 offset 47564788 bytes 192778 first 8192 xxh64 112152b0acc4312b
+sample 59 file 0 gig 83 part 0 offset 107696448 bytes 1807572 frames 301262 channels 2 bits 24 rate 48000 compressed 0 source 8605b6b91679f157 steps 0 result_frames 301262 result_bits 24 result 8605b6b91679f157 name "bsltm3s3-g2-2-g2"
+stream 59 offset 47757566 bytes 1099154 first 0 xxh64 46f21e2bf013c8e1
+sample 60 file 0 gig 102 part 0 offset 131614096 bytes 576018 frames 96003 channels 2 bits 24 rate 48000 compressed 0 source 892c648c18a8dfcf steps 0 result_frames 96003 result_bits 24 result 892c648c18a8dfcf name "bsltm3s3-g2-2-Relg2"
+stream 60 offset 48856720 bytes 297096 first 0 xxh64 a842b44d0fd642f9
+sample 61 file 0 gig 13 part 0 offset 22956614 bytes 1459044 frames 243174 channels 2 bits 24 rate 48000 compressed 0 source 8d51fe0312f4bd1d steps 0 result_frames 243174 result_bits 24 result 8d51fe0312f4bd1d name "bsltm1s3-g2-2-g2"
+stream 61 offset 49153816 bytes 873988 first 8192 xxh64 90748f3789eb2dab
+sample 62 file 0 gig 115 part 0 offset 140126852 bytes 1773018 frames 295503 channels 2 bits 24 rate 48000 compressed 0 source d3baaaf7fce44abd steps 0 result_frames 295503 result_bits 24 result d3baaaf7fce44abd name "bsltm1s4-g2-1-g2"
+stream 62 offset 50027804 bytes 1066144 first 8192 xxh64 46e7f646f60cce5c
+sample 63 file 0 gig 124 part 0 offset 155175200 bytes 370176 frames 61696 channels 2 bits 24 rate 48000 compressed 0 source 1ccd6f1b2ca8c210 steps 0 result_frames 61696 result_bits 24 result 1ccd6f1b2ca8c210 name "bsltm1s4-g2-Rel1g2"
+stream 63 offset 51093948 bytes 178008 first 8192 xxh64 7f04239b35f63167
+sample 64 file 0 gig 57 part 0 offset 76851856 bytes 2080962 frames 346827 channels 2 bits 24 rate 48000 compressed 0 source fcd1f4d22ffb1898 steps 0 result_frames 346827 result_bits 24 result fcd1f4d22ffb1898 name "bsltm2s3-g2-3-g2"
+stream 64 offset 51271956 bytes 1308258 first 8192 xxh64 d55ad68165500a77
+sample 65 file 0 gig 65 part 0 offset 81401976 bytes 369906 frames 61651 channels 2 bits 24 rate 48000 compressed 0 source 8a7e9dd4ea346379 steps 0 result_frames 61651 result_bits 24 result 8a7e9dd4ea346379 name "bsltm2s3-g2-3-Relg2"
+stream 65 offset 52580214 bytes 214666 first 0 xxh64 e5fd344506374f43
+sample 66 file 0 gig 118 part 0 offset 145551560 bytes 2199552 frames 366592 channels 2 bits 24 rate 48000 compressed 0 source bd0f7c231e290533 steps 0 result_frames 366592 result_bits 24 result bd0f7c231e290533 name "bsltm2s4-g2-2-g2"
+stream 66 offset 52794880 bytes 1382308 first 8192 xxh64 e63cd9793843bcc0
+sample 67 file 0 gig 127 part 0 offset 156808826 bytes 698880 frames 116480 channels 2 bits 24 rate 48000 compressed 0 source d67c5a2b636cccb8 steps 0 result_frames 116480 result_bits 24 result d67c5a2b636cccb8 name "bsltm2s4-g2-Rel2g2"
+stream 67 offset 54177188 bytes 360498 first 8192 xxh64 2107d4f436e645a6
+sample 68 file 0 gig 121 part 0 offset 152158490 bytes 2158230 frames 359705 channels 2 bits 24 rate 48000 compressed 0 source 28643f76cc1680ee steps 0 result_frames 359705 result_bits 24 result 28643f76cc1680ee name "bsltm3s4-g2-1-g2"
+stream 68 offset 54537686 bytes 1360892 first 8192 xxh64 22759ef56499a39a
+sample 69 file 0 gig 130 part 0 offset 159019958 bytes 720384 frames 120064 channels 2 bits 24 rate 48000 compressed 0 source 794509373adee6b1 steps 0 result_frames 120064 result_bits 24 result 794509373adee6b1 name "bsltm3s4-g2-Rel1g2"
+stream 69 offset 55898578 bytes 352200 first 8192 xxh64 8b6ebfddd3bd0697
+sample 70 file 0 gig 2 part 0 offset 6138684 bytes 1443990 frames 240665 channels 2 bits 24 rate 48000 compressed 0 source c16e5841102d459f steps 0 result_frames 240665 result_bits 24 result c16e5841102d459f name "bsltm1s3-gs2-1-g#2"
+stream 70 offset 56250778 bytes 865550 first 8192 xxh64 8bd2f69981bc3373
+sample 71 file 0 gig 28 part 0 offset 37689926 bytes 422004 frames 70334 channels 2 bits 24 rate 48000 compressed 0 source e145a2eb0a49e331 steps 0 result_frames 70334 result_bits 24 result e145a2eb0a49e331 name "bsltm1s3-gs2-1-Relg#2"
+stream 71 offset 57116328 bytes 212620 first 8192 xxh64 4d6a746e837379b0
+sample 72 file 0 gig 38 part 0 offset 43451592 bytes 1938492 frames 323082 channels 2 bits 24 rate 48000 compressed 0 source b1a1ea9074b05ca0 steps 0 result_frames 323082 result_bits 24 result b1a1ea9074b05ca0 name "bsltm2s3-gs2-1-g#2"
+stream 72 offset 57328948 bytes 1219716 first 8192 xxh64 c81c1b0ad9d433ac
+sample 73 file 0 gig 84 part 0 offset 109504228 bytes 1907856 frames 317976 channels 2 bits 24 rate 48000 compressed 0 source d404015bc98d6594 steps 0 result_frames 317976 result_bits 24 result d404015bc98d6594 name "bsltm3s3-gs2-2-g#2"
+stream 73 offset 58548664 bytes 1166864 first 8192 xxh64 01e5616b916b3369
+sample 74 file 0 gig 101 part 0 offset 131091918 bytes 521970 frames 86995 channels 2 bits 24 rate 48000 compressed 0 source b2e9c02b2cf98feb steps 0 result_frames 86995 result_bits 24 result b2e9c02b2cf98feb name "bsltm3s3-gs2-2-Relg#2"
+stream 74 offset 59715528 bytes 248184 first 8192 xxh64 9692e765f1b0baaa
+sample 75 file 0 gig 1 part 0 offset 4826816 bytes 1311660 frames 218610 channels 2 bits 24 rate 48000 compressed 0 source 76c91855c59c1f4b steps 0 result_frames 218610 result_bits 24 result 76c91855c59c1f4b name "bsltm1s3-as2-1-a#2"
+stream 75 offset 59963712 bytes 815618 first 0 xxh64 7a5f1bf9c4124ab7
+sample 76 file 0 gig 31 part 0 offset 39120776 bytes 409746 frames 68291 channels 2 bits 24 rate 48000 compressed 0 source a458e2a9e1949933 steps 0 result_frames 68291 result_bits 24 result a458e2a9e1949933 name "bsltm1s3-as2-1-Rela#2"
+stream 76 offset 60779330 bytes 233832 first 0 xxh64 f241e0a638a7c70f
+sample 77 file 0 gig 49 part 0 offset 62228516 bytes 1875486 frames 312581 channels 2 bits 24 rate 48000 compressed 0 source 322c64edb8f272eb steps 0 result_frames 312581 result_bits 24 result 322c64edb8f272eb name "bsltm2s3-as2-2-a#2"
+stream 77 offset 61013162 bytes 1210010 first 0 xxh64 a0cc59aa92ec628b
+sample 78 file 0 gig 63 part 0 offset 80694466 bytes 312102 frames 52017 channels 2 bits 24 rate 48000 compressed 0 source 6f7dcc4544c22bdb steps 0 result_frames 52017 result_bits 24 result 6f7dcc4544c22bdb name "bsltm2s3-as2-2-Rela#2"
+stream 78 offset 62223172 bytes 179940 first 0 xxh64 09163f920544559f
+sample 79 file 0 gig 81 part 0 offset 103592446 bytes 1960044 frames 326674 channels 2 bits 24 rate 48000 compressed 0 source e8ad80f50c4d3719 steps 0 result_frames 326674 result_bits 24 result e8ad80f50c4d3719 name "bsltm3s3-as2-2-a#2"
+stream 79 offset 62403112 bytes 1260184 first 0 xxh64 e388e8a4bbd07f42
+sample 80 file 0 gig 99 part 0 offset 130180360 bytes 365550 frames 60925 channels 2 bits 24 rate 48000 compressed 0 source 0a9e3ce196fe8c44 steps 0 result_frames 60925 result_bits 24 result 0a9e3ce196fe8c44 name "bsltm3s4-as2-2-Rela#2"
+stream 80 offset 63663296 bytes 203444 first 0 xxh64 a9ecdc37b694f447
+sample 81 file 0 gig 14 part 0 offset 24415866 bytes 1436532 frames 239422 channels 2 bits 24 rate 48000 compressed 0 source cd01a145d9f43186 steps 0 result_frames 239422 result_bits 24 result cd01a145d9f43186 name "bsltm1s4-as2-2-a#2"
+stream 81 offset 63866740 bytes 870798 first 8192 xxh64 51b04cbb7cc9391c
+sample 82 file 0 gig 67 part 0 offset 82419302 bytes 488616 frames 81436 channels 2 bits 24 rate 48000 compressed 0 source 7f1ef76bfbf4e558 steps 0 result_frames 81436 result_bits 24 result 7f1ef76bfbf4e558 name "bsltm2s4-c3-2-Relc3"
+stream 82 offset 64737538 bytes 281868 first 0 xxh64 13d2fd63cd0abc07
+sample 83 file 0 gig 90 part 0 offset 121446652 bytes 1888206 frames 314701 channels 2 bits 24 rate 48000 compressed 0 source 2cb9ab86299ccde1 steps 0 result_frames 314701 result_bits 24 result 2cb9ab86299ccde1 name "bsltm3s4-c3-3-c3"
+stream 83 offset 65019406 bytes 1282566 first 0 xxh64 c8ac64251cb4750c
+sample 84 file 0 gig 100 part 0 offset 130546118 bytes 545592 frames 90932 channels 2 bits 24 rate 48000 compressed 0 source ce861f279a14e01e steps 0 result_frames 90932 result_bits 24 result ce861f279a14e01e name "bsltm3s4-c3-3-Relc3"
+stream 84 offset 66301972 bytes 304988 first 0 xxh64 f70013a528e81908
+sample 85 file 0 gig 3 part 0 offset 7582882 bytes 1324722 frames 220787 channels 2 bits 24 rate 48000 compressed 0 source 6ddcbd7c58312576 steps 0 result_frames 220787 result_bits 24 result 6ddcbd7c58312576 name "bsltm1s4-cs3-1-c#3"
+stream 85 offset 66606960 bytes 832626 first 0 xxh64 d3d7d466dad61640
+sample 86 file 0 gig 24 part 0 offset 36268942 bytes 318756 frames 53126 channels 2 bits 24 rate 48000 compressed 0 source dcff8335b573d2b6 steps 0 result_frames 53126 result_bits 24 result dcff8335b573d2b6 name "bsltm1s4-cs3-1-Relc#3"
+stream 86 offset 67439586 bytes 184200 first 0 xxh64 7428462a9a9bb6a5
+sample 87 file 0 gig 51 part 0 offset 65854354 bytes 1792404 frames 298734 channels 2 bits 24 rate 48000 compressed 0 source baf59f42b2785982 steps 0 result_frames 298734 result_bits 24 result baf59f42b2785982 name "bsltm2s4-c3-2-c3"
+stream 87 offset 67623786 bytes 1148138 first 8192 xxh64 767d0448650bb567
+sample 88 file 0 gig 53 part 0 offset 69476514 bytes 1763346 frames 293891 channels 2 bits 24 rate 48000 compressed 0 source b91658941fe2f409 steps 0 result_frames 293891 result_bits 24 result b91658941fe2f409 name "bsltm2s4-cs3-2-c#3"
+stream 88 offset 68771924 bytes 1129004 first 8192 xxh64 96318b1f1e724e75
+sample 89 file 0 gig 86 part 0 offset 113212476 bytes 2209650 frames 368275 channels 2 bits 24 rate 48000 compressed 0 source a95925f18b8518ab steps 0 result_frames 368275 result_bits 24 result a95925f18b8518ab name "bsltm3s4-cs3-2-c#3"
+stream 89 offset 69900928 bytes 1476986 first 8192 xxh64 1c4e112ae6d958cb
+sample 90 file 0 gig 97 part 0 offset 129474332 bytes 424050 frames 70675 channels 2 bits 24 rate 48000 compressed 0 source 9eb2806bf5390223 steps 0 result_frames 70675 result_bits 24 result 9eb2806bf5390223 name "bsltm3s4-cs3-2-Relc#3"
+stream 90 offset 71377914 bytes 208682 first 8192 xxh64 24e73ee6f2ed0c73
+sample 91 file 0 gig 16 part 0 offset 27429170 bytes 1443234 frames 240539 channels 2 bits 24 rate 48000 compressed 0 source b2142b5b38114312 steps 0 result_frames 240539 result_bits 24 result b2142b5b38114312 name "bsltm1s4-d3-2-d3"
+stream 91 offset 71586596 bytes 884146 first 8192 xxh64 1850367ac8bd0887
+sample 92 file 0 gig 23 part 0 offset 35833956 bytes 434778 frames 72463 channels 2 bits 24 rate 48000 compressed 0 source 693ddf7e3309eb81 steps 0 result_frames 72463 result_bits 24 result 693ddf7e3309eb81 name "bsltm1s4-d3-2-Reld3"
+stream 92 offset 72470742 bytes 220472 first 8192 xxh64 1dab933b0195645f
+sample 93 file 0 gig 39 part 0 offset 45390292 bytes 1962738 frames 327123 channels 2 bits 24 rate 48000 compressed 0 source fcb02756e62240e0 steps 0 result_frames 327123 result_bits 24 result fcb02756e62240e0 name "bsltm2s4-d3-1-d3"
+stream 93 offset 72691214 bytes 1293006 first 0 xxh64 c8979e9447494db0
+sample 94 file 0 gig 77 part 0 offset 95589354 bytes 2169264 frames 361544 channels 2 bits 24 rate 48000 compressed 0 source f3719662cf33de50 steps 0 result_frames 361544 result_bits 24 result f3719662cf33de50 name "bsltm3s4-d3-1-d3"
+stream 94 offset 73984220 bytes 1392176 first 8192 xxh64 9c0c9ef09f84cd10
+sample 95 file 0 gig 96 part 0 offset 128770906 bytes 703218 frames 117203 channels 2 bits 24 rate 48000 compressed 0 source d6187ce93c5cb756 steps 0 result_frames 117203 result_bits 24 result d6187ce93c5cb756 name "bsltm3s4-d3-1-Reld3"
+stream 95 offset 75376396 bytes 338566 first 8192 xxh64 6100909b78c2fb6b
+sample 96 file 0 gig 4 part 0 offset 8907812 bytes 1472898 frames 245483 channels 2 bits 24 rate 48000 compressed 0 source 8dec89ad309370e7 steps 0 result_frames 245483 result_bits 24 result 8dec89ad309370e7 name "bsltm1s4-e3-1-e3"
+stream 96 offset 75714962 bytes 920990 first 0 xxh64 48f95210f0815b1b
+sample 97 file 0 gig 22 part 0 offset 35348024 bytes 485724 frames 80954 channels 2 bits 24 rate 48000 compressed 0 source 6bfe9b4414e9e9fc steps 0 result_frames 80954 result_bits 24 result 6bfe9b4414e9e9fc name "bsltm1s4-e3-1-Rele3"
+stream 97 offset 76635952 bytes 269332 first 0 xxh64 c1c27a953d24cb30
+sample 98 file 0 gig 69 part 0 offset 83344360 bytes 416394 frames 69399 channels 2 bits 24 rate 48000 compressed 0 source 5cc71854d29c5855 steps 0 result_frames 69399 result_bits 24 result 5cc71854d29c5855 name "bsltm2s4-fs3-2-Relf#3"
+stream 98 offset 76905284 bytes 244472 first 0 xxh64 1b999e396bcf6e61
+sample 99 file 0 gig 88 part 0 offset 117463544 bytes 2136240 frames 356040 channels 2 bits 24 rate 48000 compressed 0 source d527bc0e1fdb7095 steps 0 result_frames 356040 result_bits 24 result d527bc0e1fdb7095 name "bsltm3s4-e3-2-e3"
+stream 99 offset 77149756 bytes 1439590 first 0 xxh64 e5c0d9b477cfe7bc
+sample 100 file 0 gig 95 part 0 offset 128388240 bytes 382458 frames 63743 channels 2 bits 24 rate 48000 compressed 0 source 5d3bfcbae0e504c0 steps 0 result_frames 63743 result_bits 24 result 5d3bfcbae0e504c0 name "bsltm3s4-e3-2-Rele3"
+stream 100 offset 78589346 bytes 220670 first 0 xxh64 afff24b24e924a8c
+sample 101 file 0 gig 54 part 0 offset 71240068 bytes 1878930 frames 313155 channels 2 bits 24 rate 48000 compressed 0 source 8a4978a36c0ea46c steps 0 result_frames 313155 result_bits 24 result 8a4978a36c0ea46c name "bsltm2s4-e3-2-e3"
+stream 101 offset 78810016 bytes 1220608 first 8192 xxh64 dfbac95bedecd903
+sample 102 file 0 gig 55 part 0 offset 73119206 bytes 1773024 frames 295504 channels 2 bits 24 rate 48000 compressed 0 source 59bc2bbcb0183d98 steps 0 result_frames 295504 result_bits 24 result 59bc2bbcb0183d98 name "bsltm2s4-fs3-2-f#3"
+stream 102 offset 80030624 bytes 1192354 first 0 xxh64 489869da437c6332
+sample 103 file 0 gig 92 part 0 offset 125002920 bytes 2317800 frames 386300 channels 2 bits 24 rate 48000 compressed 0 source 27f45a734855e056 steps 0 result_frames 386300 result_bits 24 result 27f45a734855e056 name "bsltm3s4-fs3-3-f#3"
+stream 103 offset 81222978 bytes 1572722 first 0 xxh64 824a53582fc31ea6
+sample 104 file 0 gig 94 part 0 offset 127703012 bytes 685020 frames 114170 channels 2 bits 24 rate 48000 compressed 0 source 8635177a6873455a steps 0 result_frames 114170 result_bits 24 result 8635177a6873455a name "bsltm3s4-fs3-3-Relf#3"
+stream 104 offset 82795700 bytes 376660 first 0 xxh64 e5c9f285e13986ab
+sample 105 file 0 gig 20 part 0 offset 33563238 bytes 1352340 frames 225390 channels 2 bits 24 rate 48000 compressed 0 source 29addf61755756d0 steps 0 result_frames 225390 result_bits 24 result 29addf61755756d0 name "bsltm1s4-g3-3-g3"
+stream 105 offset 83172360 bytes 866344 first 0 xxh64 fe66751c20c572ec
+sample 106 file 0 gig 21 part 0 offset 34915786 bytes 432030 frames 72005 channels 2 bits 24 rate 48000 compressed 0 source 7d8c5506818dcdbe steps 0 result_frames 72005 result_bits 24 result 7d8c5506818dcdbe name "bsltm1s4-g3-3-Relg3"
+stream 106 offset 84038704 bytes 249906 first 0 xxh64 56d8cb6cabce639a
+sample 107 file 0 gig 56 part 0 offset 74892438 bytes 1959210 frames 326535 channels 2 bits 24 rate 48000 compressed 0 source cddbb8f9c5ffbd86 steps 0 result_frames 326535 result_bits 24 result cddbb8f9c5ffbd86 name "bsltm2s4-g3-2-g3"
+stream 107 offset 84288610 bytes 1275422 first 8192 xxh64 82f84c333dc80623
+sample 108 file 0 gig 87 part 0 offset 115422334 bytes 2041002 frames 340167 channels 2 bits 24 rate 48000 compressed 0 source d96a95c84851674f steps 0 result_frames 340167 result_bits 24 result d96a95c84851674f name "bsltm3s4-g3-2-g3"
+stream 108 offset 85564032 bytes 1369018 first 8192 xxh64 16b632460b23b621
+sample 109 file 0 gig 93 part 0 offset 127320928 bytes 381876 frames 63646 channels 2 bits 24 rate 48000 compressed 0 source 503e64b3e1d7e8d0 steps 0 result_frames 63646 result_bits 24 result 503e64b3e1d7e8d0 name "bsltm3s4-g3-2-Relg3"
+stream 109 offset 86933050 bytes 216950 first 0 xxh64 4383f5decab8d01b
+sample 110 file 0 gig 18 part 0 offset 30308374 bytes 1595898 frames 265983 channels 2 bits 24 rate 48000 compressed 0 source 896775c2033e8ee8 steps 0 result_frames 265983 result_bits 24 result 896775c2033e8ee8 name "bsltm1s4-a3-2-a3"
+stream 110 offset 87150000 bytes 1017136 first 0 xxh64 a7117b3780bddb5f
+sample 111 file 0 gig 27 part 0 offset 37123480 bytes 566238 frames 94373 channels 2 bits 24 rate 48000 compressed 0 source a5976767801f6615 steps 0 result_frames 94373 result_bits 24 result a5976767801f6615 name "bsltm1s4-a3-2-Rela3"
+stream 111 offset 88167136 bytes 324636 first 0 xxh64 87031773de602d69
+sample 112 file 0 gig 50 part 0 offset 64104210 bytes 1749936 frames 291656 channels 2 bits 24 rate 48000 compressed 0 source b64841f33d483d69 steps 0 result_frames 291656 result_bits 24 result b64841f33d483d69 name "bsltm2s4-a3-2-2a3"
+stream 112 offset 88491772 bytes 594012 first 0 xxh64 a7fe2f49000db4b2
+sample 113 file 0 gig 85 part 0 offset 111412292 bytes 1799976 frames 299996 channels 2 bits 24 rate 48000 compressed 0 source c31a04084c6b60eb steps 0 result_frames 299996 result_bits 24 result c31a04084c6b60eb name "bsltm3s4-a3-2-a3"
+stream 113 offset 89085784 bytes 1253826 first 0 xxh64 29191aa4f29e49ba
+sample 114 file 0 gig 15 part 0 offset 25852606 bytes 1576356 frames 262726 channels 2 bits 24 rate 48000 compressed 0 source 4307db7e603134d1 steps 0 result_frames 262726 result_bits 24 result 4307db7e603134d1 name "bsltm1s4-as3-2-a#3"
+stream 114 offset 90339610 bytes 981952 first 8192 xxh64 a57fb5402ef4ac6f
+sample 115 file 0 gig 26 part 0 offset 36824208 bytes 299064 frames 49844 channels 2 bits 24 rate 48000 compressed 0 source 921a9f2777200903 steps 0 result_frames 49844 result_bits 24 result 921a9f2777200903 name "bsltm1s4-as3-2-Rela#3"
+stream 115 offset 91321562 bytes 142408 first 8192 xxh64 03458a7f7dd8f158
+sample 116 file 0 gig 89 part 0 offset 119599992 bytes 1846452 frames 307742 channels 2 bits 24 rate 48000 compressed 0 source 0db246efa8a8d439 steps 0 result_frames 307742 result_bits 24 result 0db246efa8a8d439 name "bsltm3s4-a#3-3-a#3"
+stream 116 offset 91463970 bytes 1270140 first 8192 xxh64 cd007ece270e787c
+sample 117 file 0 gig 98 part 0 offset 129898590 bytes 281562 frames 46927 channels 2 bits 24 rate 48000 compressed 0 source 560da4cc2cc01ce7 steps 0 result_frames 46927 result_bits 24 result 560da4cc2cc01ce7 name "bsltm3s4-c4-4-Relc4"
+stream 117 offset 92734110 bytes 157186 first 0 xxh64 79c6d073f15c815a
+sample 118 file 0 gig 19 part 0 offset 31904480 bytes 1658550 frames 276425 channels 2 bits 24 rate 48000 compressed 0 source 050218c831212a1e steps 0 result_frames 276425 result_bits 24 result 050218c831212a1e name "bsltm1s4-c4-5-c4"
+stream 118 offset 92891296 bytes 1053760 first 0 xxh64 2d815d186cf9dfac
+sample 119 file 0 gig 25 part 0 offset 36587906 bytes 236094 frames 39349 channels 2 bits 24 rate 48000 compressed 0 source c636dc561020cd75 steps 0 result_frames 39349 result_bits 24 result c636dc561020cd75 name "bsltm1s4-c4-5-Relc4"
+stream 119 offset 93945056 bytes 137242 first 0 xxh64 20508323d5ac296e
+sample 120 file 0 gig 52 part 0 offset 67646966 bytes 1829340 frames 304890 channels 2 bits 24 rate 48000 compressed 0 source cbea9a7ec0bcb6d0 steps 0 result_frames 304890 result_bits 24 result cbea9a7ec0bcb6d0 name "bsltm2s4-c4-2-c4"
+stream 120 offset 94082298 bytes 1238208 first 0 xxh64 a1d52e994032ff1b
+sample 121 file 0 gig 91 part 0 offset 123335066 bytes 1667646 frames 277941 channels 2 bits 24 rate 48000 compressed 0 source f9a01d9b4fa7acf5 steps 0 result_frames 277941 result_bits 24 result f9a01d9b4fa7acf5 name "bsltm3s4-c4-4-c4"
+stream 121 offset 95320506 bytes 1124960 first 0 xxh64 3a18bc34237cb6c6
+preload offset 29868 bytes 5996544 xxh64 a8aa6f7265a51c10
+head bytes 44
+RlNCMQMAAACAuwAAAgAAAAAgAADYAAAArHQAAAAAAAAAgFsAAAAAABgAAAA=
+rows count 216 bytes 27648 xxh64 9e397223577a4947
+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
+AAAA
+end

@@ -1,0 +1,553 @@
+# Sonic Reimplants bank recipe: how sr_install rebuilds this bank from the original .gig files.
+recipe 1
+bank "Cellos Marcato.fsb" bytes 41232848 content_xxh64 60d038ef1f53bd9b
+format rate 48000 channels 2 bits 24 preload 8192 block 4096 flags 0
+part 0 0 name "Cellos Staccato.gig" folder "Symphonic String Collection- Cellos" bytes 216254422
+sample 0 file 0 gig 331 part 0 offset 191145600 bytes 1653624 frames 275604 channels 2 bits 24 rate 48000 compressed 0 source d0831ce90b2d95a5 steps 0 result_frames 275604 result_bits 24 result d0831ce90b2d95a5 name "clmac2-s1-3c2"
+stream 0 offset 5084076 bytes 667462 first 8192 xxh64 9382a92aa49a86cd
+sample 1 file 0 gig 294 part 0 offset 159828422 bytes 1382400 frames 230400 channels 2 bits 24 rate 48000 compressed 0 source ad8ab1fbd3248b2f steps 0 result_frames 230400 result_bits 24 result ad8ab1fbd3248b2f name "clmac2-s1-1c2"
+stream 1 offset 5751538 bytes 555168 first 8192 xxh64 64c6ed46e49743aa
+sample 2 file 0 gig 257 part 0 offset 129951760 bytes 1535472 frames 255912 channels 2 bits 24 rate 48000 compressed 0 source 94ba04aeccb03c85 steps 0 result_frames 255912 result_bits 24 result 94ba04aeccb03c85 name "clmac2-s1-2c2"
+stream 2 offset 6306706 bytes 639650 first 8192 xxh64 dd9348232e801021
+sample 3 file 0 gig 334 part 0 offset 194309328 bytes 807936 frames 134656 channels 2 bits 24 rate 48000 compressed 0 source 1b89908b2d649a4b steps 0 result_frames 134656 result_bits 24 result 1b89908b2d649a4b name "clmacs2-s1-2c#2"
+stream 3 offset 6946356 bytes 319978 first 8192 xxh64 3d80e1408ad3ed87
+sample 4 file 0 gig 297 part 0 offset 162925238 bytes 880128 frames 146688 channels 2 bits 24 rate 48000 compressed 0 source 0bbb2412d3cb26c8 steps 0 result_frames 146688 result_bits 24 result 0bbb2412d3cb26c8 name "clmacs2-s1-1c#2"
+stream 4 offset 7266334 bytes 344774 first 8192 xxh64 e8e49d52461db18e
+sample 5 file 0 gig 276 part 0 offset 145773032 bytes 1000650 frames 166775 channels 2 bits 24 rate 48000 compressed 0 source cd62e86241f404c1 steps 0 result_frames 166775 result_bits 24 result cd62e86241f404c1 name "clmacs2-s1-4c#2"
+stream 5 offset 7611108 bytes 422770 first 8192 xxh64 3bf263b8426d9c62
+sample 6 file 0 gig 340 part 0 offset 198735768 bytes 758784 frames 126464 channels 2 bits 24 rate 48000 compressed 0 source cbe4525b0a474d20 steps 0 result_frames 126464 result_bits 24 result cbe4525b0a474d20 name "clmads2-s1-2d#2"
+stream 6 offset 8033878 bytes 281636 first 0 xxh64 558c742222634d74
+sample 7 file 0 gig 303 part 0 offset 167988566 bytes 858624 frames 143104 channels 2 bits 24 rate 48000 compressed 0 source c1a7949a3643eb51 steps 0 result_frames 143104 result_bits 24 result c1a7949a3643eb51 name "clmads2-s1-3d#2"
+stream 7 offset 8315514 bytes 366754 first 0 xxh64 62943ff539b0feb8
+sample 8 file 0 gig 258 part 0 offset 131487440 bytes 884106 frames 147351 channels 2 bits 24 rate 48000 compressed 0 source 97cfe8e26b0c4548 steps 0 result_frames 147351 result_bits 24 result 97cfe8e26b0c4548 name "clmads2-s1-2d#2"
+stream 8 offset 8682268 bytes 368606 first 8192 xxh64 a18e60a35f46fb3b
+sample 9 file 0 gig 270 part 0 offset 141545492 bytes 816474 frames 136079 channels 2 bits 24 rate 48000 compressed 0 source 33693eab4d993907 steps 0 result_frames 136079 result_bits 24 result 33693eab4d993907 name "clmads2-s1-1d#2"
+stream 9 offset 9050874 bytes 337276 first 8192 xxh64 beb27001c7910265
+sample 10 file 0 gig 344 part 0 offset 201984064 bytes 846336 frames 141056 channels 2 bits 24 rate 48000 compressed 0 source 1d6babb4e15f1bbc steps 0 result_frames 141056 result_bits 24 result 1d6babb4e15f1bbc name "clmae2-s1-2e2"
+stream 10 offset 9388150 bytes 330370 first 8192 xxh64 a2d7b2285bb05238
+sample 11 file 0 gig 307 part 0 offset 171404694 bytes 971286 frames 161881 channels 2 bits 24 rate 48000 compressed 0 source 518fd53f5e56fbc9 steps 0 result_frames 161881 result_bits 24 result 518fd53f5e56fbc9 name "clmae2-s1-1e2"
+stream 11 offset 9718520 bytes 379316 first 8192 xxh64 7510db967df1f97c
+sample 12 file 0 gig 281 part 0 offset 149649298 bytes 776874 frames 129479 channels 2 bits 24 rate 48000 compressed 0 source 59137ecde24f91e1 steps 0 result_frames 129479 result_bits 24 result 59137ecde24f91e1 name "clmae2-s1-5e2"
+stream 12 offset 10097836 bytes 323072 first 8192 xxh64 1b64a29af078bbe4
+sample 13 file 0 gig 349 part 0 offset 206347344 bytes 828240 frames 138040 channels 2 bits 24 rate 48000 compressed 0 source 35ee7a2fb158a08c steps 0 result_frames 138040 result_bits 24 result 35ee7a2fb158a08c name "clmafs2-s1-2f#2"
+stream 13 offset 10420908 bytes 294028 first 0 xxh64 a90877d4eda7f181
+sample 14 file 0 gig 312 part 0 offset 175723076 bytes 791040 frames 131840 channels 2 bits 24 rate 48000 compressed 0 source ca29cbc594dafec2 steps 0 result_frames 131840 result_bits 24 result ca29cbc594dafec2 name "clmafs2-s1-1f#2"
+stream 14 offset 10714936 bytes 342744 first 0 xxh64 67e1c726f4484345
+sample 15 file 0 gig 279 part 0 offset 148184558 bytes 741570 frames 123595 channels 2 bits 24 rate 48000 compressed 0 source 2dd723ca5befc526 steps 0 result_frames 123595 result_bits 24 result 2dd723ca5befc526 name "clmafs2-s1-4f#2"
+stream 15 offset 11057680 bytes 313536 first 8192 xxh64 6b7250df9e8980d4
+sample 16 file 0 gig 260 part 0 offset 133256596 bytes 822858 frames 137143 channels 2 bits 24 rate 48000 compressed 0 source 42cf2c8de6f549bf steps 0 result_frames 137143 result_bits 24 result 42cf2c8de6f549bf name "clmafs2-s1-2f#2"
+stream 16 offset 11371216 bytes 342996 first 8192 xxh64 339b21475029db49
+sample 17 file 0 gig 354 part 0 offset 210196952 bytes 999504 frames 166584 channels 2 bits 24 rate 48000 compressed 0 source fa8d280f1104b6a5 steps 0 result_frames 166584 result_bits 24 result fa8d280f1104b6a5 name "clmag2-s1-2g2"
+stream 17 offset 11714212 bytes 396346 first 8192 xxh64 82a5c8c57c27ba3c
+sample 18 file 0 gig 250 part 0 offset 123010584 bytes 1541382 frames 256897 channels 2 bits 24 rate 48000 compressed 0 source 1214f3279280cc13 steps 0 result_frames 256897 result_bits 24 result 1214f3279280cc13 name "clmag2-s2-3g2"
+stream 18 offset 12110558 bytes 680576 first 0 xxh64 5ad8ac207fa37294
+sample 19 file 0 gig 317 part 0 offset 179450626 bytes 995664 frames 165944 channels 2 bits 24 rate 48000 compressed 0 source d01849ad4acff8d8 steps 0 result_frames 165944 result_bits 24 result d01849ad4acff8d8 name "clmag2-s1-1g2"
+stream 19 offset 12791134 bytes 393846 first 8192 xxh64 2c0b7b50c5c5862e
+sample 20 file 0 gig 283 part 0 offset 151112916 bytes 995466 frames 165911 channels 2 bits 24 rate 48000 compressed 0 source d224c50b6fae9c29 steps 0 result_frames 165911 result_bits 24 result d224c50b6fae9c29 name "clmag2-s1-3g2"
+stream 20 offset 13184980 bytes 424888 first 8192 xxh64 8295bef6f1be52ec
+sample 21 file 0 gig 357 part 0 offset 212856872 bytes 901752 frames 150292 channels 2 bits 24 rate 48000 compressed 0 source 54ca6b893d404a0c steps 0 result_frames 150292 result_bits 24 result 54ca6b893d404a0c name "clmags2-s2-2g#2"
+stream 21 offset 13609868 bytes 361368 first 8192 xxh64 f818366936656c83
+sample 22 file 0 gig 320 part 0 offset 182117218 bytes 882816 frames 147136 channels 2 bits 24 rate 48000 compressed 0 source 3de1de473da6d854 steps 0 result_frames 147136 result_bits 24 result 3de1de473da6d854 name "clmags2-s2-1g#2"
+stream 22 offset 13971236 bytes 350172 first 8192 xxh64 f0e0973145750654
+sample 23 file 0 gig 252 part 0 offset 125441096 bytes 871236 frames 145206 channels 2 bits 24 rate 48000 compressed 0 source 2e96ccbf56d8279f steps 0 result_frames 145206 result_bits 24 result 2e96ccbf56d8279f name "clmags2-s2-3g#2"
+stream 23 offset 14321408 bytes 369016 first 8192 xxh64 0af9e09025a5ec28
+sample 24 file 0 gig 322 part 0 offset 183946584 bytes 1010976 frames 168496 channels 2 bits 24 rate 48000 compressed 0 source d3b8318e0e4d3164 steps 0 result_frames 168496 result_bits 24 result d3b8318e0e4d3164 name "clmaa2-s1-3a2"
+stream 24 offset 14690424 bytes 407320 first 8192 xxh64 ade3be83891750a0
+sample 25 file 0 gig 285 part 0 offset 152701886 bytes 978576 frames 163096 channels 2 bits 24 rate 48000 compressed 0 source b3fcb3886df0daa0 steps 0 result_frames 163096 result_bits 24 result b3fcb3886df0daa0 name "clmaa2-s1-1a2"
+stream 25 offset 15097744 bytes 382026 first 8192 xxh64 f76088f2a05047b9
+sample 26 file 0 gig 254 part 0 offset 126978220 bytes 911376 frames 151896 channels 2 bits 24 rate 48000 compressed 0 source 1c5ed7bd8a787932 steps 0 result_frames 151896 result_bits 24 result 1c5ed7bd8a787932 name "clmaa2-s1-2a2"
+stream 26 offset 15479770 bytes 381192 first 8192 xxh64 b132eb92abeb9837
+sample 27 file 0 gig 326 part 0 offset 187067104 bytes 827136 frames 137856 channels 2 bits 24 rate 48000 compressed 0 source 80557d665800a0c2 steps 0 result_frames 137856 result_bits 24 result 80557d665800a0c2 name "clmaas2-s2-1a#2"
+stream 27 offset 15860962 bytes 271148 first 8192 xxh64 7007995ee20d7b88
+sample 28 file 0 gig 289 part 0 offset 155780526 bytes 843600 frames 140600 channels 2 bits 24 rate 48000 compressed 0 source 93da91208a5c4deb steps 0 result_frames 140600 result_bits 24 result 93da91208a5c4deb name "clmaas2-s2-2a#2"
+stream 28 offset 16132110 bytes 340608 first 8192 xxh64 4418883724d1f56b
+sample 29 file 0 gig 265 part 0 offset 137801016 bytes 838218 frames 139703 channels 2 bits 24 rate 48000 compressed 0 source da0e771e13a7863e steps 0 result_frames 139703 result_bits 24 result da0e771e13a7863e name "clmaas2-s2-1a#2"
+stream 29 offset 16472718 bytes 353010 first 8192 xxh64 1522b893c11f7e5f
+sample 30 file 0 gig 329 part 0 offset 189590176 bytes 680832 frames 113472 channels 2 bits 24 rate 48000 compressed 0 source 44fc32a2a89fe3fc steps 0 result_frames 113472 result_bits 24 result 44fc32a2a89fe3fc name "clmab2-s2-1b2"
+stream 30 offset 16825728 bytes 243710 first 8192 xxh64 e8ff666c3c37527d
+sample 31 file 0 gig 292 part 0 offset 158278662 bytes 676272 frames 112712 channels 2 bits 24 rate 48000 compressed 0 source 84bf2ef3c1d2d822 steps 0 result_frames 112712 result_bits 24 result 84bf2ef3c1d2d822 name "clmab2-s2-1b2"
+stream 31 offset 17069438 bytes 238994 first 8192 xxh64 f427e4e33d6f66b5
+sample 32 file 0 gig 267 part 0 offset 139505420 bytes 676404 frames 112734 channels 2 bits 24 rate 48000 compressed 0 source 6251446d9bda2e4c steps 0 result_frames 112734 result_bits 24 result 6251446d9bda2e4c name "clmab2-s2-1b2"
+stream 32 offset 17308432 bytes 286198 first 8192 xxh64 fc1ef745ef7f5812
+sample 33 file 0 gig 335 part 0 offset 195117472 bytes 856704 frames 142784 channels 2 bits 24 rate 48000 compressed 0 source 9ca0b5075a6db578 steps 0 result_frames 142784 result_bits 24 result 9ca0b5075a6db578 name "clmacs3-s2-3c#3"
+stream 33 offset 17594630 bytes 378358 first 0 xxh64 e68d7c9c4c79ae05
+sample 34 file 0 gig 298 part 0 offset 163805574 bytes 799536 frames 133256 channels 2 bits 24 rate 48000 compressed 0 source 6aa31e5411623449 steps 0 result_frames 133256 result_bits 24 result 6aa31e5411623449 name "clmacs3-s2-2c#3"
+stream 34 offset 17972988 bytes 345894 first 0 xxh64 0ebea0e46e055ec9
+sample 35 file 0 gig 269 part 0 offset 140729002 bytes 816282 frames 136047 channels 2 bits 24 rate 48000 compressed 0 source 025bf7ba4f5b230e steps 0 result_frames 136047 result_bits 24 result 025bf7ba4f5b230e name "clmacs3-s2-1c#3"
+stream 35 offset 18318882 bytes 371296 first 0 xxh64 2274583606268b1c
+sample 36 file 0 gig 337 part 0 offset 196532160 bytes 858984 frames 143164 channels 2 bits 24 rate 48000 compressed 0 source 66a076d52cb7fa58 steps 0 result_frames 143164 result_bits 24 result 66a076d52cb7fa58 name "clmad3-s2-2d3"
+stream 36 offset 18690178 bytes 340938 first 8192 xxh64 9f9033cf55133840
+sample 37 file 0 gig 263 part 0 offset 135584554 bytes 1596804 frames 266134 channels 2 bits 24 rate 48000 compressed 0 source 8b83a5ff5f632b72 steps 0 result_frames 266134 result_bits 24 result 8b83a5ff5f632b72 name "clmad3-s3-2e3"
+stream 37 offset 19031116 bytes 708218 first 0 xxh64 60100cb244ef7806
+sample 38 file 0 gig 300 part 0 offset 165445094 bytes 852000 frames 142000 channels 2 bits 24 rate 48000 compressed 0 source 2ce2d124efb914b2 steps 0 result_frames 142000 result_bits 24 result 2ce2d124efb914b2 name "clmad3-s2-1d3"
+stream 38 offset 19739334 bytes 339874 first 8192 xxh64 556a303082ce9829
+sample 39 file 0 gig 284 part 0 offset 152108590 bytes 593088 frames 98848 channels 2 bits 24 rate 48000 compressed 0 source 4e980a31e6d502c5 steps 0 result_frames 98848 result_bits 24 result 4e980a31e6d502c5 name "clmad3-s2-5d3"
+stream 39 offset 20079208 bytes 247988 first 8192 xxh64 df30c0ad69efc218
+sample 40 file 0 gig 342 part 0 offset 200387384 bytes 885096 frames 147516 channels 2 bits 24 rate 48000 compressed 0 source 20c68bff3f31c597 steps 0 result_frames 147516 result_bits 24 result 20c68bff3f31c597 name "clmads3-s3-2d#3"
+stream 40 offset 20327196 bytes 278390 first 8192 xxh64 455fc55f6c9bac4a
+sample 41 file 0 gig 305 part 0 offset 169675510 bytes 879456 frames 146576 channels 2 bits 24 rate 48000 compressed 0 source 51f3e197f74a370e steps 0 result_frames 146576 result_bits 24 result 51f3e197f74a370e name "clmads3-s3-2d#3"
+stream 41 offset 20605586 bytes 273222 first 8192 xxh64 4ee7b4fb630bf3e9
+sample 42 file 0 gig 259 part 0 offset 132371754 bytes 884634 frames 147439 channels 2 bits 24 rate 48000 compressed 0 source 4a8bb27edbab2d0a steps 0 result_frames 147439 result_bits 24 result 4a8bb27edbab2d0a name "clmads3-s3-2d#3"
+stream 42 offset 20878808 bytes 367248 first 8192 xxh64 eb651bfe9a2d0e39
+sample 43 file 0 gig 345 part 0 offset 202830608 bytes 1413120 frames 235520 channels 2 bits 24 rate 48000 compressed 0 source d227851fbb524154 steps 0 result_frames 235520 result_bits 24 result d227851fbb524154 name "clmae3-s3-3e3"
+stream 43 offset 21246056 bytes 608622 first 0 xxh64 9d09a1a6e76ff13b
+sample 44 file 0 gig 308 part 0 offset 172376188 bytes 867432 frames 144572 channels 2 bits 24 rate 48000 compressed 0 source bdaaa2ce217729cf steps 0 result_frames 144572 result_bits 24 result bdaaa2ce217729cf name "clmae3-s2-2e3"
+stream 44 offset 21854678 bytes 372670 first 0 xxh64 a48adf5655d42570
+sample 45 file 0 gig 272 part 0 offset 143188888 bytes 666570 frames 111095 channels 2 bits 24 rate 48000 compressed 0 source f89575bebaef22f4 steps 0 result_frames 111095 result_bits 24 result f89575bebaef22f4 name "clmae3-s2-1e3"
+stream 45 offset 22227348 bytes 309540 first 0 xxh64 35987ac904b0db25
+sample 46 file 0 gig 348 part 0 offset 205674368 bytes 672768 frames 112128 channels 2 bits 24 rate 48000 compressed 0 source 46c424faae966e29 steps 0 result_frames 112128 result_bits 24 result 46c424faae966e29 name "clmaf3-s3-3f3"
+stream 46 offset 22536888 bytes 299454 first 0 xxh64 4db534d26de6852d
+sample 47 file 0 gig 311 part 0 offset 174876148 bytes 846720 frames 141120 channels 2 bits 24 rate 48000 compressed 0 source 77d325aa0e91e2b0 steps 0 result_frames 141120 result_bits 24 result 77d325aa0e91e2b0 name "clmaf3-s3-1f3"
+stream 47 offset 22836342 bytes 367610 first 0 xxh64 63dcb7d87d81b413
+sample 48 file 0 gig 261 part 0 offset 134079662 bytes 698322 frames 116387 channels 2 bits 24 rate 48000 compressed 0 source ecdf53d76d8dc917 steps 0 result_frames 116387 result_bits 24 result ecdf53d76d8dc917 name "clmaf3-s3-2f3"
+stream 48 offset 23203952 bytes 323648 first 0 xxh64 7c45b2e71d742dcc
+sample 49 file 0 gig 351 part 0 offset 208156448 bytes 804480 frames 134080 channels 2 bits 24 rate 48000 compressed 0 source 6da0ce5040ccec44 steps 0 result_frames 134080 result_bits 24 result 6da0ce5040ccec44 name "clmafs3-s3-2f#3"
+stream 49 offset 23527600 bytes 268422 first 8192 xxh64 6e4c2ef09218b276
+sample 50 file 0 gig 314 part 0 offset 177252868 bytes 788016 frames 131336 channels 2 bits 24 rate 48000 compressed 0 source 38bf18a66d72e030 steps 0 result_frames 131336 result_bits 24 result 38bf18a66d72e030 name "clmafs3-s3-2f#3"
+stream 50 offset 23796022 bytes 256704 first 8192 xxh64 61bc151b3d8808c2
+sample 51 file 0 gig 262 part 0 offset 134778192 bytes 806154 frames 134359 channels 2 bits 24 rate 48000 compressed 0 source 4dc25a39aeca6cd6 steps 0 result_frames 134359 result_bits 24 result 4dc25a39aeca6cd6 name "clmafs3-s3-2f#3"
+stream 51 offset 24052726 bytes 343546 first 8192 xxh64 df894dee68eaca50
+sample 52 file 0 gig 355 part 0 offset 211196664 bytes 850056 frames 141676 channels 2 bits 24 rate 48000 compressed 0 source d30298fc6d943320 steps 0 result_frames 141676 result_bits 24 result d30298fc6d943320 name "clmag3-s3-2g3"
+stream 52 offset 24396272 bytes 365638 first 0 xxh64 0e6fed9b6187778b
+sample 53 file 0 gig 318 part 0 offset 180446498 bytes 845568 frames 140928 channels 2 bits 24 rate 48000 compressed 0 source f17fb9afd8f27edf steps 0 result_frames 140928 result_bits 24 result f17fb9afd8f27edf name "clmag3-s3-1g3"
+stream 53 offset 24761910 bytes 368344 first 0 xxh64 902c007c9f9cbe8f
+sample 54 file 0 gig 253 part 0 offset 126312540 bytes 665472 frames 110912 channels 2 bits 24 rate 48000 compressed 0 source 612d6e88e2e4aa55 steps 0 result_frames 110912 result_bits 24 result 612d6e88e2e4aa55 name "clmags3-s3-3g#3"
+stream 54 offset 25130254 bytes 308012 first 0 xxh64 e48bbb50913ed84f
+sample 55 file 0 gig 358 part 0 offset 213758832 bytes 924096 frames 154016 channels 2 bits 24 rate 48000 compressed 0 source 538e2e83ccdacb87 steps 0 result_frames 154016 result_bits 24 result 538e2e83ccdacb87 name "clmags3-s3-2g#3"
+stream 55 offset 25438266 bytes 401202 first 0 xxh64 c79a034f189165ea
+sample 56 file 0 gig 321 part 0 offset 183000242 bytes 946134 frames 157689 channels 2 bits 24 rate 48000 compressed 0 source dfb067ce6715bad4 steps 0 result_frames 157689 result_bits 24 result dfb067ce6715bad4 name "clmags3-s3-1g#3"
+stream 56 offset 25839468 bytes 409196 first 0 xxh64 106bf40da31cc806
+sample 57 file 0 gig 323 part 0 offset 184957768 bytes 889440 frames 148240 channels 2 bits 24 rate 48000 compressed 0 source cd4f7125ed9243b6 steps 0 result_frames 148240 result_bits 24 result cd4f7125ed9243b6 name "clmaa3-s3-2a3"
+stream 57 offset 26248664 bytes 349282 first 8192 xxh64 2a13a13ac8a9caf7
+sample 58 file 0 gig 255 part 0 offset 127889804 bytes 1447482 frames 241247 channels 2 bits 24 rate 48000 compressed 0 source c1f187ee14aee246 steps 0 result_frames 241247 result_bits 24 result c1f187ee14aee246 name "clmaa3-s4-2a3"
+stream 58 offset 26597946 bytes 655742 first 0 xxh64 22541f2456191948
+sample 59 file 0 gig 286 part 0 offset 153680670 bytes 885360 frames 147560 channels 2 bits 24 rate 48000 compressed 0 source f7b85d2465611194 steps 0 result_frames 147560 result_bits 24 result f7b85d2465611194 name "clmaa3-s3-1a3"
+stream 59 offset 27253688 bytes 346424 first 8192 xxh64 80d39983db2c0954
+sample 60 file 0 gig 282 part 0 offset 150426380 bytes 686328 frames 114388 channels 2 bits 24 rate 48000 compressed 0 source fddd67a3c9539fcc steps 0 result_frames 114388 result_bits 24 result fddd67a3c9539fcc name "clmaa3-s3-3a3"
+stream 60 offset 27600112 bytes 285172 first 8192 xxh64 e638a60e005b1297
+sample 61 file 0 gig 327 part 0 offset 187894448 bytes 854688 frames 142448 channels 2 bits 24 rate 48000 compressed 0 source 0d2270ba0a468f5e steps 0 result_frames 142448 result_bits 24 result 0d2270ba0a468f5e name "clmaas3-s4-3a#3"
+stream 61 offset 27885284 bytes 342720 first 8192 xxh64 82cf7d72b1543d86
+sample 62 file 0 gig 290 part 0 offset 156624334 bytes 847056 frames 141176 channels 2 bits 24 rate 48000 compressed 0 source 8a21ffabe0084f5a steps 0 result_frames 141176 result_bits 24 result 8a21ffabe0084f5a name "clmaas3-s4-2a#3"
+stream 62 offset 28228004 bytes 342888 first 8192 xxh64 5303735e60c62acb
+sample 63 file 0 gig 266 part 0 offset 138639442 bytes 865770 frames 144295 channels 2 bits 24 rate 48000 compressed 0 source d318231e1ab38e7e steps 0 result_frames 144295 result_bits 24 result d318231e1ab38e7e name "clmaas3-s4-1a#3"
+stream 63 offset 28570892 bytes 373156 first 8192 xxh64 9c9042f9475ef1bb
+sample 64 file 0 gig 330 part 0 offset 190271216 bytes 874176 frames 145696 channels 2 bits 24 rate 48000 compressed 0 source 9617810cd3df655f steps 0 result_frames 145696 result_bits 24 result 9617810cd3df655f name "clmab3-s3-2b3"
+stream 64 offset 28944048 bytes 347546 first 8192 xxh64 9a41871433273b55
+sample 65 file 0 gig 293 part 0 offset 158955142 bytes 873072 frames 145512 channels 2 bits 24 rate 48000 compressed 0 source 7bb3701262078c2a steps 0 result_frames 145512 result_bits 24 result 7bb3701262078c2a name "clmab3-s3-1b3"
+stream 65 offset 29291594 bytes 340162 first 8192 xxh64 b999090418839dd1
+sample 66 file 0 gig 280 part 0 offset 148926336 bytes 722754 frames 120459 channels 2 bits 24 rate 48000 compressed 0 source f25c1d03c6b4c610 steps 0 result_frames 120459 result_bits 24 result f25c1d03c6b4c610 name "clmab3-s3-5b3"
+stream 66 offset 29631756 bytes 301902 first 8192 xxh64 41c289bba76a2c44
+sample 67 file 0 gig 332 part 0 offset 192799432 bytes 819816 frames 136636 channels 2 bits 24 rate 48000 compressed 0 source 9eca0578ea4b0e01 steps 0 result_frames 136636 result_bits 24 result 9eca0578ea4b0e01 name "clmac4-s4-2c4"
+stream 67 offset 29933658 bytes 333952 first 8192 xxh64 3a23a522c37af6bc
+sample 68 file 0 gig 295 part 0 offset 161211030 bytes 859608 frames 143268 channels 2 bits 24 rate 48000 compressed 0 source 40e02760c3c86958 steps 0 result_frames 143268 result_bits 24 result 40e02760c3c86958 name "clmac4-s4-1c4"
+stream 68 offset 30267610 bytes 350134 first 8192 xxh64 d7fa2bcd8a2c3998
+sample 69 file 0 gig 275 part 0 offset 145024510 bytes 748314 frames 124719 channels 2 bits 24 rate 48000 compressed 0 source bccb99af468bb8d1 steps 0 result_frames 124719 result_bits 24 result bccb99af468bb8d1 name "clmac4-s4-4c4"
+stream 69 offset 30617744 bytes 311180 first 8192 xxh64 1fb9098e0ca8260e
+sample 70 file 0 gig 336 part 0 offset 195974384 bytes 557568 frames 92928 channels 2 bits 24 rate 48000 compressed 0 source 3111e9438ad1da17 steps 0 result_frames 92928 result_bits 24 result 3111e9438ad1da17 name "clmacs4-s4-2c#4"
+stream 70 offset 30928924 bytes 234050 first 8192 xxh64 0876f3f7add5c0d2
+sample 71 file 0 gig 299 part 0 offset 164605318 bytes 839568 frames 139928 channels 2 bits 24 rate 48000 compressed 0 source 12a1020992488b44 steps 0 result_frames 139928 result_bits 24 result 12a1020992488b44 name "clmacs4-s4-1c#4"
+stream 71 offset 31162974 bytes 340638 first 8192 xxh64 680a54cb55c58640
+sample 72 file 0 gig 246 part 0 offset 119946572 bytes 728010 frames 121335 channels 2 bits 24 rate 48000 compressed 0 source 1d25d72894632a62 steps 0 result_frames 121335 result_bits 24 result 1d25d72894632a62 name "clmacs4-s4-3c#4"
+stream 72 offset 31503612 bytes 309840 first 8192 xxh64 4f53c5602739e359
+sample 73 file 0 gig 343 part 0 offset 201272688 bytes 711168 frames 118528 channels 2 bits 24 rate 48000 compressed 0 source e3ce639e4b54cdeb steps 0 result_frames 118528 result_bits 24 result e3ce639e4b54cdeb name "clmads4-s4-1d#4"
+stream 73 offset 31813452 bytes 273670 first 0 xxh64 7fad95916eb0d7e7
+sample 74 file 0 gig 306 part 0 offset 170555174 bytes 849312 frames 141552 channels 2 bits 24 rate 48000 compressed 0 source 7bf36da608709b6e steps 0 result_frames 141552 result_bits 24 result 7bf36da608709b6e name "clmads4-s4-2d#4"
+stream 74 offset 32087122 bytes 384090 first 0 xxh64 5c5cf19d9637cb60
+sample 75 file 0 gig 271 part 0 offset 142362174 bytes 826506 frames 137751 channels 2 bits 24 rate 48000 compressed 0 source c17854e8827056e7 steps 0 result_frames 137751 result_bits 24 result c17854e8827056e7 name "clmads4-s4-1d#4"
+stream 75 offset 32471212 bytes 385748 first 0 xxh64 fa21007167ba48a4
+sample 76 file 0 gig 346 part 0 offset 204243936 bytes 751104 frames 125184 channels 2 bits 24 rate 48000 compressed 0 source 590e2feb15f3e33e steps 0 result_frames 125184 result_bits 24 result 590e2feb15f3e33e name "clmae4-s4-2e4"
+stream 76 offset 32856960 bytes 308044 first 8192 xxh64 d4fc63d23d2b52cb
+sample 77 file 0 gig 309 part 0 offset 173243828 bytes 825600 frames 137600 channels 2 bits 24 rate 48000 compressed 0 source b490c42a412a58ef steps 0 result_frames 137600 result_bits 24 result b490c42a412a58ef name "clmae4-s4-1e4"
+stream 77 offset 33165004 bytes 329146 first 8192 xxh64 05e66d817b1f70cc
+sample 78 file 0 gig 248 part 0 offset 121535734 bytes 836802 frames 139467 channels 2 bits 24 rate 48000 compressed 0 source c0fe35cfecb8f49b steps 0 result_frames 139467 result_bits 24 result c0fe35cfecb8f49b name "clmae4-s4-3e4"
+stream 78 offset 33494150 bytes 354340 first 8192 xxh64 7c9f9911083042a6
+sample 79 file 0 gig 352 part 0 offset 208961136 bytes 657744 frames 109624 channels 2 bits 24 rate 48000 compressed 0 source 50c21ae80b7005f0 steps 0 result_frames 109624 result_bits 24 result 50c21ae80b7005f0 name "clmafs4-s4-1f#4"
+stream 79 offset 33848490 bytes 257226 first 0 xxh64 2c30baf952c3a529
+sample 80 file 0 gig 315 part 0 offset 178041092 bytes 824142 frames 137357 channels 2 bits 24 rate 48000 compressed 0 source 51ea3dbdebf388fc steps 0 result_frames 137357 result_bits 24 result 51ea3dbdebf388fc name "clmafs4-s4-2f#4"
+stream 80 offset 34105716 bytes 365828 first 0 xxh64 9d1a8f36b7890901
+sample 81 file 0 gig 273 part 0 offset 143855666 bytes 668370 frames 111395 channels 2 bits 24 rate 48000 compressed 0 source 38d3e9c3d6f8dcda steps 0 result_frames 111395 result_bits 24 result 38d3e9c3d6f8dcda name "clmafs4-s4-1f#4"
+stream 81 offset 34471544 bytes 287364 first 8192 xxh64 39f1b30caca6e385
+sample 82 file 0 gig 249 part 0 offset 122372744 bytes 637632 frames 106272 channels 2 bits 24 rate 48000 compressed 0 source 9c7ad25c81583fa9 steps 0 result_frames 106272 result_bits 24 result 9c7ad25c81583fa9 name "clmafs4-s4-3f#4"
+stream 82 offset 34758908 bytes 276826 first 8192 xxh64 2c67f74a2c5e4ce3
+sample 83 file 0 gig 356 part 0 offset 212046928 bytes 809736 frames 134956 channels 2 bits 24 rate 48000 compressed 0 source a6f67704cc547558 steps 0 result_frames 134956 result_bits 24 result a6f67704cc547558 name "clmag4-s4-2g4"
+stream 83 offset 35035734 bytes 330418 first 8192 xxh64 1f0b9c240e63a0d5
+sample 84 file 0 gig 319 part 0 offset 181292274 bytes 824736 frames 137456 channels 2 bits 24 rate 48000 compressed 0 source 84c13784fe4a5846 steps 0 result_frames 137456 result_bits 24 result 84c13784fe4a5846 name "clmag4-s4-1g4"
+stream 84 offset 35366152 bytes 343184 first 8192 xxh64 f1999e37aa21cc51
+sample 85 file 0 gig 251 part 0 offset 124552174 bytes 888714 frames 148119 channels 2 bits 24 rate 48000 compressed 0 source ea4b99438dcab8de steps 0 result_frames 148119 result_bits 24 result ea4b99438dcab8de name "clmag4-s4-3g4"
+stream 85 offset 35709336 bytes 379944 first 8192 xxh64 6962a91561ec294b
+sample 86 file 0 gig 324 part 0 offset 185847416 bytes 601872 frames 100312 channels 2 bits 24 rate 48000 compressed 0 source 4ab9bb90ede27608 steps 0 result_frames 100312 result_bits 24 result 4ab9bb90ede27608 name "clmaa4-s4-1a4"
+stream 86 offset 36089280 bytes 233940 first 0 xxh64 1aee6a16fbea938a
+sample 87 file 0 gig 287 part 0 offset 154566238 bytes 599424 frames 99904 channels 2 bits 24 rate 48000 compressed 0 source e9c9951aeeb9bea9 steps 0 result_frames 99904 result_bits 24 result e9c9951aeeb9bea9 name "clmaa4-s4-1a4"
+stream 87 offset 36323220 bytes 231154 first 0 xxh64 0fbe15ff94c2b1f3
+sample 88 file 0 gig 264 part 0 offset 137181566 bytes 619242 frames 103207 channels 2 bits 24 rate 48000 compressed 0 source 308e981839e65940 steps 0 result_frames 103207 result_bits 24 result 308e981839e65940 name "clmaa4-s4-1a4"
+stream 88 offset 36554374 bytes 264508 first 8192 xxh64 ac7641ad79d607aa
+sample 89 file 0 gig 256 part 0 offset 129337494 bytes 614058 frames 102343 channels 2 bits 24 rate 48000 compressed 0 source c6e484b917bf82c3 steps 0 result_frames 102343 result_bits 24 result c6e484b917bf82c3 name "clmaa4-s4-2a4"
+stream 89 offset 36818882 bytes 262224 first 8192 xxh64 673803aba8c53781
+sample 90 file 0 gig 328 part 0 offset 188749344 bytes 840624 frames 140104 channels 2 bits 24 rate 48000 compressed 0 source 1de759d300ab8a28 steps 0 result_frames 140104 result_bits 24 result 1de759d300ab8a28 name "clmaas4-s4-2a#4"
+stream 90 offset 37081106 bytes 334522 first 8192 xxh64 2ceb84299ebda73f
+sample 91 file 0 gig 291 part 0 offset 157471598 bytes 806856 frames 134476 channels 2 bits 24 rate 48000 compressed 0 source 5c0df969b1e3d5c4 steps 0 result_frames 134476 result_bits 24 result 5c0df969b1e3d5c4 name "clmaas4-s4-1a#4"
+stream 91 offset 37415628 bytes 320252 first 8192 xxh64 4c86cd68a881b656
+sample 92 file 0 gig 274 part 0 offset 144524244 bytes 500058 frames 83343 channels 2 bits 24 rate 48000 compressed 0 source c6eb2efeda378f42 steps 0 result_frames 83343 result_bits 24 result c6eb2efeda378f42 name "clmaas4-s4-4a#4"
+stream 92 offset 37735880 bytes 215146 first 8192 xxh64 13d272ebfbde0af9
+sample 93 file 0 gig 333 part 0 offset 193619456 bytes 689664 frames 114944 channels 2 bits 24 rate 48000 compressed 0 source c92f54df2ca937e2 steps 0 result_frames 114944 result_bits 24 result c92f54df2ca937e2 name "clmac5-s4-3c5"
+stream 93 offset 37951026 bytes 310910 first 0 xxh64 963dc67f5c63567b
+sample 94 file 0 gig 296 part 0 offset 162070846 bytes 854184 frames 142364 channels 2 bits 24 rate 48000 compressed 0 source 436744326afb2644 steps 0 result_frames 142364 result_bits 24 result 436744326afb2644 name "clmac5-s4-2c5"
+stream 94 offset 38261936 bytes 373192 first 0 xxh64 250cc7302ac5d06c
+sample 95 file 0 gig 268 part 0 offset 140182032 bytes 546762 frames 91127 channels 2 bits 24 rate 48000 compressed 0 source 3e88132a0221ad23 steps 0 result_frames 91127 result_bits 24 result 3e88132a0221ad23 name "clmac5-s4-1c5"
+stream 95 offset 38635128 bytes 269298 first 0 xxh64 508947b46b3466c7
+sample 96 file 0 gig 338 part 0 offset 197391352 bytes 711168 frames 118528 channels 2 bits 24 rate 48000 compressed 0 source 1a72733ed0c267b6 steps 0 result_frames 118528 result_bits 24 result 1a72733ed0c267b6 name "clmad5-s4-3d5"
+stream 96 offset 38904426 bytes 282504 first 0 xxh64 b5287066cecf170e
+sample 97 file 0 gig 301 part 0 offset 166297302 bytes 867744 frames 144624 channels 2 bits 24 rate 48000 compressed 0 source 11d9252d41320c61 steps 0 result_frames 144624 result_bits 24 result 11d9252d41320c61 name "clmad5-s4-2d5"
+stream 97 offset 39186930 bytes 380808 first 0 xxh64 0bb9c79120ba8898
+sample 98 file 0 gig 277 part 0 offset 146773890 bytes 830682 frames 138447 channels 2 bits 24 rate 48000 compressed 0 source b81c57012e1e3446 steps 0 result_frames 138447 result_bits 24 result b81c57012e1e3446 name "clmad5-s4-4d5"
+stream 98 offset 39567738 bytes 353502 first 8192 xxh64 f6d5178893ee17d3
+sample 99 file 0 gig 247 part 0 offset 120674790 bytes 860736 frames 143456 channels 2 bits 24 rate 48000 compressed 0 source 921fc3f182f7f124 steps 0 result_frames 143456 result_bits 24 result 921fc3f182f7f124 name "clmad5-s4-3d5"
+stream 99 offset 39921240 bytes 362906 first 8192 xxh64 400661226bc11822
+sample 100 file 0 gig 347 part 0 offset 204995248 bytes 678912 frames 113152 channels 2 bits 24 rate 48000 compressed 0 source 9600ab3b6c2f1cfb steps 0 result_frames 113152 result_bits 24 result 9600ab3b6c2f1cfb name "clmae5-s4-2e5"
+stream 100 offset 40284146 bytes 309798 first 0 xxh64 ac76e77e399a91c6
+sample 101 file 0 gig 310 part 0 offset 174069636 bytes 806304 frames 134384 channels 2 bits 24 rate 48000 compressed 0 source a3f9df618bd4797b steps 0 result_frames 134384 result_bits 24 result a3f9df618bd4797b name "clmae5-s4-1e5"
+stream 101 offset 40593944 bytes 356868 first 0 xxh64 f19e22e4acfba558
+sample 102 file 0 gig 278 part 0 offset 147604780 bytes 579570 frames 96595 channels 2 bits 24 rate 48000 compressed 0 source ac30dccd18bdf07f steps 0 result_frames 96595 result_bits 24 result ac30dccd18bdf07f name "clmae5-s4-4e5"
+stream 102 offset 40950812 bytes 282036 first 0 xxh64 ba4e39b3fbde3bfb
+preload offset 21420 bytes 5062656 xxh64 54c50158b183d930
+head bytes 44
+RlNCMQMAAACAuwAAAgAAAAAgAACWAAAArFMAAAAAAAAAQE0AAAAAABgAAAA=
+rows count 150 bytes 19200 xxh64 519a4c75bd145a99
+Y2xtYWMyLXMxLTNjMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAACAAAAAAAACUNAQAAAAAAAAAAAAAAAAAAAAAAJQ0BACsk00AAAAAAEYv
+CgAAAAAAACAAAAAAAABjbG1hY3MyLXMxLTJjIzIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAIAAAAAAAAAAOAgAAAAAAAAAAAAAAAAADAAAA
+AA4CADT+aQAAAAAA6uEEAAAAAAAAIAAAAAAAAGNsbWFkczItczEtMmQjMgAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAgAAAAAAAAAO4BAAAA
+AAAAAAAAAAAAAAYAAAAA7gEAVpZ6AAAAAAAkTAQAAAAAAAAAAAAAAAAAY2xtYWRzMi1zMS0yZCMy
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAA
+ACAAAAAAAAAA7gEAAAAAAAAAAAAAAAAABgAAAADuAQBWlnoAAAAAACRMBAAAAAAAAAAAAAAAAABj
+bG1hZTItczEtMmUyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAEABAAAAAAAAIAAAAAAAAAAnAgAAAAAAAAAAAAAAAAAKAAAAACcCAHZAjwAAAAAAggoF
+AAAAAAAAIAAAAAAAAGNsbWFmczItczEtMmYjMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAoAEAAAAAAAAgAAAAAAAAOBsCAAAAAAAAAAAAAAAAAA0AAAA4
+GwIArAKfAAAAAACMfAQAAAAAAAAAAAAAAAAAY2xtYWZzMi1zMS0yZiMyAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAQAAAAAAACAAAAAAAAA4GwIAAAAA
+AAAAAAAAAAAADQAAADgbAgCsAp8AAAAAAIx8BAAAAAAAAAAAAAAAAABjbG1hZ3MyLXMyLTJnIzIA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKACAAAAAAAA
+IAAAAAAAABRLAgAAAAAAAAAAAAAAAAAVAAAAFEsCAIyrzwAAAAAAmIMFAAAAAAAAIAAAAAAAAGNs
+bWFhMi1zMS0zYTIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAMAAAAAAAAgAAAAAAAAMJICAAAAAAAAAAAAAAAAABgAAAAwkgIAeCjgAAAAAAAYNwYA
+AAAAAAAgAAAAAAAAY2xtYWFzMi1zMi0xYSMyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAABgAwAAAAAAACAAAAAAAACAGgIAAAAAAAAAAAAAAAAAGwAAAIAa
+AgDiBPIAAAAAACwjBAAAAAAAACAAAAAAAABjbG1hYjItczItMWIyAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMADAAAAAAAAIAAAAAAAAEC7AQAAAAAA
+AAAAAAAAAAAeAAAAQLsBAIC9AAEAAAAA/rcDAAAAAAAAIAAAAAAAAGNsbWFjczMtczItM2MjMwAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAQAAAAAAAAg
+AAAAAAAAwC0CAAAAAAAAAAAAAAAAACEAAADALQIABnkMAQAAAAD2xQUAAAAAAAAAAAAAAAAAY2xt
+YWNzMy1zMi0zYyMzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAgBAAAAAAAACAAAAAAAADALQIAAAAAAAAAAAAAAAAAIQAAAMAtAgAGeQwBAAAAAPbFBQAA
+AAAAAAAAAAAAAABjbG1hZHMzLXMzLTJkIzMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAIAAAAAAAADxAAgAAAAAAAAAAAAAAAAAoAAAAPEAC
+ABwrNgEAAAAAdj8EAAAAAAAAIAAAAAAAAGNsbWFmczMtczMtMmYjMwAAAAAAAAAAAAAAAAAAAAAA
+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
+end

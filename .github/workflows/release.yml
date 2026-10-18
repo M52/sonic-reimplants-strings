@@ -1,0 +1,102 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            platform: windows
+            exe: sr_install.exe
+          - os: ubuntu-22.04
+            platform: linux
+            exe: sr_install
+          - os: macos-14
+            platform: macos
+            exe: sr_install
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build (Windows)
+        if: matrix.platform == 'windows'
+        shell: cmd
+        run: call Installer\build.bat
+
+      - name: Build (Linux)
+        if: matrix.platform == 'linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libx11-dev libxext-dev
+          make -C Installer -j4
+          strip Installer/sr_install
+
+      - name: Build (macOS)
+        if: matrix.platform == 'macos'
+        run: |
+          make -C Installer -j4 ARCH="-arch arm64 -arch x86_64"
+          strip Installer/sr_install
+          codesign --force --sign - Installer/sr_install
+          lipo -info Installer/sr_install
+
+      - name: Assemble
+        shell: bash
+        run: |
+          version=$(sed -n 's/^#define SR_VERSION "\(.*\)"/\1/p' Installer/src/sr_core.h)
+          name="sonic-reimplants-strings-$version-${{ matrix.platform }}.zip"
+          b="dist/Sonic Reimplants"
+          mkdir -p "$b/Installer/licenses" "$b/Samples"
+          cp README.md LICENSE "$b/"
+          cp -R Images Instruments "$b/"
+          cp Samples/.placeholder "$b/Samples/"
+          cp -R Installer/recipes "$b/Installer/"
+          cp "Installer/${{ matrix.exe }}" "$b/Installer/"
+          cp Installer/3rdparty/wavpack-5.9.0/license.txt "$b/Installer/licenses/WavPack.txt"
+          cp Installer/3rdparty/monocypher/LICENCE.md "$b/Installer/licenses/Monocypher.md"
+          cp Installer/3rdparty/imgui/LICENSE.txt "$b/Installer/licenses/Dear ImGui.txt"
+          head -n 5 Installer/3rdparty/imgui_sw/imgui_sw.cpp | sed 's|^// \{0,1\}||' > "$b/Installer/licenses/imgui_sw.txt"
+          echo "ZIP_NAME=$name" >> "$GITHUB_ENV"
+
+      - name: Zip (Windows)
+        if: matrix.platform == 'windows'
+        shell: bash
+        run: cd dist && 7z a -tzip "../$ZIP_NAME" "Sonic Reimplants"
+
+      - name: Zip (Linux, macOS)
+        if: matrix.platform != 'windows'
+        run: cd dist && zip -r -X -y "../$ZIP_NAME" "Sonic Reimplants"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.platform }}
+          path: ${{ env.ZIP_NAME }}
+          if-no-files-found: error
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: assets
+          merge-multiple: true
+      - name: Create the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          git fetch --force origin "refs/tags/$TAG:refs/tags/$TAG"
+          git tag -l --format='%(contents)' "$TAG" > notes.txt
+          cat notes.txt
+          gh release create "$TAG" assets/*.zip --title "Sonic Reimplants Strings ${TAG#v}" --notes-file notes.txt
