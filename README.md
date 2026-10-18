@@ -1,11 +1,11 @@
 # Sonic Reimplants: Symphonic String Collection
 
-FastSampler instruments for the Sonic Implants Symphonic String Collection (GigaStudio, 2002). This package contains the instruments and an installer. The package does not contain audio. The installer makes the sample banks from your copy of the original .gig files.
+FastSampler instruments for the Sonic Implants Symphonic String Collection (GigaStudio, 2002). This package contains the instruments and an installer. The package does not contain any samples. The installer builds the sample banks from your copy of the original .gig files.
 
 ## Requirements
 
 - [FastSampler](https://github.com/M52/fastsampler-downloads/releases)
-- The 57 .gig files of the Sonic Implants Symphonic String Collection (approximately 14 GB)
+- The .gig files of the Sonic Implants Symphonic String Collection
 - 10 GB of free disk space
 
 ## Install
