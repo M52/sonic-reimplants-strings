@@ -68,7 +68,7 @@ sr_install --gig "D:\Libraries\Sonic Implants" --only Cellos --yes
 
 ## Different editions of the .gig files
 
-If a .gig file has a different size, the installer finds the samples by name instead. The installer compares each sample with the recipe. If a sample is different, the installer does not build that bank.
+If a .gig file has a different size, the installer finds the samples by name instead. The installer compares each sample with the recipe. 16-bit editions are supported. If a sample has the correct name but is different, the installer uses it and shows a warning. It cuts a longer sample to the original length and adds silence to the end of a shorter sample. If the installer cannot find a sample with the correct name, it does not build that bank.
 
 ## Build from source
 

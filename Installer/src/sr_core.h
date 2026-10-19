@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 
-#define SR_VERSION "1.3.1"
+#define SR_VERSION "1.4"
 #define SR_CREATOR "sonic-reimplants-installer"
 
 std::string sr_exe_dir();
@@ -36,6 +36,9 @@ struct SrPart {
     bool exact;
 };
 
+#define SR_SKETCH_BLOCKS 16
+#define SR_SKETCH_WINDOW 16
+
 struct SrSample {
     int file, gig, part, channels, bits, steps, result_bits, compressed;
     uint32_t rate, result_frames;
@@ -43,6 +46,10 @@ struct SrSample {
     std::string name;
     bool has_stream;
     uint64_t stream_offset, stream_bytes, stream_first, stream_hash;
+    bool has_sketch;
+    uint8_t env[SR_SKETCH_BLOCKS];
+    uint64_t window_at[2];
+    std::vector<int16_t> window;
 };
 
 struct SrRecipe {
@@ -82,6 +89,8 @@ struct SrBankProgress {
     std::atomic<int> samples_done{0};
     int samples_total = 0;
     std::string error;
+    int samples_16bit = 0;
+    std::vector<std::string> warnings;
 };
 
 struct SrRebuilder {
@@ -101,4 +110,5 @@ int sr_default_threads();
 bool sr_verify_bank(const SrRecipe& r, const std::string& out_dir, std::string* err);
 
 std::string sr_default_instruments_dir();
-int sr_link_instruments(const std::string& instruments_dir, std::vector<std::string>* problems);
+int sr_link_instruments(const std::string& instruments_dir, const std::vector<std::string>& built,
+                        std::vector<std::string>* problems);

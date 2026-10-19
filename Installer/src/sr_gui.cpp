@@ -324,8 +324,11 @@ void start_build(App& app) {
     app.screen = SCREEN_BUILDING;
     app.build_thread = std::thread([&app]() {
         sr_build_all(app.building, app.out_dir, app.who, app.force, app.threads, &app.cancel, app.progress.get());
+        std::vector<std::string> built;
+        for (size_t i = 0; i < app.building.size(); ++i)
+            if ((*app.progress)[i].state.load() == SR_BANK_DONE) built.push_back(app.building[i]->bank);
         app.link_problems.clear();
-        app.linked = sr_link_instruments(app.instruments_dir, &app.link_problems);
+        app.linked = sr_link_instruments(app.instruments_dir, built, &app.link_problems);
         app.finished = std::chrono::steady_clock::now();
         app.build_done.store(true);
     });
@@ -452,7 +455,7 @@ void draw_found(App& app) {
 }
 
 struct Tally {
-    int done = 0, skipped = 0, failed = 0, building = 0, waiting = 0, cancelled = 0;
+    int done = 0, skipped = 0, failed = 0, building = 0, waiting = 0, cancelled = 0, from_16bit = 0, warned = 0;
     long long samples_done = 0, samples_total = 0;
 };
 
@@ -464,8 +467,11 @@ Tally tally(App& app) {
         t.samples_total += p.samples_total;
         if (st == SR_BANK_DONE || st == SR_BANK_SKIPPED) t.samples_done += p.samples_total;
         else t.samples_done += p.samples_done.load();
-        if (st == SR_BANK_DONE) t.done++;
-        else if (st == SR_BANK_SKIPPED) t.skipped++;
+        if (st == SR_BANK_DONE) {
+            t.done++;
+            if (p.samples_16bit) t.from_16bit++;
+            if (!p.warnings.empty()) t.warned++;
+        } else if (st == SR_BANK_SKIPPED) t.skipped++;
         else if (st == SR_BANK_FAILED) t.failed++;
         else if (st == SR_BANK_BUILDING) t.building++;
         else if (st == SR_BANK_CANCELLED) t.cancelled++;
@@ -481,6 +487,17 @@ void draw_failures(App& app) {
         ImGui::TextColored(COL_BAD, "%s", app.building[i]->bank.c_str());
         ImGui::Indent();
         text_wrapped_dim("%s", p.error.c_str());
+        ImGui::Unindent();
+    }
+}
+
+void draw_warnings(App& app) {
+    for (size_t i = 0; i < app.progress->size(); ++i) {
+        const SrBankProgress& p = (*app.progress)[i];
+        if (p.state.load() != SR_BANK_DONE || p.warnings.empty()) continue;
+        ImGui::TextColored(COL_ACCENT, "%s", app.building[i]->bank.c_str());
+        ImGui::Indent();
+        for (const std::string& w : p.warnings) text_wrapped_dim("%s", w.c_str());
         ImGui::Unindent();
     }
 }
@@ -570,17 +587,26 @@ void draw_done(App& app) {
     ImGui::TextWrapped("The program built %s in %s.", n_banks(built).c_str(), human_time(elapsed).c_str());
     if (t.skipped)
         ImGui::TextWrapped("%s already in the output folder.", (n_banks(t.skipped) + (t.skipped == 1 ? " was" : " were")).c_str());
+    if (t.from_16bit)
+        ImGui::TextWrapped("%s 16-bit samples from a different edition.",
+                           (n_banks(t.from_16bit) + (t.from_16bit == 1 ? " contains" : " contain")).c_str());
     if (app.linked)
         ImGui::TextWrapped("The program updated %d %s to use your banks.", app.linked,
                            app.linked == 1 ? "instrument" : "instruments");
     for (const std::string& p : app.link_problems) ImGui::TextColored(COL_BAD, "%s", p.c_str());
     if (t.failed) ImGui::TextColored(COL_BAD, "The program cannot build %s:", n_banks(t.failed).c_str());
-    if (t.failed) {
+    if (t.warned)
+        ImGui::TextColored(COL_ACCENT, "%s samples that are different from the original samples. They can sound different:",
+                           (n_banks(t.warned) + (t.warned == 1 ? " contains" : " contain")).c_str());
+    if (t.failed || t.warned) {
         float h = ImGui::GetContentRegionAvail().y - ImGui::GetFrameHeightWithSpacing() * 4.0f;
         ImGui::BeginChild("##failed", ImVec2(0, h > 60.0f * s ? h : 60.0f * s), ImGuiChildFlags_Borders);
         draw_failures(app);
+        if (t.failed && t.warned) ImGui::Dummy(ImVec2(0, 8.0f * s));
+        draw_warnings(app);
         ImGui::EndChild();
-    } else if (t.failed == 0 && t.cancelled == 0) {
+    }
+    if (t.failed == 0 && t.cancelled == 0) {
         ImGui::Dummy(ImVec2(0, 6.0f * s));
         ImGui::TextColored(COL_GOOD, "You can now load the instruments in FastSampler.");
     }

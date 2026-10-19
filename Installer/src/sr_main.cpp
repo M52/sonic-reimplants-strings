@@ -159,11 +159,15 @@ static int run_cli(int argc, char** argv) {
     printf("Building %d banks, %d at the same time...\n", (int)buildable.size(), threads);
     fflush(stdout);
     sr_build_all(buildable, out_dir, who, force, threads, &cancel, &progress);
-    int built = 0, skipped = 0, failed = (int)(chosen.size() - buildable.size());
+    int built = 0, skipped = 0, warned = 0, failed = (int)(chosen.size() - buildable.size());
+    std::vector<std::string> built_banks;
     for (size_t i = 0; i < buildable.size(); ++i) {
         int st = progress[i].state.load();
         if (st == SR_BANK_DONE) {
-            printf("%s\n", buildable[i]->bank.c_str());
+            printf("%s%s\n", buildable[i]->bank.c_str(), progress[i].samples_16bit ? " (with 16-bit samples)" : "");
+            for (const std::string& w : progress[i].warnings) printf("  Warning: %s\n", w.c_str());
+            warned += progress[i].warnings.empty() ? 0 : 1;
+            built_banks.push_back(buildable[i]->bank);
             built++;
         } else if (st == SR_BANK_SKIPPED) {
             printf("%s: The bank is already in the output folder. Use --force to build it again.\n",
@@ -175,9 +179,12 @@ static int run_cli(int argc, char** argv) {
         }
     }
     printf("\n%d banks built. %d banks were already in the output folder. %d banks failed.\n", built, skipped, failed);
+    if (warned)
+        printf("%d banks contain samples that are different from the original samples. They can sound different.\n",
+               warned);
 
     std::vector<std::string> problems;
-    int linked = sr_link_instruments(instruments_dir, &problems);
+    int linked = sr_link_instruments(instruments_dir, built_banks, &problems);
     if (linked) printf("%d instruments updated to use your banks.\n", linked);
     for (const std::string& p : problems) fprintf(stderr, "%s\n", p.c_str());
     return failed || !problems.empty() ? 1 : 0;

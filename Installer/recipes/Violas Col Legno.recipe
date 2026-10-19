@@ -1,67 +1,96 @@
-# Sonic Reimplants bank recipe: how sr_install rebuilds this bank from the original .gig files.
 recipe 1
 bank "Violas Col Legno.fsb" bytes 9877328 content_xxh64 8e6cd27524c78463
 format rate 48000 channels 2 bits 24 preload 8192 block 4096 flags 0
 part 0 0 name "Violas Col Legno.gig" folder "Symphonic String Collection- Violas" bytes 17323550
 sample 0 file 0 gig 21 part 0 offset 10612950 bytes 1022976 frames 170496 channels 2 bits 24 rate 48000 compressed 0 source cca7b3b801683481 steps 0 result_frames 170496 result_bits 24 result cca7b3b801683481 name "vlacls1-c3-3-c3"
+sketch 0 env 2f3a484b565d5e65727072737d8d999a at 1701 100084 pcm /fdRBKn5cwur+1UVhfzIF/j6pxmq+BEfWPdzIR/3VCHL+HYhP/36HG8Bvhf6A5wUOAjPEaoMsQ91D64M8hC0B7P/e/+0/3j/tP93/7T/d/+0/3f/s/92/7P/dv+0/3b/tf9z/7X/dP+4/3X/uv91/73/d/++/3f/wP93/8D/eP8=
 stream 0 offset 1487276 bytes 497156 first 0 xxh64 0f9fc9f75263beb5
 sample 1 file 0 gig 22 part 0 offset 11636134 bytes 620544 frames 103424 channels 2 bits 24 rate 48000 compressed 0 source 75c5ec761aa2b2e0 steps 0 result_frames 103424 result_bits 24 result 75c5ec761aa2b2e0 name "vlacls1-cs3-3-c#3"
+sketch 1 env 373d4a525a6a6e757e82848d918d8c98 at 2960 53746 pcm jgLc/fgEy/tYCMT6Egyd+pkPbvuOEtz8wRQ3/m4Wav8WF/f/whUzAGgT3P8BEKL/TwuL/7sGH/+eAjz+Z/+9/D8ALgBDAC8AQgAsAEAALgBFADAARAAvAEYALQBJACsASwArAEkAKgBLACcASQAnAEgAJQBJACQASQAiAEgAIAA=
 stream 1 offset 1984432 bytes 308382 first 0 xxh64 f41585d7af8c44cc
 sample 2 file 0 gig 14 part 0 offset 7306334 bytes 462336 frames 77056 channels 2 bits 24 rate 48000 compressed 0 source 20aa851d220ed166 steps 0 result_frames 77056 result_bits 24 result 20aa851d220ed166 name "vlacls1-ds3-2-d#3"
+sketch 2 env 2a323b47525d66727b858c8e93979ea5 at 700 38673 pcm dw8M/YwKUQQKB0sROQPnGgb+HRTl+qsFGPkM9CH4YOAT+HHGzfiryRz6OuW8+6H4Gf0C/sH+PPzV/on1Tvzz8Oz/0//0/8z//P/I/wEAwv8CALr/BACz/wUAq/8FAKn/BQCo////qP/8/6r//f+t/wAArv8DALH/CAC0/wkAuP8=
 stream 2 offset 2292814 bytes 242920 first 0 xxh64 ae0cd05242ed64fa
 sample 3 file 0 gig 0 part 0 offset 210888 bytes 496128 frames 82688 channels 2 bits 24 rate 48000 compressed 0 source 482a9bf0894be509 steps 0 result_frames 82688 result_bits 24 result 482a9bf0894be509 name "vlacls1-e3-1-e3"
+sketch 3 env 2f35414c565e68737d8688838c91919f at 3166 41432 pcm Pv3OE1/+XxSC/+YW6gDQGcsCnRvBBEIeQwYDIYQHuyK3CN0ksApsJJkMuyKzDWAiXg52Is8OByIrD5EhUA8PIcP/rv/C/63/xf+s/8n/p//Q/6v/1P+t/9f/qf/f/6b/4v+l/+j/qf/t/6v/7P+r/+//r//v/7P/8f+z//T/tv8=
 stream 3 offset 2535734 bytes 252526 first 0 xxh64 59d61201c1119ac5
 sample 4 file 0 gig 1 part 0 offset 707224 bytes 422400 frames 70400 channels 2 bits 24 rate 48000 compressed 0 source 4df797a152c33a31 steps 0 result_frames 70400 result_bits 24 result 4df797a152c33a31 name "vlacls1-fs3-1-f#3"
+sketch 4 env 2d343c444f5b696e7074757173787e92 at 1917 36392 pcm ZwJM4BQDi9yRAu3ZFwEF3Ov/kt5a/oDeivtu3K/5N9lV+vrUHfuJ1dz8/9j8/r/eHgDi4scApONiARLnHQOC6sH/Vv/B/1D/wP9I/8L/QP+//z7/wP87/73/N/+8/zf/vv82/8H/Pf/B/0H/wP9D/8H/Sf+//07/wP9O/8D/TP8=
 stream 4 offset 2788260 bytes 219514 first 0 xxh64 c23c7a33f3f8dc42
 sample 5 file 0 gig 15 part 0 offset 7768878 bytes 442368 frames 73728 channels 2 bits 24 rate 48000 compressed 0 source 998a6e28126c9c51 steps 0 result_frames 73728 result_bits 24 result 998a6e28126c9c51 name "vlacls1-fs3-2-f#3"
+sketch 5 env 2b2c37414c555f6770797e76726e7686 at 1879 37088 pcm xQkG1fQG3OM8AXD+IP0iDZ7+5v9iAiT4nAdW8TcJVM/QCKHHFQov0vIIY9BhBm7WdAXc5hoHxeigEbz4eRvzApkADwCbAAQAngACAKEABACmAPz/qwD1/60A8f+wAPL/sADn/6cA3P+fANn/lADU/4IA0f90ANL/agDU/10Azf8=
 stream 5 offset 3007774 bytes 238640 first 0 xxh64 1b4be39ec5bfef2a
 sample 6 file 0 gig 25 part 0 offset 13199122 bytes 517632 frames 86272 channels 2 bits 24 rate 48000 compressed 0 source 32c50cd06c07876c steps 0 result_frames 86272 result_bits 24 result 32c50cd06c07876c name "vlacls2-gs3-3-g#3"
+sketch 6 env 2d38424958657177797e83898f9599a0 at 2127 43375 pcm ZQeG4GkEXN94AgfehQEn22IAeNi4/1bXB/+i1m/9DNQp/NPQ1/rl0Pv4Q9Os+N7VAPgS2Yj1Et7o82zju/MT5MX/zP/G/8r/w//P/8D/0v+9/9T/uv/b/7X/3P+0/9v/r//Z/7D/2v+3/93/uf/g/7v/5P+9/+b/wP/m/8L/6f8=
 stream 6 offset 3246414 bytes 264262 first 0 xxh64 40da6441716aebbd
 sample 7 file 0 gig 30 part 0 offset 16164186 bytes 1158864 frames 193144 channels 2 bits 24 rate 48000 compressed 0 source fb09be216451301a steps 0 result_frames 193144 result_bits 24 result fb09be216451301a name "vlacls2-g3-4-g3"
+sketch 7 env 2f3d4a555f6768686e72777d82817d83 at 4341 97765 pcm //d4EMr2sxPx9egWa/XYGk/1xx6A9RMiJfbSJEH3hya6+CAnxfprJk/9fiQDABkiNQKlH1cDch11A8obAwNSGrkABwC7AAIAvQD//8AA/f/CAPb/wgDx/8YA8P/HAOz/ywDo/8oA5P/JAOD/yQDf/8oA2v/JANX/yQDX/8cA1f8=
 stream 7 offset 3510676 bytes 559800 first 0 xxh64 42a717b63f0ab784
 sample 8 file 0 gig 16 part 0 offset 8211454 bytes 580608 frames 96768 channels 2 bits 24 rate 48000 compressed 0 source b653dcc79d7b96e3 steps 0 result_frames 96768 result_bits 24 result b653dcc79d7b96e3 name "vlacls1-g3-2-g3"
+sketch 8 env 2e34444e58686c74847f7e7c888b8b98 at 2569 67048 pcm afvdA1P6agjy9/IN3/cHEe33gRLH9joWVvb3GuD4/iEL+9glL/ytJd78siU0/QYiXv04HF39OBll/8QXeQLMFEMAMgBFADMARQA1AEcANABGADYARwA2AEcANgBHADgASwA2AEkAOABHADcARQA3AEcANwBHADcARgA6AEcAOwA=
 stream 8 offset 4070476 bytes 294802 first 0 xxh64 028b64f8d30f1202
 sample 9 file 0 gig 2 part 0 offset 1129832 bytes 689664 frames 114944 channels 2 bits 24 rate 48000 compressed 0 source d9b68fe1620a2442 steps 0 result_frames 114944 result_bits 24 result d9b68fe1620a2442 name "vlacls2-as3-1-a#3"
+sketch 9 env 2f35404858656f7b83868d9294959fab at 2799 65825 pcm 5/jN+rr6yfiw/Nz1r/1d8rj93+2H/Y/og/zQ4hD6BN5e983bWvU03Ez0jt439CnjI/Qw6kb0q/Hu9eP3R/hj/SsAEgAtAA8ALgAPAC8AEQAuABIALgASAC0AEAAtABQAMAAVAC8AEwAuABQALAAXACoAEwAvABMALAAVACsAEgA=
 stream 9 offset 4365278 bytes 342412 first 0 xxh64 4061c514de09fd6d
 sample 10 file 0 gig 17 part 0 offset 8792270 bytes 486912 frames 81152 channels 2 bits 24 rate 48000 compressed 0 source f9add9601eadd666 steps 0 result_frames 81152 result_bits 24 result f9add9601eadd666 name "vlacls2-as3-2-a#3"
+sketch 10 env 31353c434a545e646a72777b7f7f8b93 at 1282 40833 pcm qf+UDicAPQpz/nYER/ti/hH4JvcD9LnuJ/B65q3t499R7Lfc4Osm3uHup+Rx88HtQfeP9x39aQHZAcoHRQSvCaj/bf+n/2z/qP9l/6r/Y/+r/17/rf9U/6//Uf+t/0v/rf9I/67/S/+u/07/rf9Q/6v/WP+s/1v/qv9e/6b/Yv8=
 stream 10 offset 4707690 bytes 248276 first 0 xxh64 af3e9e538bd04075
 sample 11 file 0 gig 3 part 0 offset 1819704 bytes 531456 frames 88576 channels 2 bits 24 rate 48000 compressed 0 source a638bcac11b82ca8 steps 0 result_frames 88576 result_bits 24 result a638bcac11b82ca8 name "vlacls2-b3-1-b3"
+sketch 11 env 30323c484f575f68747c81848b8e949f at 2798 45671 pcm bfcEBdf60wjY/4QL3gRGDr4IdxScCq0czgn6JQkHsy2EBO8vAgNLLW0CFiQjAywXGwXmC4oH6AMrCon+mQwy/SEAnP8gAJz/IACa/x0Amv8dAJn/GQCW/xUAk/8PAJH/CQCO/wgAj/8CAJD/AACS//3/lv/5/5f/9v+a//X/mv8=
 stream 11 offset 4955966 bytes 270206 first 0 xxh64 ecf58cca2eec4f41
 sample 12 file 0 gig 23 part 0 offset 12256886 bytes 455424 frames 75904 channels 2 bits 24 rate 48000 compressed 0 source 0c571527e7f58c05 steps 0 result_frames 75904 result_bits 24 result 0c571527e7f58c05 name "vlacls2-cs4-3-c#4"
+sketch 12 env 34333d494f58636f757d7e76757b8589 at 3306 56823 pcm 1vwGBbz9eAdC/okKv/3EDkz8VxNR+yEXxPrMGZT5fxtc+Eoct/fNGzX3/Rnu9voXuPboFEj25hF09rkOhPezC3oADwB6AA0AewAKAHsADgB9ABEAfQANAHwADgB8AAcAgAAFAH0AAwB9AAMAfAABAH0A/P99AP7/fwD+/30A/v8=
 stream 12 offset 5226172 bytes 235452 first 0 xxh64 bf6460bd9150da5d
 sample 13 file 0 gig 24 part 0 offset 12712518 bytes 486396 frames 81066 channels 2 bits 24 rate 48000 compressed 0 source 776251f070a6aac5 steps 0 result_frames 81066 result_bits 24 result 776251f070a6aac5 name "vlacls2-d4-3-d4"
+sketch 13 env 3336444b56626f6d72777b7874798292 at 4989 40673 pcm uf0PAeL7Qv2F+oT4jfp/8wv8Ae4l/u7nWABn4j0Cv95BA0LdwQON3QQETN+yA5XiMQP75uYCteu+AoTwugL69PT/ZwDx/2oA8f9wAO3/eADr/4IA7f+JAO//jwD4/5QAAACdAAUAnQALAJwAEQCcABsAnAAeAJoAHQCTACEAkAA=
 stream 13 offset 5461624 bytes 250308 first 0 xxh64 bab2e7e66b5a01b0
 sample 14 file 0 gig 26 part 0 offset 13716962 bytes 1083960 frames 180660 channels 2 bits 24 rate 48000 compressed 0 source b831878f6f1f2495 steps 0 result_frames 180660 result_bits 24 result b831878f6f1f2495 name "vlacls3-d4-3-d4"
+sketch 14 env 333f4c5a626f787c78787b858d93a0a5 at 1965 95379 pcm KPYG/QX40ft4++b/9v2kA0MAYAn5AnsQOgMPFoABXxkd/w8aFf2MGCb9MRIC/zYJ4v+eAMX+h/iV/ST39vyl+xsAVAAdAFEAHQBTAB4AVQAgAFUAHwBUACAAVwAlAFYAJgBYACYAVAAnAFQAJgBTACkAUwAoAFMAKgBPACkATwA=
 stream 14 offset 5711932 bytes 522240 first 0 xxh64 32492dd730712dba
 sample 15 file 0 gig 27 part 0 offset 14801130 bytes 456192 frames 76032 channels 2 bits 24 rate 48000 compressed 0 source 52039af277e434aa steps 0 result_frames 76032 result_bits 24 result 52039af277e434aa name "vlacls3-ds4-3-d#4"
+sketch 15 env 333c434b5560686f797d828c8f96a0a1 at 1186 39483 pcm d/31Dwn8FxGj+cwLevawAbL0Cvbz88bqe/OQ4ij1bN5p+Nzdl/we4boBl+ZXBcfu2wWt97UD4/yf/pT/jPd5//v/yP///8X/BgC9/woAs/8OAK7/DgCi/woAnf8JAJj/BgCS/wMAlP8CAJX//P+a//r/o//6/6z//v+6/wQAwP8=
 stream 15 offset 6234172 bytes 235158 first 0 xxh64 840a28cf9375b874
 sample 16 file 0 gig 28 part 0 offset 15257530 bytes 482304 frames 80384 channels 2 bits 24 rate 48000 compressed 0 source 8e2c0bd6cf9b84dc steps 0 result_frames 80384 result_bits 24 result 8e2c0bd6cf9b84dc name "vlacls3-f4-3-f4"
+sketch 16 env 30343e4b505e6671787e7c7e82888a84 at 3728 40222 pcm gQtV+BMLFfSaCtPu5Qmb6UIJgeV4CAzi9AYt3zEFwd1zAzTdewJ93eIBj95SAWTg4wD74lEAa+YOAJ/qBwCC7sH/EQCz/xUAqP8VAJv/FwCQ/xcAh/8fAID/KAB6/y0AeP81AHr/PgB8/0oAfv9KAIT/UACP/1MAmv9XAKf/WQA=
 stream 16 offset 6469330 bytes 249412 first 0 xxh64 590be2bc03402dcf
 sample 17 file 0 gig 5 part 0 offset 2807000 bytes 491520 frames 81920 channels 2 bits 24 rate 48000 compressed 0 source d11d02a214f8b4f7 steps 0 result_frames 81920 result_bits 24 result d11d02a214f8b4f7 name "vlacls3-f4-1-f4"
+sketch 17 env 2f3b45515a65727c858d93959a9d9ca0 at 1303 41222 pcm N/wJEkj+ag23APAF7ALX/EUEOPLiBSnntQXz3ZUDE9fiAbjTVQAm1N3+XdnP/j/hpf4C6nP+SfMZ/xf87P8OAt7/8v/e//H/3v/u/+D/6P/i/+P/4v/c/+P/1//i/9D/5f/N/+j/z//r/9H/7//V//D/3P/v/9//7v/j/+r/5f8=
 stream 17 offset 6718742 bytes 214842 first 8192 xxh64 195fbdfa5f67c045
 sample 18 file 0 gig 7 part 0 offset 3755128 bytes 459264 frames 76544 channels 2 bits 24 rate 48000 compressed 0 source 48347c3973d7b0d9 steps 0 result_frames 76544 result_bits 24 result 48347c3973d7b0d9 name "vlacls3-g4-1-g4"
+sketch 18 env 2d363c45515d667375767b7b85848f8d at 2648 39142 pcm vfkY8lf9He+A/7zqgAF05ewBOOCLAvnb8gTA2IAGFNYYB5DULgi91S8JItmzCmzeHQzg5D8LXuuKCfXx+wdg+Lj//f+r/wEAoP8BAJv/AwCU/wgAjv8JAIj/BwCG/wUAhP8DAIX//v+F//3/h//6/43/8/+N/+n/kv/e/5b/1f8=
 stream 18 offset 6933584 bytes 234804 first 0 xxh64 ef34402017df6b24
 sample 19 file 0 gig 6 part 0 offset 3298728 bytes 456192 frames 76032 channels 2 bits 24 rate 48000 compressed 0 source 8018706d641a371f steps 0 result_frames 76032 result_bits 24 result 8018706d641a371f name "vlacls3-fs4-1-f#4"
+sketch 19 env 2c353e4b516168737f83878588808d9d at 2432 38994 pcm //jmFjb7bxkT/OgbD/v9HQz67x9w+SQiNfinI0f3vCTJ9hslGvZcJOD1XSM99qIh8vZpHwj4qB0a+RsdWvrEHtP/3v/J/9z/xf/c/73/2f+1/9n/tP/a/7H/2/+s/9f/rP/Y/63/2/+z/97/vP/j/8T/5P/K/+f/0f/n/9T/7P8=
 stream 19 offset 7168388 bytes 236488 first 0 xxh64 cc16629092c25e32
 sample 20 file 0 gig 4 part 0 offset 2351368 bytes 455424 frames 75904 channels 2 bits 24 rate 48000 compressed 0 source 313b6c015cc46340 steps 0 result_frames 75904 result_bits 24 result 313b6c015cc46340 name "vlacls3-a4-1-a4"
+sketch 20 env 30324346555d667a7f8489909798a2a8 at 675 41963 pcm W/UoFMr34xUO+WgW6vlZF8X6KRrI+r0dyPm4H1z4sCCU99khf/iEIEX6BhwO/I4XD/1oFNr9HRMb/0oRyADaD+r/JADs/ygA7v8tAO3/MwDs/zoA6f8/AOX/QQDl/0EA4v9DAOT/PwDl/zwA5v83AOr/NADr/zEA7v8sAOz/KAA=
 stream 20 offset 7404876 bytes 229964 first 0 xxh64 4d79518f01cf2460
 sample 21 file 0 gig 9 part 0 offset 4644120 bytes 903312 frames 150552 channels 2 bits 24 rate 48000 compressed 0 source ef0705c7d0fcf811 steps 0 result_frames 150552 result_bits 24 result ef0705c7d0fcf811 name "vlacls4-a4-1-a4"
+sketch 21 env 2e3e53605d6c6f7a78838a8d91989ca6 at 3719 77524 pcm pfum8WP+7e2gACnqywGt5rADvOP9BsffgAiR2p8GBdeZAz/WBwFr1+v+vdtH/eDhff2f57D/7eyjAZTxIwI39u7/NwDv/zcA8f86APP/PAD1/0EA8/9AAPT/RQDy/0cA9v9JAPj/RwD9/0gAAABIAAIASAADAEYAAQBJAAAARwA=
 stream 21 offset 7634840 bytes 435974 first 0 xxh64 5bc76ad48ea1e4c6
 sample 22 file 0 gig 8 part 0 offset 4214600 bytes 429312 frames 71552 channels 2 bits 24 rate 48000 compressed 0 source 9a64871fcf6c44fa steps 0 result_frames 71552 result_bits 24 result 9a64871fcf6c44fa name "vlacls3-gs4-1-g#4"
+sketch 22 env 302f3a485155646d747781858a8b8a9f at 3239 38685 pcm Yfxc9qL75vWS+jrzR/ms8Lv3bO059jroCfXV4sf0u97d9aLd4PdH30r6eeG6/CHkW/6x5wn/L+zS/uHvvf3h8V0ACgBhAA4AaQAOAHEAEQB2AA8AewANAH0ADgB+ABEAgQAQAH0ADwB5AA8AdQANAG0ADgBoAAsAYwAHAF0ABQA=
 stream 22 offset 8070814 bytes 223460 first 0 xxh64 7c1eaac1b3751288
 sample 23 file 0 gig 18 part 0 offset 9279390 bytes 448512 frames 74752 channels 2 bits 24 rate 48000 compressed 0 source 59af80c1d2a64a1f steps 0 result_frames 74752 result_bits 24 result 59af80c1d2a64a1f name "vlacls4-as4-2-a#4"
+sketch 23 env 303b4349585e6a757e888e92989c9a9f at 2431 37605 pcm hgCQEHv6ixa+9kwb9vV6IMP3TyUa+vwnO/uTKGj7JCk3/PMqPf3oKif/MSd2AZQgsAKNGFcDyRCwApAIJwLFAcb/BwDD/wcAwv8EAL3/+/+2//j/sf/z/6v/7/+m/+z/pf/q/6j/6P+v/+r/vf/r/8v/8v/b//j/8////wUACgA=
 stream 23 offset 8294274 bytes 231190 first 0 xxh64 b9cdf9e5d6d52739
 sample 24 file 0 gig 19 part 0 offset 9728110 bytes 417480 frames 69580 channels 2 bits 24 rate 48000 compressed 0 source 1b6ea965c0f7d6ed steps 0 result_frames 69580 result_bits 24 result 1b6ea965c0f7d6ed name "vlacls4-c5-2-c5"
+sketch 24 env 2f36434b535b6370797f868b8c969ca7 at 2332 35104 pcm Dvmn/rX2Pvng9azzGfdw7IL4suP++q7cl/0z2TL+x9Zi/c7U+fzY1Rf70tlA+EDg3vZ06Jj2RvHi9wT5iPjV/ez/9//e////z/8FAMD/BQCu/wkAm/8IAJL/BwCI/wsAg/8TAIr/IQCQ/y0Anf81AKf/OQC2/zkAxv8zAM7/KwA=
 stream 24 offset 8525464 bytes 220466 first 0 xxh64 fce4f876c7a6682a
 sample 25 file 0 gig 11 part 0 offset 6013256 bytes 416934 frames 69489 channels 2 bits 24 rate 48000 compressed 0 source 28ddbe5e294a3350 steps 0 result_frames 69489 result_bits 24 result 28ddbe5e294a3350 name "vlacls4-c5-1-c5"
+sketch 25 env 3537434b5558626e7a828a8c8c969ca7 at 4908 36013 pcm afUaAUzxngA97j3/cuwa/ePrHfud64n58OrX+orptv7O6JwDnekfCVLrsw2s7RAQlPBBECf0Fg7f96cJTPpEBPz/AwDt//7/3v/0/9D/8f+//+n/r//m/6L/3f+S/9r/iv/X/4//0/+U/9b/oP/b/7X/4P/D/+f/y//t/9X/8/8=
 stream 25 offset 8745930 bytes 219012 first 0 xxh64 9dbc3baec9cb1122
 sample 26 file 0 gig 12 part 0 offset 6430398 bytes 471552 frames 78592 channels 2 bits 24 rate 48000 compressed 0 source a18e01715281fb08 steps 0 result_frames 78592 result_bits 24 result a18e01715281fb08 name "vlacls4-cs5-1-c#5"
+sketch 26 env 313c44505a626c767f8a8c8c93979893 at 2464 39333 pcm QgK9AbsClv0zAzT4EgN38oUBuuyh/iHn6PpQ4tz2xd/U8r7fu+9A4i7vnOa18ArsWPID87rzCft/9UsCkvdpBtX/8P/O/+n/xf/q/8L/7P+9//H/vf/4/7r//v+2/wsAsf8VALL/HwC4/yUAv/8qAMz/KwDW/y4A5P8xAPD/KgA=
 stream 26 offset 8964942 bytes 242912 first 0 xxh64 a770fdfd0da1aa90
 sample 27 file 0 gig 29 part 0 offset 15740042 bytes 423936 frames 70656 channels 2 bits 24 rate 48000 compressed 0 source a882a40a697cd598 steps 0 result_frames 70656 result_bits 24 result a882a40a697cd598 name "vlacls4-ds5-3-d#5"
+sketch 27 env 313d464f57636e7a848b8f94969ca2aa at 668 39054 pcm uQNw95D/jfQm/Grus/sw7Az9aOw8//3pCALE5lsEB+NUBqbgEQiA47oI7+b5CEjqsgk78IEKevYrCmP5MQjC+BYA2f8TANb/EADT/w8AzP8QAMr/EADG/wsAxf8JAMP/BgDC/wUAxv8DAMf/AQDL//7/0v/8/9z/+P/k//j/5/8=
 stream 27 offset 9207854 bytes 218356 first 0 xxh64 ef800269358a5338
 sample 28 file 0 gig 20 part 0 offset 10145798 bytes 466944 frames 77824 channels 2 bits 24 rate 48000 compressed 0 source e11969a9776ce919 steps 0 result_frames 77824 result_bits 24 result e11969a9776ce919 name "vlacls4-e5-2-e5"
+sketch 28 env 2f38444f5a616c7981898f9193979ca2 at 1222 39790 pcm 2PGJCa/ynQQN+lH/EgSX+KwME++0EY3lzxUh3foYmtfgF0XVmhKf168Lld5oBebn8wHO62EBCOo2ANrnpP025/j/8v/0/+f/7//c/+f/1P/j/8b/5P+8/+j/tv/x/7L//f+w/wUAsv8RALb/GwC5/x4Au/8jAML/JQDK/yMA1P8=
 stream 28 offset 9426210 bytes 242014 first 0 xxh64 68b3127f438f56aa
 sample 29 file 0 gig 13 part 0 offset 6902158 bytes 403968 frames 67328 channels 2 bits 24 rate 48000 compressed 0 source 16cf3fc22074fded steps 0 result_frames 67328 result_bits 24 result 16cf3fc22074fded name "vlacls4-e5-1-e5"
+sketch 29 env 333b464c555e69717b838a8f8f959ca6 at 1323 33998 pcm 2gTj96sDaPguA3b7yQMCAboEnQgiBUkRtQQPGbED4B06AmYfmwBPHcj//BeCAKkRrgK5CooFNgOQCPD76wrJ9f7/+//x//r/4//x/9L/6v/A/+r/r//p/6X/7v+a//L/lf/2/5r/AACl/wcAtv8MAMr/DQDf/w0A7f8QAPj/DQA=
 stream 29 offset 9668224 bytes 209104 first 0 xxh64 76321bb84778bd86
 preload offset 12716 bytes 1474560 xxh64 29b6b7aecee1b04d
 head bytes 44

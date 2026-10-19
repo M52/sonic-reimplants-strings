@@ -10,6 +10,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
+#include <cmath>
 #include <ctime>
 #include <thread>
 
@@ -508,6 +509,41 @@ static bool read_b64(FILE* f, uint8_t* out, size_t want) {
     return got == want;
 }
 
+static bool read_sketch(const Words& w, SrSample* s) {
+    const std::string *env = w.after("env"), *pcm = w.after("pcm");
+    size_t at = 0;
+    while (at + 2 < w.w.size() && w.w[at] != "at") ++at;
+    if (!env || !pcm || env->size() != 2 * SR_SKETCH_BLOCKS || at + 2 >= w.w.size()) return false;
+    for (int k = 0; k < SR_SKETCH_BLOCKS; ++k) {
+        char hex[3] = {(*env)[2 * k], (*env)[2 * k + 1], 0};
+        if (!isxdigit((unsigned char)hex[0]) || !isxdigit((unsigned char)hex[1])) return false;
+        s->env[k] = (uint8_t)strtoul(hex, nullptr, 16);
+    }
+    s->window_at[0] = strtoull(w.w[at + 1].c_str(), nullptr, 10);
+    s->window_at[1] = strtoull(w.w[at + 2].c_str(), nullptr, 10);
+    std::vector<uint8_t> bytes;
+    uint32_t acc = 0;
+    int bits = 0;
+    for (char c : *pcm) {
+        int v = b64_value((unsigned char)c);
+        if (v < 0) continue;
+        acc = acc << 6 | (uint32_t)v;
+        bits += 6;
+        if (bits >= 8) {
+            bits -= 8;
+            bytes.push_back((uint8_t)(acc >> bits));
+        }
+    }
+    uint64_t n = std::min<uint64_t>(s->frames, SR_SKETCH_WINDOW);
+    if (s->channels < 1 || bytes.size() != 4 * n * (uint64_t)s->channels || s->window_at[0] + n > s->frames ||
+        s->window_at[1] + n > s->frames)
+        return false;
+    s->window.resize(bytes.size() / 2);
+    for (size_t i = 0; i < s->window.size(); ++i) s->window[i] = (int16_t)(bytes[2 * i] | bytes[2 * i + 1] << 8);
+    s->has_sketch = true;
+    return true;
+}
+
 static void fix_part_name(SrPart* p) {
     static const char* const fixes[][2] = {
         {"Violas Esprsessivo.gig", "Violas Espressivo.gig"},
@@ -599,6 +635,13 @@ bool sr_recipe_read(const std::string& path, SrRecipe* r, std::string* err) {
             s.stream_bytes = w.num("bytes");
             s.stream_first = w.num("first");
             s.stream_hash = w.hex("xxh64");
+        } else if (k == "sketch" && w.w.size() >= 2) {
+            int i = atoi(w.w[1].c_str());
+            if (i < 0 || i >= (int)r->samples.size() || !read_sketch(w, &r->samples[(size_t)i])) {
+                *err = "It has a damaged line.";
+                ok = false;
+                break;
+            }
         } else if (k == "preload") {
             r->preload_offset = w.num("offset");
             r->preload_bytes = w.num("bytes");
@@ -988,8 +1031,44 @@ static void gig_index(GigSource* g) {
     }
 }
 
+#define SKETCH_TOLERANCE 6
+#define SKETCH_LEVEL 3
+#define SKETCH_FLOOR 168
+
+static bool sketch_agrees(const SrSample& smp, const int32_t* v) {
+    uint64_t frames = smp.frames, ch = (uint64_t)smp.channels;
+    for (int k = 0; k < SR_SKETCH_BLOCKS; ++k) {
+        uint64_t a = frames * k / SR_SKETCH_BLOCKS, b = frames * (k + 1) / SR_SKETCH_BLOCKS;
+        double sum = 0.0;
+        for (uint64_t i = a * ch; i < b * ch; ++i) sum += (double)v[i] * (double)v[i];
+        int level = 255;
+        if (b > a && sum > 0.0) {
+            double db = 10.0 * log10(sum / (double)((b - a) * ch)) - 20.0 * log10(8388608.0);
+            level = std::min(std::max((int)lround(-2.0 * db), 0), 255);
+        }
+        if (abs(std::min(level, SKETCH_FLOOR) - std::min((int)smp.env[k], SKETCH_FLOOR)) > SKETCH_LEVEL) return false;
+    }
+    uint64_t n = std::min<uint64_t>(frames, SR_SKETCH_WINDOW);
+    const int16_t* want = smp.window.data();
+    for (uint64_t start : smp.window_at) {
+        for (uint64_t i = start * ch; i < (start + n) * ch; ++i) {
+            int32_t q = std::min(std::max((v[i] + 128) >> 8, -32768), 32767);
+            if (abs(q - *want++) > SKETCH_TOLERANCE) return false;
+        }
+    }
+    return true;
+}
+
+enum SampleMatch {
+    MATCH_SAME,
+    MATCH_16BIT,
+    MATCH_NAME,
+};
+
 static std::string read_sample(GigSource* g, const SrPart& part, const SrSample& smp, std::vector<uint8_t>* raw,
-                               std::vector<int32_t>* pcm) {
+                               std::vector<int32_t>* pcm, int* match, std::string* warning) {
+    *match = MATCH_SAME;
+    warning->clear();
     size_t values = (size_t)smp.frames * (size_t)smp.channels;
     raw->resize((size_t)smp.bytes);
     pcm->resize(values);
@@ -1014,7 +1093,50 @@ static std::string read_sample(GigSource* g, const SrPart& part, const SrSample&
     }
     for (const GigWave& w : g->waves)
         if (!sr_name_equal(w.name, smp.name) && fits(w) && !tried(w) && read_at(w.offset)) return "";
-    if (named) return fmt("Sample %s in %s is different from the sample in the original bank.", smp.name.c_str(), part.name.c_str());
+    for (const GigWave& w : g->waves) {
+        if (!smp.has_sketch || smp.bits != 24 || w.bits != 16 || !sr_name_equal(w.name, smp.name) ||
+            w.channels != smp.channels || w.rate != smp.rate || w.bytes != values * 2)
+            continue;
+        raw->resize((size_t)w.bytes);
+        if (w.offset > g->size || w.bytes > g->size - w.offset || !file_seek(g->f, w.offset) ||
+            fread(raw->data(), 1, raw->size(), g->f) != raw->size())
+            continue;
+        decode_pcm(raw->data(), 16, values, pcm->data());
+        for (int32_t& v : *pcm) v *= 256;
+        if (sketch_agrees(smp, pcm->data())) {
+            *match = MATCH_16BIT;
+            return "";
+        }
+    }
+    for (const GigWave& w : g->waves) {
+        if (!sr_name_equal(w.name, smp.name) || w.channels != smp.channels || w.rate != smp.rate ||
+            (w.bits != 16 && w.bits != 24))
+            continue;
+        uint64_t frame_bytes = (uint64_t)w.channels * (uint64_t)(w.bits / 8), frames = w.bytes / frame_bytes;
+        uint64_t used = std::min<uint64_t>(frames, smp.frames);
+        raw->resize((size_t)(used * frame_bytes));
+        if (w.offset > g->size || raw->size() > g->size - w.offset || !file_seek(g->f, w.offset) ||
+            fread(raw->data(), 1, raw->size(), g->f) != raw->size())
+            continue;
+        std::fill(pcm->begin(), pcm->end(), 0);
+        decode_pcm(raw->data(), w.bits, (size_t)used * (size_t)smp.channels, pcm->data());
+        if (w.bits < smp.bits)
+            for (int32_t& v : *pcm) v *= 256;
+        else if (w.bits > smp.bits)
+            for (int32_t& v : *pcm) v = std::min((v + 128) >> 8, 32767);
+        *match = MATCH_NAME;
+        if (frames < smp.frames)
+            *warning = fmt("Sample %s in %s is %llu frames shorter than the original sample. The program adds silence at the end.",
+                           smp.name.c_str(), part.name.c_str(), (unsigned long long)(smp.frames - frames));
+        else if (frames > smp.frames)
+            *warning = fmt("Sample %s in %s is %llu frames longer than the original sample. The program removes the frames at the end.",
+                           smp.name.c_str(), part.name.c_str(), (unsigned long long)(frames - smp.frames));
+        else
+            *warning = fmt("Sample %s in %s is different from the original sample.", smp.name.c_str(), part.name.c_str());
+        return "";
+    }
+    if (named)
+        return fmt("Sample %s in %s has a format that this program cannot use.", smp.name.c_str(), part.name.c_str());
     return fmt("Cannot find sample %s in %s.", smp.name.c_str(), part.name.c_str());
 }
 
@@ -1081,7 +1203,11 @@ void sr_build_bank(const SrRecipe& r, const std::string& out_dir, const SrRebuil
         if (!ok) error = "Cannot write the bank. The disk is possibly full.";
     }
 
-    uint64_t expect_next = preload_offset + preload_size;
+    uint64_t expect_next = preload_offset + preload_size, recipe_next = expect_next;
+    bool any_other = false;
+    int sixteen = 0;
+    std::vector<std::string> warnings;
+    std::vector<uint64_t> stream_at(r.samples.size(), 0), stream_size(r.samples.size(), 0);
     for (size_t s = 0; ok && s < r.samples.size(); ++s) {
         if (cancel && cancel->load()) {
             ok = false;
@@ -1109,11 +1235,17 @@ void sr_build_bank(const SrRecipe& r, const std::string& out_dir, const SrRebuil
                 break;
             }
         }
-        error = read_sample(&src, part, smp, &raw, &pcm);
+        int match = MATCH_SAME;
+        std::string warning;
+        error = read_sample(&src, part, smp, &raw, &pcm, &match, &warning);
         if (!error.empty()) {
             ok = false;
             break;
         }
+        bool other = match != MATCH_SAME;
+        any_other = any_other || other;
+        if (match == MATCH_16BIT) sixteen++;
+        if (!warning.empty()) warnings.push_back(warning);
         if ((int)r.bits > smp.bits)
             for (int32_t& v : pcm) v *= 256;
 
@@ -1142,7 +1274,7 @@ void sr_build_bank(const SrRecipe& r, const std::string& out_dir, const SrRebuil
                     if (row.sample_index == (uint32_t)s) end = row.sample_frame_offset + row.total_frames;
                 }
             }
-            if (smp.stream_first >= end || end > smp.frames || smp.stream_offset != expect_next) {
+            if (smp.stream_first >= end || end > smp.frames || smp.stream_offset != recipe_next) {
                 error = fmt("The position of the data of sample %s is not correct.", smp.name.c_str());
                 ok = false;
                 break;
@@ -1153,29 +1285,51 @@ void sr_build_bank(const SrRecipe& r, const std::string& out_dir, const SrRebuil
                 ok = false;
                 break;
             }
-            if (stream.data.size() != smp.stream_bytes || xxh64(stream.data.data(), stream.data.size()) != smp.stream_hash) {
+            if (!other && (stream.data.size() != smp.stream_bytes ||
+                                xxh64(stream.data.data(), stream.data.size()) != smp.stream_hash)) {
                 error = fmt("The compressed data of sample %s is different from the original bank.", smp.name.c_str());
                 ok = false;
                 break;
             }
-            if (!file_seek(out, smp.stream_offset) ||
+            if (!file_seek(out, expect_next) ||
                 fwrite(stream.data.data(), 1, stream.data.size(), out) != stream.data.size()) {
                 error = "Cannot write the bank. The disk is possibly full.";
                 ok = false;
                 break;
             }
+            stream_at[s] = expect_next;
+            stream_size[s] = stream.data.size();
             expect_next += stream.data.size();
+            recipe_next += smp.stream_bytes;
         }
         p->samples_done.store((int)s + 1);
     }
-    if (ok && xxh64(preload.data(), preload.size()) != r.preload_hash) {
+    if (ok && !any_other && xxh64(preload.data(), preload.size()) != r.preload_hash) {
         error = "The first part of the samples is different from the original bank.";
         ok = false;
     }
-    if (ok && expect_next != r.bank_bytes) {
-        error = fmt("The size of the bank is %llu bytes. The correct size is %llu bytes.", (unsigned long long)expect_next,
+    if (ok && recipe_next != r.bank_bytes) {
+        error = fmt("The size of the bank is %llu bytes. The correct size is %llu bytes.", (unsigned long long)recipe_next,
                     (unsigned long long)r.bank_bytes);
         ok = false;
+    }
+    if (ok && any_other) {
+        std::vector<uint8_t> rows = r.rows;
+        for (uint32_t z = 0; z < r.row_count; ++z) {
+            Row row = row_at(r, z);
+            if (row.stream_size == 0) continue;
+            if (row.sample_index >= r.samples.size() || stream_size[row.sample_index] == 0) {
+                error = fmt("Row %u is not correct.", z);
+                ok = false;
+                break;
+            }
+            put64(rows.data() + (size_t)z * ROW_BYTES + 104, stream_at[row.sample_index]);
+            put64(rows.data() + (size_t)z * ROW_BYTES + 112, stream_size[row.sample_index]);
+        }
+        if (ok && (!file_seek(out, rows_offset) || fwrite(rows.data(), ROW_BYTES, r.row_count, out) != r.row_count)) {
+            error = "Cannot write the bank. The disk is possibly full.";
+            ok = false;
+        }
     }
     if (ok && (!file_seek(out, preload_offset) || fwrite(preload.data(), 1, preload.size(), out) != preload.size())) {
         error = "Cannot write the bank. The disk is possibly full.";
@@ -1196,6 +1350,8 @@ void sr_build_bank(const SrRecipe& r, const std::string& out_dir, const SrRebuil
         finish(p, end_state, error);
         return;
     }
+    p->samples_16bit = sixteen;
+    p->warnings = warnings;
     finish(p, SR_BANK_DONE, "");
 }
 
@@ -1398,7 +1554,8 @@ static bool bank_digests(const std::string& path, bool want_preload, uint64_t* t
     return ok;
 }
 
-static bool link_instrument(const std::string& fsi, std::vector<std::string>* problems, bool* changed) {
+static bool link_instrument(const std::string& fsi, const std::vector<std::string>& built,
+                            std::vector<std::string>* problems, bool* changed) {
     *changed = false;
     int64_t size = sr_file_size(fsi);
     if (size < 8 || size > (64 << 20)) return false;
@@ -1420,12 +1577,16 @@ static bool link_instrument(const std::string& fsi, std::vector<std::string>* pr
             continue;
         }
         if (table == rd64(data.data() + ref.table_at)) continue;
-        if (!bank_digests(bank, true, &table, &preload) || preload != rd64(data.data() + ref.preload_at)) {
+        bool checked = std::any_of(built.begin(), built.end(),
+                                   [&](const std::string& name) { return sr_name_equal(name, sr_path_base(bank)); });
+        if (!bank_digests(bank, true, &table, &preload) ||
+            (!checked && preload != rd64(data.data() + ref.preload_at))) {
             problems->push_back(fmt("%s: %s is not the bank this instrument was made with. Build the bank again.",
                                     sr_path_base(fsi).c_str(), sr_path_base(bank).c_str()));
             continue;
         }
         put64(data.data() + ref.table_at, table);
+        put64(data.data() + ref.preload_at, preload);
         *changed = true;
     }
     if (!*changed) return true;
@@ -1443,7 +1604,8 @@ static bool link_instrument(const std::string& fsi, std::vector<std::string>* pr
     return true;
 }
 
-int sr_link_instruments(const std::string& instruments_dir, std::vector<std::string>* problems) {
+int sr_link_instruments(const std::string& instruments_dir, const std::vector<std::string>& built,
+                        std::vector<std::string>* problems) {
     std::vector<std::string> dirs = { instruments_dir };
     std::vector<SrDirEntry> entries;
     if (!sr_list_dir(instruments_dir, &entries)) return 0;
@@ -1455,7 +1617,7 @@ int sr_link_instruments(const std::string& instruments_dir, std::vector<std::str
         for (const SrDirEntry& e : entries) {
             if (e.dir || !sr_ends_with(e.name, ".fsi")) continue;
             bool changed = false;
-            link_instrument(sr_path_join(d, e.name), problems, &changed);
+            link_instrument(sr_path_join(d, e.name), built, problems, &changed);
             if (changed) changed_count++;
         }
     }

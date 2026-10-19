@@ -1,75 +1,108 @@
-# Sonic Reimplants bank recipe: how sr_install rebuilds this bank from the original .gig files.
 recipe 1
 bank "2nd Violins Col Legno.fsb" bytes 9933202 content_xxh64 6b6531a25c9a5842
 format rate 48000 channels 2 bits 24 preload 8192 block 4096 flags 0
 part 0 0 name "2nd Violins Col Legno.gig" folder "Symphonic String Collection- 2nd Violins" bytes 17551216
 sample 0 file 0 gig 32 part 0 offset 15657198 bytes 429594 frames 71599 channels 2 bits 24 rate 48000 compressed 0 source 9dd417a309d5b1e4 steps 0 result_frames 71599 result_bits 24 result 9dd417a309d5b1e4 name "v2cl2s1-gs3-6-g#3"
+sketch 0 env 2e32414d556067777f848c918f93979b at 2759 35986 pcm P/02EBD7Aw1D+JsL1fMfDCXu6Q5t6JgT6+ImGBHfnRqX3ZUaa95gGCbirBSg53EQ3+3fC/nygwb69VYBNfbi/RsA5f8jAOj/KwDt/zQA7v86AO//QADt/0EA7v9DAOv/RADp/0IA6P8+AOn/NwDr/zQA7f8yAOr/NgDr/zcA7P8=
 stream 0 offset 1684652 bytes 215562 first 0 xxh64 c63575cbaa4451ec
 sample 1 file 0 gig 21 part 0 offset 10367578 bytes 522624 frames 87104 channels 2 bits 24 rate 48000 compressed 0 source b4ec240fd41664c7 steps 0 result_frames 87104 result_bits 24 result b4ec240fd41664c7 name "v2cl2s1-g3-4-g3"
+sketch 1 env 3335424a585e67727970717a7a838ea2 at 3320 52259 pcm 1/iVAOb9wABQBIcAoAt+AFITuwBbGh0BAyCiAeYjDwK3JRMCoCX7AQ8k/QHXIJoBOBx9ADUX9/5VEor95Q1B/PH/gwDy/4UA8f+HAO3/iQDu/4sA7/+KAO7/iQD0/4oA8v+OAPP/jQD2/4oA9v+MAPX/jAD3/4sA9v+LAPv/iAA=
 stream 1 offset 1900214 bytes 259502 first 0 xxh64 b78b4bea36cb2d3b
 sample 2 file 0 gig 13 part 0 offset 6530606 bytes 493728 frames 82288 channels 2 bits 24 rate 48000 compressed 0 source 38bdff4b1a3a0c20 steps 0 result_frames 82288 result_bits 24 result 38bdff4b1a3a0c20 name "v2cl2s1-as3-3-a#3"
+sketch 2 env 323d4a555f6a757e86848079817e8d9b at 2756 59936 pcm Fgsh8w8GmfHs/pjxxPb28pHtUfUm5f731t4q+jDao/s72OD84Njg/b/aJ/6f3Sj+0eAl/mPkGf566Ib+8ext/9b/sP/V/7L/1v+u/9X/rf/T/6z/0/+t/9T/rf/T/6n/0P+o/9P/qv/U/6r/0/+p/9P/rP/T/63/0/+s/9P/rP8=
 stream 2 offset 2159716 bytes 246032 first 0 xxh64 b403c80e957fa972
 sample 3 file 0 gig 27 part 0 offset 13089064 bytes 568380 frames 94730 channels 2 bits 24 rate 48000 compressed 0 source 693d6656e98bcb2f steps 0 result_frames 94730 result_bits 24 result 693d6656e98bcb2f name "v2cl2s1-as3-5-a#3"
+sketch 3 env 34434f5b636e757d7986868691939ba3 at 1018 48602 pcm CwnO/tIMP/8pESv/9hVz/r0aMv3dHrL70iFn+oQjbfkyJKX4sCMV+Mkh4/ebHg34Vxpw+J0V9vjBEM/5Hgz4+vv/oP/6/6H/+f+h//j/of/3/6H/9v+e//f/nv/4/5z/9v+a//b/nP/z/53/8v+c//P/nv/2/5//+v+h//r/of8=
 stream 3 offset 2405748 bytes 278158 first 0 xxh64 60e989dd17e5cd8b
 sample 4 file 0 gig 19 part 0 offset 9344696 bytes 563802 frames 93967 channels 2 bits 24 rate 48000 compressed 0 source 3176f54a26702e4e steps 0 result_frames 93967 result_bits 24 result 3176f54a26702e4e name "v2cl2s1-b3-4-b3"
+sketch 4 env 363f4c525a656e73777d828c8d818f96 at 2800 48481 pcm VPvuBHP7hAMs+6wByPmPALv2OgC/8qf/Ye5F/yPrxv8J6owAQupMAZHqsgEm7FgBse0DAXHumwCy74f/mPB3/sv/o//K/6L/yP+i/8z/of/P/6D/zP+g/8v/nv/M/57/zP+c/8v/nf/K/5//y/+e/8z/nP/K/53/y/+g/8j/of8=
 stream 4 offset 2683906 bytes 277086 first 0 xxh64 8dc7c1362e3f2e7d
 sample 5 file 0 gig 14 part 0 offset 7024542 bytes 413928 frames 68988 channels 2 bits 24 rate 48000 compressed 0 source 2926d80261045de7 steps 0 result_frames 68988 result_bits 24 result 2926d80261045de7 name "v2cl2s1-cs4-3-c#4"
+sketch 5 env 242e3a444e575f6a757d7e84838495a3 at 1993 34651 pcm HPMVBijsWgYN45kGjNkvB1jQKwhHyDUJCML8CQu+XAo0vDYKUbxcCba9Xwj3vjoIvL+eCB7A3Qg4wCwJ/MChCWIA8P9oAO7/bwDr/3UA6P9+AOf/ggDp/4EA6v+FAOz/hgDx/4YA+v9/AAEAfwAKAH0AEAB7ABUAdwAXAHEAGwA=
 stream 5 offset 2960992 bytes 211256 first 0 xxh64 821afa2498853700
 sample 6 file 0 gig 20 part 0 offset 9908706 bytes 458664 frames 76444 channels 2 bits 24 rate 48000 compressed 0 source ed2a93aa6f13dd71 steps 0 result_frames 76444 result_bits 24 result ed2a93aa6f13dd71 name "v2cl2s1-cs4-4-c#4"
+sketch 6 env 2230384449595e6b76808788909195a2 at 2031 38458 pcm QBK18rsPZ+1SEbHp2RcG6MIihOjaL27qOTt27HpEzOxtSdvqqUih549D1eT+OTLjMy+H4l4myuLLHvnjNhnj5aD/EQCf/w4Amv8LAJb/CQCQ/wgAi/8FAIb///+H////hv/+/4j/+f+L//T/lP/x/5r/8v+a//T/n//4/6H/+P8=
 stream 6 offset 3172248 bytes 233564 first 0 xxh64 9d1c3340b3c4c225
 sample 7 file 0 gig 23 part 0 offset 11293752 bytes 474174 frames 79029 channels 2 bits 24 rate 48000 compressed 0 source bd991c5781b5f4cb steps 0 result_frames 79029 result_bits 24 result bd991c5781b5f4cb name "v2cl2s2-ds4-4-d#4"
+sketch 7 env 343d47555a60686f75797a746b767589 at 1180 60495 pcm /OqLCC7nEgg55MwHeuEzB2/fTQYj3pEFs9xwBHbb3gFE23P+Btx0+4fdRPka3zH4L+Eb+BfkQfia50X4+Ouu96EAGwCjABoAogAZAJ8AGgCjABkAogAZAKEAGwChABoAowAaAKMAGQCiABoAowAaAKIAHAChABwAowAaAKIAGwA=
 stream 7 offset 3405812 bytes 234736 first 0 xxh64 3c65a49c1eb51e0c
 sample 8 file 0 gig 0 part 0 offset 233248 bytes 907938 frames 151323 channels 2 bits 24 rate 48000 compressed 0 source 063d482090e2f47d steps 0 result_frames 151323 result_bits 24 result 063d482090e2f47d name "v2cl2s2-d4-1-d4"
+sketch 8 env 2c39464e5963696d707479838a857388 at 1713 76428 pcm NunwC5DkDw4G3xgPZdkODzvU3g3wz6sLxcwaCfXK0QZ6yjwFncraBJPLxQWJzQ0HYNDkB5TTNwhE1nkI7NcICXgAGwB6AB4AeQAfAHoAIQB7ACUAfQAmAH8AKQCAAC0AggAuAIEAMACBADEAgQA1AH4ANgCBADgAfgA8AH0APQA=
 stream 8 offset 3640548 bytes 434188 first 0 xxh64 4082365799c24b8c
 sample 9 file 0 gig 7 part 0 offset 3789206 bytes 456660 frames 76110 channels 2 bits 24 rate 48000 compressed 0 source 614a2de36de666bd steps 0 result_frames 76110 result_bits 24 result 614a2de36de666bd name "v2cl2s1-d4-2-d4"
+sketch 9 env 2a2f3e444e59666e7b8173768286898a at 2420 52181 pcm cvrKFpT/KhqvBVodHwyVINoRRyR5FlUo+xnaKxUc2S26HN8t7hy7K3McCijtGh0kwBhyIGwW3RxgFK4ZGhMkFwwAgv8IAID/CACB/woAgf8LAH3/BgB8/wUAff8FAH3/AgB7/wUAff8BAH3/AACA/wAAgf/+/4D///+B//7/gf8=
 stream 9 offset 4074736 bytes 232048 first 0 xxh64 9bf3e74aace6e35d
 sample 10 file 0 gig 33 part 0 offset 16087000 bytes 568656 frames 94776 channels 2 bits 24 rate 48000 compressed 0 source 270f3059e7b595cf steps 0 result_frames 94776 result_bits 24 result 270f3059e7b595cf name "v2cl2s2-f4-7-f4"
+sketch 10 env 323c5054545c6a74787d83848b8d979b at 989 51728 pcm vQq+AP4MoAIwEA0FXxR4B/kYFQoAHXkM6yCFDf8j7gwUJTkL2CNuCTMgBQiYG3MHqBYqCK8R9glFDLgMqgYBEAYAtv8GALb/BAC1/wcAs/8IALj/DgC1/w8AtP8SALb/EQCx/xUAsv8WALL/FgC0/xoAs/8YALP/GAC0/xsAuP8=
 stream 10 offset 4306784 bytes 278918 first 0 xxh64 ca66f47ab1429f94
 sample 11 file 0 gig 28 part 0 offset 13657652 bytes 565866 frames 94311 channels 2 bits 24 rate 48000 compressed 0 source 45b25cae941b7c58 steps 0 result_frames 94311 result_bits 24 result 45b25cae941b7c58 name "v2cl2s2-f4-5-f4"
+sketch 11 env 353e464b525d6870777d83848b8d979b at 2537 48734 pcm JgUxBSn+NQPx9V8ALeyj/LzkB/mf34T2Q9xr9BjakPJT2E/xO9kn8QLbpfKY3ob0eeNq9cDoXPW97Q71nPCl9L7/KAC9/ycAvP8mALj/JAC1/yQAtP8iALL/IwCy/yEAsf8gALb/HwC0/xoAtf8YALX/FgC3/xQAuP8PALj/DQA=
 stream 11 offset 4585702 bytes 278016 first 0 xxh64 0a5bd22155a2a275
 sample 12 file 0 gig 9 part 0 offset 4655764 bytes 480642 frames 80107 channels 2 bits 24 rate 48000 compressed 0 source c6d0d89aad40025a steps 0 result_frames 80107 result_bits 24 result c6d0d89aad40025a name "v2cl2s2-fs4-2-f#4"
+sketch 12 env 3435414e59656e797d888e8993999ba4 at 990 40991 pcm Rvq4/Fr91PvRAeH6Ogf0+eIM7PguEgv4bhaa9+IYlPdVGSL4+xeH+XAVaPsZEhr9NQ4s/vEJh/7WBVH+jAKZ/c7/4f/L/+D/y//c/8j/2v/F/9r/xP/b/8j/2//F/9v/wv/f/8b/3//J/+H/zP/i/9L/3//X/9//3//d/+T/2v8=
 stream 12 offset 4863718 bytes 240034 first 0 xxh64 79fad4ade6931550
 sample 13 file 0 gig 1 part 0 offset 1141394 bytes 443544 frames 73924 channels 2 bits 24 rate 48000 compressed 0 source 3f87f4d324e34fa4 steps 0 result_frames 73924 result_bits 24 result 3f87f4d324e34fa4 name "v2cl2s2-fs4-1-f#4"
+sketch 13 env 2f353d46576466707b7f80888a8e9a9e at 3537 37027 pcm Fvuv9Kr+Hva+A573NQpF+W8RCPuLGF78Sh6D/X4h4P4RIl8AhiDfAaIdVgP5GaoE0hVQBcwRAAXMDg0EsQzhAhcAwP8UALv/EgC2/xEAtP8OALP/DACy/w4Asf8RALH/FACx/xYAtv8YALv/HwC7/yEAwf8nAMX/LADI/ywAzf8=
 stream 13 offset 5103752 bytes 223228 first 0 xxh64 423717d17dd89822
 sample 14 file 0 gig 8 part 0 offset 4246074 bytes 409482 frames 68247 channels 2 bits 24 rate 48000 compressed 0 source 1a50334f6b1d4299 steps 0 result_frames 68247 result_bits 24 result 1a50334f6b1d4299 name "v2cl2s2-a4-2-a4"
+sketch 14 env 33393e53595e6974787c818888818697 at 914 36070 pcm iwhe+zMMuP3lD8//dBLQARkWVATkGBAHWhx+CakfSgu9H3sM0h1IDfga0w1eF8MNEhNwDBAOlgkXCLwF1QKYARwAdQAYAHcAGwB4ABoAegAaAHwAHQB+ABoAfwAbAH8AHgB/AB4AfwAeAHoAHwB3ABwAcAAbAGsAFABmABAAZAA=
 stream 14 offset 5326980 bytes 206168 first 0 xxh64 2eb65ad048790452
 sample 15 file 0 gig 3 part 0 offset 2054674 bytes 431166 frames 71861 channels 2 bits 24 rate 48000 compressed 0 source 49d976dc154b547e steps 0 result_frames 71861 result_bits 24 result 49d976dc154b547e name "v2cl2s3-a4-1-a4"
+sketch 15 env 3b363f444e5a5f656d74797e686c798b at 4567 56050 pcm 9fdj/6f0VQDc8TIB8e4rArDrGAMz6X0D+edRA0/n1QJJ5zECyui0AZ7rlwEi78MBBPPnAfz2vgGo+lkBlf0HAfj/yAD2/8cA9v/HAPn/xgD2/8cA9v/IAPb/ywD1/8oA9f/LAPX/ygD1/8oA9P/KAPj/yQD4/8oA9//KAPf/yAA=
 stream 15 offset 5533148 bytes 216430 first 0 xxh64 269392bc634886e1
 sample 16 file 0 gig 2 part 0 offset 1585146 bytes 469320 frames 78220 channels 2 bits 24 rate 48000 compressed 0 source f0bdb2171de5ae6c steps 0 result_frames 78220 result_bits 24 result f0bdb2171de5ae6c name "v2cl2s2-gs4-1-g#4"
+sketch 16 env 3b42555e65707d848d919491929b9fa4 at 4087 42705 pcm YALPAIMEBwI5B+MCPwpSAyANVgPND0MDDRJAA1wTKgOuE+kCHBMrAoYRwQBQD/n+7QxC/fEKhftyCaH5UAhH+Ob/AQDj/wAA5P/+/+T/+//f//3/4////+P//v/h/wAA3v///+H/AgDk/wYA4f8FAOP/CADi/wsA4/8KAOP/CQA=
 stream 16 offset 5749578 bytes 231766 first 0 xxh64 3ddd15cc79575e42
 sample 17 file 0 gig 15 part 0 offset 7438678 bytes 446448 frames 74408 channels 2 bits 24 rate 48000 compressed 0 source 0b8cc3e355028dc9 steps 0 result_frames 74408 result_bits 24 result 0b8cc3e355028dc9 name "v2cl2s2-b4-3-b4"
+sketch 17 env 37404d57606b737a838986878b8c8c98 at 2465 51662 pcm VAUl+58ETvkjAz/4nv+e+MH6xvmA8yr6E+x4+fHmPPmF5In6SuXv/Ejpav/E770BoPfHBEkApQfbBuQH+gihBT0AAwA9AAEAPQADAD4AAwA9AAQAPgAFAD0ABQA+AAgAQQAHAD4ABgA9AAMAPwAEAD8AAgA9AAIAPQAEAD0ABQA=
 stream 17 offset 5981344 bytes 225666 first 0 xxh64 4d45433963f8bee4
 sample 18 file 0 gig 22 part 0 offset 10890410 bytes 403134 frames 67189 channels 2 bits 24 rate 48000 compressed 0 source 514cc42a4c82eef9 steps 0 result_frames 67189 result_bits 24 result 514cc42a4c82eef9 name "v2cl2s2-a4-4-a4"
+sketch 18 env 31404c4e59656c736d6a75838c8b7b81 at 1162 34237 pcm g/29/vb/gPyRBKz6Owsw+uUQC/n3FNP1UxoG818evvFtH4/w2x1W724anO7cFQnwYhDt8goLsfQHBxH1XQUn9A4AWP8WAE7/GQBG/x8AQP8kAD3/KQA9/y4AO/8vADz/MQA6/y0AO/8sAD7/JwA7/yIAPP8gAD//HgBB/x8ARP8=
 stream 18 offset 6207010 bytes 171588 first 8192 xxh64 a8d0323a82e74273
 sample 19 file 0 gig 35 part 0 offset 17102160 bytes 448512 frames 74752 channels 2 bits 24 rate 48000 compressed 0 source d6bec50911906519 steps 0 result_frames 74752 result_bits 24 result d6bec50911906519 name "v2cl2s3-c5-7-c5"
+sketch 19 env 3437464f59616b797a858f8c8b8c94a5 at 1163 38756 pcm sAHOAzgDmwRbBeYFqQgRCBILGQpHEFELNBRxDAIaugw7HpoKLR1vBtoaKAIdFMv+Ww8R/fkK6/yeCAD9DQqH/dX/zv/S/8T/0v+6/9P/sf/S/6r/0f+l/9H/o//V/6H/1/+e/9r/of/c/6n/4f+s/+P/sf/p/7T/7/+3//H/tv8=
 stream 19 offset 6378598 bytes 228198 first 0 xxh64 8f4fcfccb51fed9d
 sample 20 file 0 gig 34 part 0 offset 16655864 bytes 446088 frames 74348 channels 2 bits 24 rate 48000 compressed 0 source 94da288247c23034 steps 0 result_frames 74348 result_bits 24 result 94da288247c23034 name "v2cl2s3-c5-6-c5"
+sketch 20 env 2f38445560646b76848a8f8c8b8c94a5 at 2132 37441 pcm 5QIBEB4KUxB/D9gNKhQaCg8aGQbIH+kBjiTn/WUny/raJyD4zSWo9PQgsfCjGvjscxLi6kMLheucBFXu9f7q8eb/CwDl/wwA3v8NANb/DgDS/w0Azv8LAM3/CwDL/woAxv8JAMf/CQDI/wsAyf8LAM3/CgDK/wgAzP8GAMv/BwA=
 stream 20 offset 6606796 bytes 224498 first 0 xxh64 8e8ff48ab4145bb8
 sample 21 file 0 gig 16 part 0 offset 7885334 bytes 402360 frames 67060 channels 2 bits 24 rate 48000 compressed 0 source a792635ce73c2771 steps 0 result_frames 67060 result_bits 24 result a792635ce73c2771 name "v2cl2s3-ds5-3-d#5"
+sketch 21 env 35434c555f6772797d888c869092949e at 1308 37738 pcm A+3NETHs9hVb7AEXC+wVE7Hp9Qwm5tcHj+GWBTLdAAZG2ywHQtz+B0LgpQfP5AgHOOi2BefpYgMn64wCFuyvAxYAHQAYACIAGgAmAB8AKQAgADEAHAA7AB0AQwAZAEYAFwBIABkARgAVAEEAFAA+ABUAPQAYADkAFQA0ABMAMAA=
 stream 21 offset 6831294 bytes 205488 first 0 xxh64 e85533f6e743da45
 sample 22 file 0 gig 29 part 0 offset 14223726 bytes 482856 frames 80476 channels 2 bits 24 rate 48000 compressed 0 source 26f2ba4f82af7856 steps 0 result_frames 80476 result_bits 24 result 26f2ba4f82af7856 name "v2cl2s3-e5-5-e5"
+sketch 22 env 36434d5965707c8281858c8b91989591 at 863 40473 pcm KPllB0309gld8HsM8+1bDYrsxwyk6swLsud9CtHkCAk+44AHq+NrBdvlOAJv6NP+8+r9/Bzt/fws75L9wfFD/uH/1f/b/9b/0//W/83/1v/K/9X/x//Y/8P/2v/B/9z/v//e/8L/3v/F/93/yf/c/87/2//U/9v/1v/d/9n/5P8=
 stream 22 offset 7036782 bytes 241432 first 0 xxh64 23c128bc5f2d2562
 sample 23 file 0 gig 17 part 0 offset 8287902 bytes 589434 frames 98239 channels 2 bits 24 rate 48000 compressed 0 source 033ddb24944ecf1d steps 0 result_frames 98239 result_bits 24 result 033ddb24944ecf1d name "v2cl2s4-e5-3-e5"
+sketch 23 env 373d4556636b717c82616b76706c808b at 3082 59817 pcm fwxpA1AL6gRvCjgFdwdIBmwFQAjlBYgK0QFBEGX+RRUn/g8Yj/raFTr0bQ+H7lcJCeuvBVToBgWK6SsG0e1ZBuX/of7m/5/+5/+f/ur/n/7r/53+7f+b/vD/mv7x/5X+9f+U/vf/lv75/5b+/P+W/vv/mv4AAJr+BACY/gIAl/4=
 stream 23 offset 7278214 bytes 301044 first 0 xxh64 6ed730f8ded38d80
 sample 24 file 0 gig 25 part 0 offset 12189410 bytes 416334 frames 69389 channels 2 bits 24 rate 48000 compressed 0 source c0ae32e570c51355 steps 0 result_frames 69389 result_bits 24 result c0ae32e570c51355 name "v2cl2s3-e5-4-e5"
+sketch 24 env 334049555e68717a80888d8e92959f9d at 1817 37299 pcm 6flBBAcAEQQRB48CGw0c/yMTJvuwF3L4ehkA+c8cTvwuID/+3h9j/Nkc//fBFWT0qAtJ8+kEUvQ+Aez2v/9B+yoAHwAtABwALwAZADIAGAA3ABgAPwAUAEUAEgBJABAAUAATAE4AFwBNABoASgAgAEgAJABAACgAOAApADQAKgA=
 stream 24 offset 7579258 bytes 212136 first 0 xxh64 c9316969db493085
 sample 25 file 0 gig 18 part 0 offset 8877544 bytes 466944 frames 77824 channels 2 bits 24 rate 48000 compressed 0 source dabbe86a55ea59c6 steps 0 result_frames 77824 result_bits 24 result dabbe86a55ea59c6 name "v2cl2s4-f5-3-f5"
+sketch 25 env 324448566068757c828985757e888c8e at 1449 56230 pcm u/LSDdLvlApm7ZUHXun0BZ/jvAS63p8EbdqVBqvXcQkM1nALQdYnDcjZqQwp4IEJ/ekqBdfzkv/w+8L6qQSf+fj/nv/3/53/9v+d//j/nP/5/5z/+P+a//n/mf/6/5n/+v+Y//n/mv/4/5r/9f+a//P/nP/0/5z/9v+d//b/n/8=
 stream 25 offset 7791394 bytes 240808 first 0 xxh64 ba9d651cf3ceb942
 sample 26 file 0 gig 31 part 0 offset 15193040 bytes 463950 frames 77325 channels 2 bits 24 rate 48000 compressed 0 source ee51c16cf4202206 steps 0 result_frames 77325 result_bits 24 result ee51c16cf4202206 name "v2cl2s4-f5-5-f5"
+sketch 26 env 324046525f697480848986747e888c8e at 1993 55731 pcm 8vxr+1H8CPrz9PX47PE1+x71vP1TANb+0RLMAZsdmQWNIZ4FCSDXBrgYFwnVD9kI9wsmBxoN1QQEDucBKAiXAPj/nv/3/53/9v+d//j/nP/5/5z/+P+a//n/mf/6/5n/+v+Y//n/mv/4/5r/9f+a//P/nP/0/5z/9v+d//b/n/8=
 stream 26 offset 8032202 bytes 239504 first 0 xxh64 1c021f1ea463d170
 sample 27 file 0 gig 12 part 0 offset 6043732 bytes 486666 frames 81111 channels 2 bits 24 rate 48000 compressed 0 source 9125ede9d79afd08 steps 0 result_frames 81111 result_bits 24 result 9125ede9d79afd08 name "v2cl2s4-gs5-2-g#5"
+sketch 27 env 31434e57606b727d857c7c807e7d8a9c at 1382 54376 pcm ahi0APAR3f5PBOL5SPJf99LwOvrJ8CP7MOQ3++/RYf8SzvkCUNasA63dWQhz5GIQqu9ND871tQc48bf+9O9P+AEASgABAEwAAQBNAAMATAADAEwABABNAAAASwACAE0AAABPAAIATAADAEwABQBKAAcASQAIAEgABwBGAAUARQA=
 stream 27 offset 8271706 bytes 248402 first 0 xxh64 514de70b4bbcafdf
 sample 28 file 0 gig 6 part 0 offset 3365740 bytes 423258 frames 70543 channels 2 bits 24 rate 48000 compressed 0 source 3c7c0e57862304f1 steps 0 result_frames 70543 result_bits 24 result 3c7c0e57862304f1 name "v2cl2s4-g5-1-g5"
+sketch 28 env 323c47525f67717a7a7b868681858d88 at 1242 38493 pcm o/IA+dT4O/wI+uP/AO/PBAXdSwns2MwInNZUA4fRsv2B0Gn+Vd29/hPzA/2zAor+eAaMAbQSgv5RE3r5fQ4T+e3/0P/y/8v/9f/H//P/wv/1/7n/9f+w//D/pf/s/57/6/+b/+j/nP/r/53/7P+k/+7/sP/t/7j/7f/D/+7/yf8=
 stream 28 offset 8520108 bytes 222440 first 0 xxh64 d64b5131806d78cb
 sample 29 file 0 gig 4 part 0 offset 2486048 bytes 409638 frames 68273 channels 2 bits 24 rate 48000 compressed 0 source a2e9e29844f3cd91 steps 0 result_frames 68273 result_bits 24 result a2e9e29844f3cd91 name "v2cl2s4-as5-4-a#5"
+sketch 29 env 2b3c49505a636c70787b807c848d9096 at 2517 35163 pcm 2/yDADn5KwEF9ZEBZO9xAenoAQK44pMCXN5lAwPdYAT33EgEqN3GAjzf2QBn4f7+quSC/SHpK/3e7Ev+Ne/x/wwAWAAWAGEAGgBoAB0AbAAdAG4AGwBvABkAeAAWAH0ACwB9AAgAegACAG4A/P9gAP3/VgADAE0ACgBDAAwAPAA=
 stream 29 offset 8742548 bytes 216466 first 0 xxh64 15b112d0b8662aee
 sample 30 file 0 gig 26 part 0 offset 12605952 bytes 482904 frames 80484 channels 2 bits 24 rate 48000 compressed 0 source ee26330536f41c19 steps 0 result_frames 80484 result_bits 24 result ee26330536f41c19 name "v2cl2s4-b5-4-b5"
+sketch 30 env 2c414a57616e757d83817368656b7f8d at 2367 65446 pcm RAKhAw7/QAAvAfoCQgSgBrH5jQrv6yINEeAACpfSKwpAykEO6cwZDsfYiA8O6rwRTvlHEin9RRAb/dcI1vroAun/DP/p/wv/6f8M/+n/DP/o/wz/5/8M/+j/C//m/wv/5/8K/+b/Cv/m/wr/5/8K/+b/Cv/l/wv/5/8M/+X/C/8=
 stream 30 offset 8959014 bytes 247800 first 0 xxh64 048de1c91620658c
 sample 31 file 0 gig 30 part 0 offset 14706790 bytes 486042 frames 81007 channels 2 bits 24 rate 48000 compressed 0 source 21abc1a801a63e98 steps 0 result_frames 81007 result_bits 24 result 21abc1a801a63e98 name "v2cl2s4-b5-5-b5"
+sketch 31 env 2b3a48535f69777e7b86807f85889c97 at 2901 44239 pcm SQKB8pcHuO9ODvPvdBcg8Awd2/ALIg/2ei3U9vE3/e5UO3XoGDZ94xoqLd/hHuLdwhV43RkUUd5WGU/j7BfO5wAAwP8DAL//AwC7/wYAu/8IALf/CwCz/woAtf8JALT/DQCz/wkAtv8GALj/CAC7/wcAwv///8T/+v/I//b/yP8=
 stream 31 offset 9206814 bytes 249924 first 0 xxh64 c0901fddb638fa7e
 sample 32 file 0 gig 5 part 0 offset 2895894 bytes 469638 frames 78273 channels 2 bits 24 rate 48000 compressed 0 source b76cc28e42d6428b steps 0 result_frames 78273 result_bits 24 result b76cc28e42d6428b name "v2cl2s4-cs6-1-c#6"
+sketch 32 env 2d424c565f686e66666b6c6c666d696e at 1250 39985 pcm 9vipDW0CIAi3DYMC+Rft/tAniv+2OIsGk0NBDZlM4A6AT4EOkEd7Dr46wAxhKXIIMRX8AQ4JFv7WA339ZgDe+wMA5QD//+cA///rAP7/9QD9//wA/f8AAfn/CgH5/w8B9/8QAff/DgH4/wcB8//+APH/9QDu/+wA7v/jAOz/3AA=
 stream 32 offset 9456738 bytes 242950 first 0 xxh64 54eafa9351ff79d4
 sample 33 file 0 gig 11 part 0 offset 5595984 bytes 447540 frames 74590 channels 2 bits 24 rate 48000 compressed 0 source 9905f70072faa21b steps 0 result_frames 74590 result_bits 24 result 9905f70072faa21b name "v2cl2s4-cs6-2-c#6"
+sketch 33 env 2d414c555e68737b868a86888a8e929d at 1932 37454 pcm 3/d3E+n74A7pBl4MsxBfDHwccQovK2oJkzUdCRE+NgjYPxMHjTYPAjUsIf3wGQ/6kQcP9MT89/AX8j/vUO5Z7REAHQAbAB4AJwAeAC0AIgAyACAANgAjAD0AIABAAB4AQQAZAD0AGAA3ABcAMgAWADAAGgArABoAKQAcACcAHwA=
 stream 33 offset 9699688 bytes 233514 first 0 xxh64 193769a7e8a6f322
 preload offset 13484 bytes 1671168 xxh64 cc52d01779fd021d
 head bytes 44

@@ -1,23 +1,30 @@
-# Sonic Reimplants bank recipe: how sr_install rebuilds this bank from the original .gig files.
 recipe 1
 bank "Cellos Pizzicato Harmonics.fsb" bytes 4842660 content_xxh64 a1addfe545164484
 format rate 48000 channels 2 bits 24 preload 8192 block 4096 flags 0
 part 0 0 name "Cellos Pizzicato Harmonics.gig" folder "Symphonic String Collection- Cellos" bytes 11598716
 sample 0 file 0 gig 0 part 0 offset 177028 bytes 1536000 frames 256000 channels 2 bits 24 rate 48000 compressed 0 source 720e51fafc05b70c steps 0 result_frames 256000 result_bits 24 result 720e51fafc05b70c name "clpzhrm-s1-(c2)o-1c3"
+sketch 0 env 21292d3f4b48464f52525e5e70839ca4 at 828 128743 pcm UfxVsc78VbBR/WSv2v16rmj+ja35/rysjf8NrB8AhKusAEWrLwFVq6UBoqsJAjasVwIFrYoC/62fAi6vkwJ2sBP/g/0S/4H9Ef+A/Q//f/0O/339DP99/Qz/fP0L/3z9Cv97/Qj/fP0I/3z9CP98/Qf/fP0H/339Bv99/Qb/fv0=
 stream 0 offset 398252 bytes 652050 first 0 xxh64 d48230e1ec8e6fc5
 sample 1 file 0 gig 4 part 0 offset 4758896 bytes 1801008 frames 300168 channels 2 bits 24 rate 48000 compressed 0 source 9313e695d73de633 steps 0 result_frames 300168 result_bits 24 result 9313e695d73de633 name "clpzhrm-s1-(c2)o-3c3"
+sketch 1 env 1c282e3746465660696c7778829392b0 at 3493 150959 pcm wftBYvr7n2Ix/PdiZPxFY5T8gWO//Kxj5Py/YwP9zWMf/c5jNP3BY0X9sGNT/ZxjXf2GY2X9cGNs/WNjc/1eY8EACADBAAkAwQAIAMEACQDBAAkAwQAJAMAACQDCAAoAwgAKAMEACQDBAAkAwQAJAMEACgDBAAkAwAAKAMAACgA=
 stream 1 offset 1050302 bytes 760956 first 0 xxh64 66ba305585b11d21
 sample 2 file 0 gig 7 part 0 offset 8518070 bytes 1423542 frames 237257 channels 2 bits 24 rate 48000 compressed 0 source 85c6b1e8c5ddbfd4 steps 0 result_frames 237257 result_bits 24 result 85c6b1e8c5ddbfd4 name "clpzhrm-s2-(g2)o-1g3"
+sketch 2 env 1e2f444f554c4c585b6771737a8697ae at 10149 121278 pcm DvqeSUP7N0p3/L5KqP0zS9X+kEv//9dLJQEJTEECJ0xYAzNMZAQuTGcFG0xfBv9LSwfbSywIsEsFCX1L1AlBS7D/hf6w/4L+sP+B/rH/gP6y/37+s/99/rX/ff62/3z+tf98/rj/fP64/33+uv99/rv/fv68/3/+vP+A/r7/g/4=
 stream 2 offset 1811258 bytes 608304 first 0 xxh64 beac803f73808df0
 sample 3 file 0 gig 8 part 0 offset 9941820 bytes 1656528 frames 276088 channels 2 bits 24 rate 48000 compressed 0 source b6bef6f013afeb5e steps 0 result_frames 276088 result_bits 24 result b6bef6f013afeb5e name "clpzhrm-s2-(g2)o-2g3"
+sketch 3 env 1d3542545a63666a74737b7883859ca7 at 2587 138789 pcm Tkn7CbpJqwkXSncJYUpaCZxKWAnKSmoJ6EqOCfhKvAn5Su0J6koYCsdKNgqNSkIKPUo4CtRJGQpPSeIJsEiVCfb/gv/2/4P/9f+C//b/gP/4/4D/+P9///j/f//5/37/+v9+//r/fv/6/37/+f9+//r/fv/7/4D/+/9+//v/f/8=
 stream 3 offset 2419562 bytes 720520 first 0 xxh64 6823acb2b43f5043
 sample 4 file 0 gig 1 part 0 offset 1713236 bytes 1115136 frames 185856 channels 2 bits 24 rate 48000 compressed 0 source 31928ee221f486b0 steps 0 result_frames 185856 result_bits 24 result 31928ee221f486b0 name "clpzhrm-s3-(d3)o-1d4"
+sketch 4 env 182c324b525e71727d86868a9399a6c0 at 2228 93143 pcm KfZInLP1QZo89W2YwfTSllP0bZX/8zuUuPNTk2nz15IQ88mSvfIMk27yhJMM8kKUlPFVlRPxwJag8GqYQPA/mgUAMgAGADMACAA0AAoANAAMADUADgA1AA8ANQAQADYAEgA2ABMANgAVADYAFgA1ABgANQAaADUAGgA1ABsANAA=
 stream 4 offset 3140082 bytes 471282 first 0 xxh64 3d1d01eabebce01b
 sample 5 file 0 gig 6 part 0 offset 7589440 bytes 928422 frames 154737 channels 2 bits 24 rate 48000 compressed 0 source daeb258f65d005d4 steps 0 result_frames 154737 result_bits 24 result daeb258f65d005d4 name "clpzhrm-s3-(d3)o-3d4"
+sketch 5 env 1e293e4c4f5f616a77778092a1a3b2bb at 3139 77479 pcm YA5Tvb0O57wZD4q8bg89vLwP/bv9D8m7MhCju1sQirt6EIC7jBCFu5MQmruQEMC7gxD5u2sQSLxIEK68HBAvvf7/ZQD+/2YAAABmAAEAZwABAGgAAwBoAAMAaAAEAGoABQBqAAUAaAAFAGkABgBoAAcAZwAIAGcACQBmAAoAZQA=
 stream 5 offset 3611364 bytes 385458 first 0 xxh64 36571ca4a46645e0
 sample 6 file 0 gig 5 part 0 offset 6560112 bytes 1029120 frames 171520 channels 2 bits 24 rate 48000 compressed 0 source e49ad78f83350ef2 steps 0 result_frames 171520 result_bits 24 result e49ad78f83350ef2 name "clpzhrm-s4-(a3)o-4a4"
+sketch 6 env 1d293e525b636c758093969aa1adbcc6 at 2299 86314 pcm G9alTg3VRlIf1LRVN9O3WFPScluR0eVdHdHRXxbREWFq0aFhC9J5YQPTnWBW1CRf8NUCXbXXJlqV2aVWituoUjsA/f89AP7/PwD+/0AA//9CAP//QwABAEQAAgBEAAMARQADAEQABABFAAQARQAFAEMABQBDAAYAQgAGAEEABgA=
 stream 6 offset 3996822 bytes 432240 first 0 xxh64 952b34b494ec1284
 sample 7 file 0 gig 3 part 0 offset 3773890 bytes 984798 frames 164133 channels 2 bits 24 rate 48000 compressed 0 source 7aafeb1c7fefd11a steps 0 result_frames 164133 result_bits 24 result 7aafeb1c7fefd11a name "clpzhrm-s4-(a3)o-2a4"
+sketch 7 env 1e2e4a58585f6e82838588858b937e89 at 4965 83106 pcm RAA+rWcBT6utAq+pEAReqIcFUqcQB4SmrQj4pVAKqaXrC5eleA3OpfoOU6Z0EBSn5hH6p14T/ajqFB6qhBZRqz0AEQA9AA8APgAPAD8ADwA/AA4APwAOAD8ADgA+AA0AQAAMAD8ACwA+AAsAPgAKAD4ACQA+AAoAPQAIADsACAA=
 stream 7 offset 4429062 bytes 413598 first 0 xxh64 75bd502ebe4d47cf
 preload offset 5036 bytes 393216 xxh64 accccfd3f9c4ccaa
 head bytes 44
