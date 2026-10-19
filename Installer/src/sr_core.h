@@ -5,7 +5,7 @@
 #include <string>
 #include <vector>
 
-#define SR_VERSION "1.3"
+#define SR_VERSION "1.3.1"
 #define SR_CREATOR "sonic-reimplants-installer"
 
 std::string sr_exe_dir();
