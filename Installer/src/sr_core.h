@@ -30,6 +30,7 @@ void sr_reveal(const std::string& dir);
 struct SrPart {
     int file, part;
     std::string name, folder;
+    std::string alt_name;
     uint64_t bytes;
     std::string path;
     bool exact;

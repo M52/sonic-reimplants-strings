@@ -508,6 +508,18 @@ static bool read_b64(FILE* f, uint8_t* out, size_t want) {
     return got == want;
 }
 
+static void fix_part_name(SrPart* p) {
+    static const char* const fixes[][2] = {
+        {"Violas Esprsessivo.gig", "Violas Espressivo.gig"},
+    };
+    for (const auto& f : fixes) {
+        if (!sr_name_equal(p->name, f[0])) continue;
+        p->alt_name = p->name;
+        p->name = f[1];
+        return;
+    }
+}
+
 bool sr_recipe_read(const std::string& path, SrRecipe* r, std::string* err) {
     *r = SrRecipe{};
     r->file = path;
@@ -547,6 +559,7 @@ bool sr_recipe_read(const std::string& path, SrRecipe* r, std::string* err) {
             p.part = atoi(w.w[2].c_str());
             p.name = w.str("name");
             p.folder = w.str("folder");
+            fix_part_name(&p);
             p.bytes = w.num("bytes");
             r->parts.push_back(p);
         } else if (k == "sample" && w.w.size() >= 2) {
@@ -693,11 +706,16 @@ bool sr_match_parts(SrRecipe* r, const std::vector<SrFound>& files) {
     bool all = true;
     for (SrPart& p : r->parts) {
         int best = -1;
-        for (int pass = 0; pass < 2 && best < 0; ++pass) {
-            for (size_t j = 0; j < files.size(); ++j) {
-                const SrFound& f = files[j];
-                if ((pass == 0 && (uint64_t)f.size != p.bytes) || !sr_name_equal(sr_path_base(f.path), p.name)) continue;
-                if (best < 0 || sr_name_equal(sr_path_base(sr_path_parent(f.path)), p.folder)) best = (int)j;
+        const std::string* names[2] = {&p.name, &p.alt_name};
+        for (int n = 0; n < 2 && best < 0; ++n) {
+            if (names[n]->empty()) continue;
+            for (int pass = 0; pass < 2 && best < 0; ++pass) {
+                for (size_t j = 0; j < files.size(); ++j) {
+                    const SrFound& f = files[j];
+                    if ((pass == 0 && (uint64_t)f.size != p.bytes) || !sr_name_equal(sr_path_base(f.path), *names[n]))
+                        continue;
+                    if (best < 0 || sr_name_equal(sr_path_base(sr_path_parent(f.path)), p.folder)) best = (int)j;
+                }
             }
         }
         p.path = best >= 0 ? files[(size_t)best].path : "";
